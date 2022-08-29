@@ -106,7 +106,7 @@ display: none;
 @media(max-width: 900px) {
   .img{
      display: initial;
-     margin-right: 45%;
+     margin-right: 50%;
      
   }
    justify-content: center;

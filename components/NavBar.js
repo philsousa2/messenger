@@ -28,7 +28,7 @@ function Navbar() {
 <Image  src="/logobranca.png" alt="Logo" width={125} height={40} margin-left={50} />
 </div>
     <section>
-      <HiMenu className="mobile"  color={'#fff'} size={40} onClick={()=> setMenuVisible(true)}/>
+      <HiMenu className="mobile"  color={'#fff'} size={50} onClick={()=> setMenuVisible(true)}/>
     </section>
   </Container>
   )
