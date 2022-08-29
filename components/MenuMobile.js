@@ -37,12 +37,12 @@ useEffect( () => {
     <Container id="cont" menuVisible={menuVisible}> 
        <IoClose size={45} onClick={()=> setClose(true)}/>
         <nav onClick={()=> setClose(true) }>
-            <Link href="/">Home</Link>
+            <Link href="/">Início</Link>
             <Link href="/Servicos">Serviços</Link>
-            <Link href="/Localidades">Localidades</Link>
-            <Link href="/Contato">Contato</Link>
-            <Link href="/">Rastrear</Link>
-            <Link href="/Informacao">Informações</Link>
+            <Link href="/Localidades">Abra sua Conta</Link>
+            <Link href="/Contato">Sobre Nós</Link>
+            <Link href="/">Ajuda</Link>
+            <Link href="/Informacao">Contato</Link>
         </nav>
     </Container>
   )

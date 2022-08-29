@@ -14,7 +14,7 @@ display: none;
 align-items: center;
 justify-content: center;
 background: rgba(17, 18, 17, 0.95);
-background: linear-gradient(34deg, rgba(255,0,0,0.95) 0%, rgba(17,18,17,0.95) 95%);
+background: linear-gradient(34deg, rgba(0, 69, 122, 0.95) 0%, rgba(17,18,17,0.95) 95%);
 pointer-events: none;
 color: #FFF;
 
