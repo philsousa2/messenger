@@ -165,16 +165,12 @@ margin-left: 30px;
 }
 
 @media(max-width: 1160px) {
-    background-color: #00457A;
-    justify-content: center;
+    flex-direction: column;
+    
 .LogoContainer{
 height: 140px;
 background-color: #00457A;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-width: 100%;
-transition: linear;
+
 }
 .Logo{
    display: none;
@@ -183,12 +179,10 @@ transition: linear;
     display: none;
 }
 .img{
-    margin-top: -70px;
     z-index: 2;
 }
 
 .Contatos{
-    margin-top: -135px;
     width: 100%;
     color: #FFF;
 }
