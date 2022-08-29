@@ -19,12 +19,7 @@ export const Container = styled.div`
     &:last-child {
       gap: 1rem;
     }
-    > img {
-      width: 230px;
-      @media(max-width: 500px) {
-        width: 120px;
-      }
-    }
+   
     > nav {
       margin-left: 70px;
       display: flex;
@@ -72,12 +67,13 @@ export const Container = styled.div`
   }
 
   .corte{
-width: 200px;
+width: 300px;
 height: 55px;
 background: #2a2a2a;
 position: absolute;
 z-index: -1;
 transform: skew(-40deg);
+margin-left: -70px;
 }
 .corte2{
 width: 800px;
@@ -106,7 +102,7 @@ display: none;
 @media(max-width: 900px) {
   .img{
      display: initial;
-     margin-right: 50%;
+     margin-right: 45%;
      
   }
    justify-content: center;

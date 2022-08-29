@@ -37,7 +37,7 @@ font-size: 40px;
     z-index: 2;
 }
 .Contatos{
-width: 50%;
+width: 55%;
 height: 50px;
 display: flex;
 flex-direction: row;
