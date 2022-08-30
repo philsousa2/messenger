@@ -7,18 +7,16 @@ display: flex;
 justify-content: center;
 align-items: center;
 color: #9b9b9b;
+margin-top: 30px;
 
 
-.content{
-display: flex;
-justify-content: center;
-align-items: center; 
-}
+
 .MenuForms{
     display: flex;
     justify-content: center;
     align-items: center;
-  width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .BtnForm{
     display: flex;
@@ -30,10 +28,23 @@ align-items: center;
     border: #9b9b9b solid;
     width: 220px;
     height: 150px;
-    margin-left: 50px;
+    margin-inline: 20px;
+    
 }
 .BtnForm h2{
     margin-top: 20px;
+}
+
+@media(max-width: 1000px) {
+    .MenuForms{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.BtnForm{
+   margin-top: 20px;
+   margin-inline: 20px;
+}
 }
 
 `;
