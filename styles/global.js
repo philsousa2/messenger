@@ -28,6 +28,8 @@ export const GlobalStyle = createGlobalStyle`
 
 .slide-container{
   margin-top: -5px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
 }
   
   .each-slide-effect > div {
