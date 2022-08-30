@@ -35,6 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   align-items: center;
   justify-content: center;
   background-size: cover;
+  flex-direction: column;
   height: 500px;
 }
 
@@ -43,5 +44,33 @@ export const GlobalStyle = createGlobalStyle`
   font-size: 20px;
   background: #efefef;
   text-align: center;
+}
+
+.titulo{
+  color: #FFF;
+  margin-bottom: 150px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 20px ;
+}
+.info{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px ;
+  border-radius: 15px;
+  margin-left: 60%;
+}
+.infotxt{
+  display: flex;
+  flex-direction: row;
+  color: #FFF;
+}
+
+@media(max-width: 1100px) {
+  .info{
+margin-left: 0;
+
+}
+
 }
 `

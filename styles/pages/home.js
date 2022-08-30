@@ -88,6 +88,7 @@ text-align: center;
     align-items: center;
     text-align: center;
     padding: 50px 0 50px 0;
+    color:#2a2a2a;
 }
 .parceiroslinks{
     margin-top: 50px;
