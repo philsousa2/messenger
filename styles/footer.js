@@ -19,7 +19,7 @@ h4{
 }
 
 .linha{
-width: 900px;
+width:60%;
 border: 1px solid #9b9b9b;
 margin-top: 10px;
 }
