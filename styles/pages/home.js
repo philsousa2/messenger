@@ -29,8 +29,20 @@ margin-top: 30px;
     width: 220px;
     height: 150px;
     margin-inline: 20px;
-    
+    cursor: pointer;
 }
+.BtnForm:hover{
+    background:#00457A;
+    color: #FFF;
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: #FFF solid;
+}
+.BtnForm:active{
+    background:#9b9b9b;
+}
+
+
 .BtnForm h2{
     margin-top: 20px;
 }
