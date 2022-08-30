@@ -79,7 +79,7 @@ margin-left: -70px;
 width: 800px;
 height: 55px;
 background: #2a2a2a;
-position: fixed;
+position: absolute ;
 z-index: -1;
 margin-left: 150px;
 }

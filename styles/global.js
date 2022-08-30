@@ -26,13 +26,22 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
   }
 
-.paginas{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
+.slide-container{
+  margin-top: -5px;
 }
-.menu{
-  margin-top: -50px;
+  
+  .each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 450px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
 }
 `
