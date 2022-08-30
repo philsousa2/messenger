@@ -2,18 +2,23 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
 width: 100%;
-height: 250px;
 background: #FFF;
 display: flex;
 justify-content: center;
 align-items: center;
 color: #9b9b9b;
 
+
+.content{
+display: flex;
+justify-content: center;
+align-items: center; 
+}
 .MenuForms{
     display: flex;
     justify-content: center;
     align-items: center;
-  
+  width: 100%;
 }
 .BtnForm{
     display: flex;
