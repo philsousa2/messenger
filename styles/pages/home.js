@@ -6,9 +6,8 @@ background: #FFF;
 display: flex;
 justify-content: center;
 align-items: center;
-color: #9b9b9b;
 margin-top: 30px;
-
+flex-direction: column;
 
 
 .MenuForms{
@@ -16,7 +15,7 @@ margin-top: 30px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 100px 0 100px 0; 
 }
 .BtnForm{
     display: flex;
@@ -25,7 +24,8 @@ margin-top: 30px;
     flex-direction: column;
     background: #FFF;
     border-radius: 15px;
-    border: #9b9b9b solid;
+    border: #00457A solid;
+    color: #00457A;
     width: 220px;
     height: 150px;
     margin-inline: 20px;
@@ -47,11 +47,74 @@ margin-top: 30px;
     margin-top: 20px;
 }
 
+.servicos{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: #FFF;
+padding: 50px 0 50px 0;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,69,122,1) 50%, rgba(2,0,36,1) 100%);
+text-align: center;
+}
+.servicos h3{
+    margin-top: 20px
+}
+.BtnservContianer{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+.Btnserv{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 50px;
+}
+
+.parceiros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.parceiroslinks{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.img{
+    margin-inline: 30px;
+    margin-top: 30px;
+}
+@media(max-width: 800px) {
+   
+    .BtnservContianer{
+        flex-wrap:wrap;
+    }
+}
+
+
 @media(max-width: 1000px) {
     .MenuForms{
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;   
+}
+.Btnserv{
+    margin-top: 40px;
 }
 .BtnForm{
    margin-top: 20px;

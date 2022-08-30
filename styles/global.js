@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 450px;
+  height: 500px;
 }
 
 .each-slide-effect span {

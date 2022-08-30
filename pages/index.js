@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import Banner from '../components/Banner';
+import Image from 'next/image'
 import { Container } from "../styles/pages/home";
 import { FiNavigation, FiTruck } from "react-icons/fi";
 import { BsCoin, BsGeoAlt } from "react-icons/bs";
+import { TbPackgeImport, TbReport } from "react-icons/tb";
+import { GoMailRead } from "react-icons/go";
+
+
 export default function Home() {
   return (
     <div >
@@ -34,6 +39,48 @@ export default function Home() {
             <h2>Cotações</h2>
           </div>
       </div>
+      
+      <div className="servicos">
+          <h1>Serviços que atendem às necessidades da sua empresa</h1>
+          <h3>A Messenger oferece soluções ajustadas aos seus negócios. Veja abaixo alguns serviços.</h3>
+          
+          <div className="BtnservContianer">
+            <div className="Btnserv">
+              <TbReport   size={150} />
+              <h2>Encomenda Expressa</h2>
+            </div>
+
+            <div className="Btnserv">
+              <GoMailRead   size={150} />
+              <h2>malote</h2>
+            </div>
+
+            <div className="Btnserv">
+              <TbPackgeImport   size={150} />
+              <h2>Importação</h2>
+            </div>
+          </div>          
+    </div>
+
+    <div className="parceiros">
+      <h1>Nossos Parceiros</h1>
+      <h3>Veja algumas empresas que trabalham com a Messenger em outros países.</h3>
+      <div className="parceiroslinks">
+        <div className="img">
+        <Image  src="/parceiro1.jpeg" alt="parceiros" width={200} height={100}  />
+        </div>
+        <div className="img">
+        <Image  src="/parceiro2.png" alt="parceiros" width={250} height={80}  />
+        </div>
+        <div className="img">
+        <Image  src="/parceiro3.jpg" alt="parceiros" width={250} height={80} />
+        </div>
+        <div className="img">
+        <Image  src="/parceiro4.jpg" alt="parceiros" width={250} height={150}  />
+        </div>
+      </div>
+    </div>
+
     </Container>
         </div>
    
