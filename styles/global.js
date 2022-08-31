@@ -68,11 +68,27 @@ export const GlobalStyle = createGlobalStyle`
   color: #FFF;
 }
 
+.icon{
+  width: 40px;
+  height: 40px;
+}
 @media(max-width: 1100px) {
   .info{
 margin-left: 0;
-
+.titulo{
+  font-size: 8px;
 }
+.infotxt{
+  font-size: 12px;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+}
+}
+
+
 
 }
 `
