@@ -14,7 +14,7 @@ flex-direction: column;
 }
 @media(max-width: 1200px) {
     .accordion{
-    width: 90%;
+    width: 98%;
 }
 
 }
