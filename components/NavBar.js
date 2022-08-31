@@ -15,11 +15,11 @@ function Navbar() {
      
       <nav>
             <Link href="/">Início</Link>
-            <Link href="/Servicos">Serviços</Link>
-            <Link href="/Localidades">Abra sua Conta</Link>
-            <Link href="/Contato">Sobre Nós</Link>
-            <Link href="/">Ajuda</Link>
-            <Link href="/Informacao">Contato</Link>
+            <Link href="/servicos">Serviços</Link>
+            <Link href="/conta">Abra sua Conta</Link>
+            <Link href="/sobre">Sobre Nós</Link>
+            <Link href="/ajuda">Ajuda</Link>
+            <Link href="/contato">Contato</Link>
       </nav>
       <div className="corte"></div>
       <div className="corte2"></div>
