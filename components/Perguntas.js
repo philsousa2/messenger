@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import { GoChevronRight } from "react-icons/go";
 import { Container } from "../styles/pages/ajuda";
