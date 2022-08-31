@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -24,7 +25,7 @@ function servicos() {
                         <AccordionDetails>
                         <Typography>
                         Serviço de entregas porta a porta de documentos e cargas. A Messenger opera através 
-                        da rede GDA - Global Distribution Alliance, presente em mais de 220 países. <a>Saiba mais.</a> 
+                        da rede GDA - Global Distribution Alliance, presente em mais de 220 países.<span> <Link href="/encomendaExpressa">Saiba mais.</Link> </span>
                         </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -39,7 +40,7 @@ function servicos() {
                         <AccordionDetails>
                         <Typography>
                         Importação de bens e produtos não destinados a revenda, através do Regime de Tributação Simplificada. Uma solução para atender
-                         importações urgentes, no menor prazo, pela melhor relação de custo/benefício. Saiba mais.
+                         importações urgentes, no menor prazo, pela melhor relação de custo/benefício. <span> <Link href="/importacao">Saiba mais</Link></span>.
                         </Typography>
                         </AccordionDetails>
                     </Accordion> 
@@ -58,8 +59,8 @@ function servicos() {
                         </AccordionSummary>
                         <AccordionDetails>
                         <Typography>
-                        Serviço regular para transferência consolidada de documentos, entre quaisquer cidades atendidas pela rede nacional. O serviço pode ter
-                        frequencia diária e o cliente indica onde coletar, o local da entrega e os horários da operação. Saiba mais.
+                        Serviço regular de mensageiros profissionais para qualquer parte da cidade. 
+                        O cliente indica onde coletar, o local da entrega e horários.
                         </Typography>
                         </AccordionDetails>
                     </Accordion>
@@ -73,8 +74,8 @@ function servicos() {
                         </AccordionSummary>
                         <AccordionDetails>
                         <Typography>
-                        Entregas porta a porta de documentos e encomendas em mais de duas mil localidades 
-                        no território nacional, com a mesma tecnologia de rastreamento utilizada nos embarques internacionais.
+                        Entregas porta a porta de documentos e encomendas em mais de duas mil 
+                        localidades no território nacional, com a mesma tecnologia de rastreamento utilizada nos embarques internacionais.
                         </Typography>
                         </AccordionDetails>
                     </Accordion> 
@@ -89,7 +90,7 @@ function servicos() {
                         <AccordionDetails>
                         <Typography>
                         Serviço regular para transferência consolidada de documentos, entre quaisquer cidades atendidas pela rede nacional.
-                         O serviço pode ter frequencia diária e o cliente indica onde coletar, o local da entrega e os horários da operação. Saiba mais.
+                         O serviço pode ter frequencia diária e o cliente indica onde coletar, o local da entrega e os horários da operação.<span><Link href="/malote"> Saiba mais</Link></span>.
                         </Typography>
                         </AccordionDetails>
                     </Accordion> 

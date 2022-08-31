@@ -81,6 +81,10 @@ text-align: center;
     margin-inline: 50px;
 }
 
+.Btnserv:hover{
+    color: #9b9b9b;
+}
+
 .parceiros{
     display: flex;
     flex-direction: column;

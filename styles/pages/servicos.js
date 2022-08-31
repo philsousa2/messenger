@@ -35,4 +35,9 @@ h3{
     font-weight: bold;
     color: #00457A;
 }
+span{
+    font-weight: bold;
+    color: #00457A; 
+}
+
 `;
