@@ -25,6 +25,7 @@ function TabPanel(props) {
   );
 }
 
+
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
@@ -39,7 +40,8 @@ function a11yProps(index) {
 }
 
 export default function ajuda() {
-  const [value, setValue] = useState(0);
+
+const [value, setValue] = useState(0)
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
