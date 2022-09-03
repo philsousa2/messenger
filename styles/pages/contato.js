@@ -54,12 +54,20 @@ h1{
 }
 
 .endereco p{
-    margin-top: 5px;
+    margin-top: 8px;
 }
 .endereco span{
     font-weight: bold;
 }
 .endereco h2{
+    color: #00457A;
+}
+
+.endereco a{
+    color: #00457A;
+}
+
+.endereco svg{
     color: #00457A;
 }
 @media(max-width: 750px) {

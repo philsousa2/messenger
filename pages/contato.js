@@ -3,7 +3,7 @@ import { Container } from "../styles/pages/contato";
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
-
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 const currencies = [
     {
       value: 'Trabalhe Conosco',
@@ -71,21 +71,21 @@ function Contato() {
             <div>
                <div className="endereco">
                      <h2>Messenger Rio</h2>
-                     <p><span>Endereço:</span> R. Pedro Guedes, 55 - Maracanã, Rio de Janeiro - RJ 20271-040, Brazil</p>
-                     <p><span>Telefone:</span> +55 (21) 2142-8000</p>
-                     <p><span>Email:</span><a href="">cs.rio@messenger.com.br</a></p> 
+                     <p><FiMapPin/>  <span>Endereço:</span> R. Pedro Guedes, 55 - Maracanã, Rio de Janeiro - RJ 20271-040, Brazil</p>
+                     <p><FiPhone/>  <span>Telefone:</span> +55 (21) 2142-8000</p>
+                     <p><FiMail/>  <span>Email:</span><a href="mailto:cs.rio@messenger.com.br">cs.rio@messenger.com.br</a></p> 
                </div>
                <div className="endereco">
                      <h2>Messenger São Paulo</h2>
-                     <p><span>Endereço:</span> R. Nelson de Moraes Lopes, 35 – Vila Guilherme, São Paulo - SP 02052-045, Brazil</p>
-                     <p><span>Telefone:</span> +55 (11) 2203-9531</p>
-                     <p><span>Email:</span><a href="">cs.sao@messenger.com.br</a></p>
+                     <p><FiMapPin/>  <span>Endereço:</span> R. Nelson de Moraes Lopes, 35 – Vila Guilherme, São Paulo - SP 02052-045, Brazil</p>
+                     <p><FiPhone/>  <span>Telefone:</span> +55 (11) 2203-9531</p>
+                     <p><FiMail/>  <span>Email:</span><a href="mailto:cs.sao@messenger.com.br">cs.sao@messenger.com.br</a></p>
                </div>
                <div className="endereco">
                      <h2>Messenger Macaé</h2>
-                     <p><span>Endereço:</span> R. IB Francisco Lima de Moura, 10 – Prédio 2 Novo Cavaleiros, Macaé - RJ 27933-370, Brazil</p>
-                     <p><span>Telefone:</span> +55 (22) 2773-3250</p>
-                     <p><span>Email:</span><a href="">cs.mea@messenger.com.br</a></p>  
+                     <p><FiMapPin/>  <span>Endereço:</span> R. IB Francisco Lima de Moura, 10 – Prédio 2 Novo Cavaleiros, Macaé - RJ 27933-370, Brazil</p>
+                     <p><FiPhone/>  <span>Telefone:</span> +55 (22) 2773-3250</p>
+                     <p><FiMail/>  <span>Email:</span><a href="mailto:cs.mea@messenger.com.br">cs.mea@messenger.com.br</a></p>  
                </div>
             </div>
        
