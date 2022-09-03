@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Container } from "../styles/pages/contato";
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
+import Button from '@mui/material/Button';
+
 const currencies = [
     {
       value: 'Trabalhe Conosco',
@@ -36,7 +38,9 @@ function Contato() {
       };
   return (
    <Container>
-    <div className="formulario">
+    <h1>Envie-nos um e-mail</h1>
+    <div className="containerinfo" >
+        <div className="formulario">
         <TextField className="input" id="nome" label="Nome" required />
         <TextField className="input" id="telefone"  label="Telefone" type="tel" required/>
         <TextField className="input" id="email"  label="E-mail" type="email" required/>
@@ -59,12 +63,38 @@ function Contato() {
             </TextField>
 
             <TextField className="input" id="text"   multiline  rows={5} label="Mensagem" type="text" required/>
-      
-       
+            
+            <Button  className="btn" variant="contained" disableElevation>
+                 Enviar
+            </Button>
+            </div>
+            <div>
+               <div className="endereco">
+                     <h2>Messenger Rio</h2>
+                     <p><span>Endereço:</span> R. Pedro Guedes, 55 - Maracanã, Rio de Janeiro - RJ 20271-040, Brazil</p>
+                     <p><span>Telefone:</span> +55 (21) 2142-8000</p>
+                     <p><span>Email:</span><a href="">cs.rio@messenger.com.br</a></p> 
+               </div>
+               <div className="endereco">
+                     <h2>Messenger São Paulo</h2>
+                     <p><span>Endereço:</span> R. Nelson de Moraes Lopes, 35 – Vila Guilherme, São Paulo - SP 02052-045, Brazil</p>
+                     <p><span>Telefone:</span> +55 (11) 2203-9531</p>
+                     <p><span>Email:</span><a href="">cs.sao@messenger.com.br</a></p>
+               </div>
+               <div className="endereco">
+                     <h2>Messenger Macaé</h2>
+                     <p><span>Endereço:</span> R. IB Francisco Lima de Moura, 10 – Prédio 2 Novo Cavaleiros, Macaé - RJ 27933-370, Brazil</p>
+                     <p><span>Telefone:</span> +55 (22) 2773-3250</p>
+                     <p><span>Email:</span><a href="">cs.mea@messenger.com.br</a></p>  
+               </div>
+            </div>
        
        </div>
        <div className="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0335635784513!2d-43.222347884992466!3d-22.912132843822143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e564a76bdc7%3A0x17b8caea2b1cfbf5!2sMessenger%20Express!5e0!3m2!1spt-BR!2sbr!4v1662075986960!5m2!1spt-BR!2sbr" width="600" height="250"  allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0335635784513!2d-43.222347884992466!3d-22.912132843822143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e564a76bdc7%3A0x17b8caea2b1cfbf5!2sMessenger%20Express!5e0!3m2!1spt-BR!2sbr!4v1662075986960!5m2!1spt-BR!2sbr" width="720" height="350"  allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+       <div className="maparesponsivo">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0335635784513!2d-43.222347884992466!3d-22.912132843822143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e564a76bdc7%3A0x17b8caea2b1cfbf5!2sMessenger%20Express!5e0!3m2!1spt-BR!2sbr!4v1662075986960!5m2!1spt-BR!2sbr" width="450" height="350"  allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
    
    </Container>
