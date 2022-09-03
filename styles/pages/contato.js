@@ -21,7 +21,6 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: row; 
-    flex-wrap: wrap;
 }
 .input{
     width: 300px;
@@ -64,6 +63,9 @@ h1{
     color: #00457A;
 }
 @media(max-width: 750px) {
+    .containerinfo{
+    flex-direction: column;
+    }
     .endereco{
         margin-left: 0;
         width: 350px;
