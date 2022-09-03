@@ -71,6 +71,11 @@ p{
 }
 
 @media(max-width: 900px) {
+    p{
+    width: 90%;
+    margin-top: 30px;
+    text-align: center;
+}
     .formulario{
     padding: 40px 10px 40px 10px;
     display: flex;
