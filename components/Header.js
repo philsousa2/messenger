@@ -15,7 +15,7 @@ function Header() {
         <div className="LogoFinal"></div>
 
         <div className="Contatos">
-        <Link href="/">Fale conosco : +55 (21) 2142-8000</Link>
+        <Link href="/contato">Fale conosco : +55 (21) 2142-8000</Link>
         <a>|</a>
         <a href="https://web.archive.org/web/20220127053821/https://messenger.brudam.com.br/site/">Portal do Cliente</a>
         <a>|</a>
