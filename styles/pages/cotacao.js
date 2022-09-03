@@ -21,18 +21,6 @@ h4{
     margin: 30px 0 30px 0;
 }
 
-.inputh{
-    width: 30%;
-    margin-top: -15px;
-    margin-inline: 10px;
-}
-
-.txt{
-    margin: 10px  0 10px 0;
-    margin-inline: 10px;
-
-}
-
 .formulario{
     width: 90%;
     box-shadow: -1px 1px 20px 4px rgba(0,0,0,0.32);
@@ -64,6 +52,17 @@ h4{
     margin-inline: 20px;
 }
 
+.inputh{
+    width: 30%;
+    margin-top: -15px;
+    margin-inline: 10px;
+}
+
+.txt{
+    margin: 10px  0 10px 0;
+    margin-inline: 10px;
+
+}
 
 
 @media(max-width: 1300px) {
@@ -79,11 +78,11 @@ h4{
 }
 
 @media(max-width: 900px) {
- 
-h4{
+    h4{
     margin: 30px 0 0px 0;
 } 
-
+   
+ 
     .formulario{
     padding: 40px 10px 40px 10px;
     display: flex;
@@ -92,18 +91,6 @@ h4{
     align-items: center;
     
 }
-.input{  
-    width: 90%;
-    margin-top: 15px;
-    margin-inline: 0;
-}
-
-.input2{
-    width: 90%;
-    margin-top: 15px;
-    margin-inline: 0;
-}
-
 .txt{
     margin: 20px  0 20px 0;
     margin-inline: 10px;
@@ -113,6 +100,18 @@ h4{
 .inputh{
     width: 50%;
     margin-top: 0;
+    margin-inline: 0;
+}
+
+.input{  
+    width: 90%;
+    margin-top: 15px;
+    margin-inline: 0;
+}
+
+.input2{
+    width: 90%;
+    margin-top: 15px;
     margin-inline: 0;
 }
 

@@ -41,7 +41,7 @@ export default function Home() {
           </div>
       </Link>   
 
-      <Link href="/cotacoes">  
+      <Link href="/cotacao">  
           <div className="BtnForm">
             <BsCoin   size={50} />
             <h2>Cotações</h2>
