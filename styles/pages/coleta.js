@@ -13,12 +13,25 @@ h1{
     color: #00457A;
 }
 
+h3{
+    margin-top: 30px;
+}
+
+h4{
+    margin: 30px 0 0 0;
+}
+
 p{
     width: 70%;
     margin-top: 30px;
     text-align: center;
 }
 
+.txt{
+    margin-inline: 30px;
+    margin: 20px  0 20px 0;
+
+}
 .formulario{
     width: 90%;
     box-shadow: -1px 1px 20px 4px rgba(0,0,0,0.32);
@@ -28,12 +41,13 @@ p{
     margin: 40px 0 80px 0;
     text-align: center;
     color: #00457A;
+    
 }
 
 .btn{
     margin-top: 20px;
     height: 55px;
-    width:50%;
+    width:90%;
     margin-inline: 20px;
 }
 
@@ -87,10 +101,6 @@ p{
     align-items: center;
     
 }
-.btn{
-    width:90%;
-}
-
 .input{  
     width: 90%;
     margin-top: 15px;

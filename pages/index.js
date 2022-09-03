@@ -20,25 +20,33 @@ export default function Home() {
       <Banner />
     <Container>
       <div className="MenuForms">
+      <Link href="/ewb">
           <div className="BtnForm">
             <FiNavigation   size={50}/>
             <h2>Emissão de e-WB</h2>
           </div>
-          
+      </Link>
+      
+      <Link href="/coleta">
           <div className="BtnForm">
             <FiTruck   size={50} />
             <h2>Coletas</h2>
           </div>
-          
+      </Link>
+
+      <Link href="/rastreamento"> 
           <div className="BtnForm">
             <BsGeoAlt   size={50} />
             <h2>Rastreamento</h2>
           </div>
-          
+      </Link>   
+
+      <Link href="/cotacoes">  
           <div className="BtnForm">
             <BsCoin   size={50} />
             <h2>Cotações</h2>
           </div>
+      </Link>     
       </div>
       
       <div className="servicos">

@@ -13,30 +13,30 @@ function conta() {
             do crédito. Nossa Central de Serviços retornará o contato em até dois dias.</p>
             <div className="formulario">
               <h2>Todos os campos são obrigatórios</h2>
-        <TextField className="input2" id="cnpj" label="CNPJ" required />
-        <TextField className="input2" id="razaoSocial" label="Razão Socia" required />
+        <TextFiel type="text"d className="input2" id="cnpj" label="CNPJ" required />
+        <TextField type="text" className="input2" id="razaoSocial" label="Razão Socia" required />
         <br/>
-        <TextField className="input2" id="inscricaoEstadual" label="Inscrição Estadual" required />
-        <TextField className="input2" id="cnae" label="CNAE" required />
+        <TextField type="text" className="input2" id="inscricaoEstadual" label="Inscrição Estadual" required />
+        <TextField type="text" className="input2" id="cnae" label="CNAE" required />
         <br/>
-        <TextField className="input" id="nome" label="Nome do Responsável" required />
+        <TextField type="text" className="input" id="nome" label="Nome do Responsável" required />
         <br/>
-        <TextField className="input2" id="email" label="Email do Responsável" required />
-        <TextField className="input2" id="telefone" label="Telefone para Contato" required />
+        <TextField type="email" className="input2" id="email" label="Email do Responsável" required />
+        <TextField type="tel" className="input2" id="telefone" label="Telefone para Contato" required />
         <br/>
-        <TextField className="input2" id="emailFinanceiro" label="Email do Responsável Financeiro" required />
-        <TextField className="input2" id="nomeFinanceiro" label="Contato no Depto Financeiro" required />
+        <TextField type="email" className="input2" id="emailFinanceiro" label="Email do Responsável Financeiro" required />
+        <TextField type="text" className="input2" id="nomeFinanceiro" label="Contato no Depto Financeiro" required />
         <br/>
-        <TextField className="input3" id="cep" label="CEP" required />
-        <TextField className="input2" id="logradouro" label="Logradouro" required />
-        <TextField className="input3" id="numero" label="Número" required />
+        <TextField type="text" className="input3" id="cep" label="CEP" required />
+        <TextField type="text"className="input2" id="logradouro" label="Logradouro" required />
+        <TextField type="text"className="input3" id="numero" label="Número" required />
         <br/>
-        <TextField className="input2" id="complemento" label="Complemento" required />
-        <TextField className="input3" id="bairro" label="Bairro" required />
-        <TextField className="input3" id="municipio" label="Município" required />
+        <TextField type="text" className="input2" id="complemento" label="Complemento" required />
+        <TextField type="text" className="input3" id="bairro" label="Bairro" required />
+        <TextField type="text" className="input3" id="municipio" label="Município" required />
         <br/>
-        <TextField className="input4" id="uf" label="UF" required />
-        <TextField className="input3" id="pais" label="País" required />
+        <TextField type="text" className="input4" id="uf" label="UF" required />
+        <TextField type="text" className="input3" id="pais" label="País" required />
         <Button  className="btn" variant="contained" disableElevation>
                  Enviar
             </Button>

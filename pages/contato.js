@@ -41,7 +41,7 @@ function Contato() {
     <h1>Envie-nos um e-mail</h1>
     <div className="containerinfo" >
         <div className="formulario">
-        <TextField className="input" id="nome" label="Nome" required />
+        <TextField  className="input" id="nome" label="Nome" required />
         <TextField className="input" id="telefone"  label="Telefone" type="tel" required/>
         <TextField className="input" id="email"  label="E-mail" type="email" required/>
         
