@@ -66,13 +66,13 @@ h1{
 @media(max-width: 750px) {
     .endereco{
         margin-left: 0;
-        width: 450px;
+        width: 350px;
     }
     .input{
-        width: 450px; 
+        width: 350px; 
     }
     .btn{
-        width: 450px; 
+        width: 350px; 
         height: 50px;
     }
 
