@@ -21,8 +21,8 @@ color: #FFF;
 ${({ menuVisible }) => menuVisible && css`
     display: flex;
     pointer-events: auto;
-    animation: fadeIn 0.7s;
-    transition: 0.7s;
+    animation: fadeIn 0.5s;
+    transition: 0.5s;
    
 `} 
 
@@ -30,8 +30,8 @@ ${({ menuVisible }) => menuVisible && css`
     position: absolute;
     top: 1rem;
     right: 1rem;
-    animation: btnSvg 0.7s;
-    transition: 0.7s;
+    animation: btnSvg 0.6s;
+    transition: 0.6s;
 }
 
 > nav{
