@@ -15,7 +15,7 @@ const currencies = [
   },
 ];
 
-function Coleta() {
+function Cotacao() {
   const [currency, setCurrency] = useState('');
   const handleChange = (event) => {
     setCurrency(event.target.value);
@@ -92,4 +92,4 @@ function Coleta() {
   )
 }
 
-export default Coleta
+export default Cotacao
