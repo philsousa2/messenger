@@ -13,7 +13,7 @@ function conta() {
             do crédito. Nossa Central de Serviços retornará o contato em até dois dias.</p>
             <div className="formulario">
               <h2>Todos os campos são obrigatórios</h2>
-        <TextFiel type="text"d className="input2" id="cnpj" label="CNPJ" required />
+        <TextField type="text"d className="input2" id="cnpj" label="CNPJ" required />
         <TextField type="text" className="input2" id="razaoSocial" label="Razão Socia" required />
         <br/>
         <TextField type="text" className="input2" id="inscricaoEstadual" label="Inscrição Estadual" required />
