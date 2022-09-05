@@ -1,73 +1,56 @@
 import React, { useState } from 'react'
 import { Container } from "../styles/pages/contato";
-import TextField from '@mui/material/TextField';
-import MenuItem from '@mui/material/MenuItem';
-import Button from '@mui/material/Button';
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
-const currencies = [
-    {
-      value: 'Trabalhe Conosco',
-      label: 'Trabalhe Conosco',
-    },
-    {
-      value: 'Rastreamento',
-      label: 'Rastreamento',
-    },
-    {
-      value: 'Serviço Doméstico',
-      label: 'Serviço Doméstico',
-    },
-    {
-      value: 'Serviço Internacionais',
-      label: 'Serviço Internacionais',
-    },
-    {
-        value: 'Dúvidas',
-        label: 'Dúvidas',
-      },
-      {
-        value: 'Críticas e elogios',
-        label: 'Críticas e elogios',
-      },
-  ];
+
 
 function Contato() {
-    const [currency, setCurrency] = useState('');
-    const handleChange = (event) => {
-        setCurrency(event.target.value);
-      };
+   
+   const [formulario, setFormulario] = useState({
+    nome: "",
+    telefone:"",
+    email:"",
+    assunto:"",
+    mensagem:""
+   })
+
+  const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
+
+  const enviarContato = async e => {
+    e.preventDefault();
+    e.pass
+    console.log(formulario.nome, formulario.telefone, formulario.email, formulario.assunto, formulario.mensagem)
+  }
+
   return (
    <Container>
     <h1>Envie-nos um e-mail</h1>
     <div className="containerinfo" >
-        <div className="formulario">
-        <TextField  className="input" id="nome" label="Nome" required />
-        <TextField className="input" id="telefone"  label="Telefone" type="tel" required/>
-        <TextField className="input" id="email"  label="E-mail" type="email" required/>
+       
+        <form onSubmit={enviarContato}>
+          <div className="formulario">
+         
+            <input type="text" className="input" name="nome" placeholder="Nome" onChange={valorInput} required  />
         
-        <TextField
-            id="outlined-select-currency"
-            select
-            className="input"
-            required
-            label="Assunto"
-            value={currency}
-            onChange={handleChange}
-            helperText="Please select your currency"
-            >
-            {currencies.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                {option.label}
-                </MenuItem>
-            ))}
-            </TextField>
-
-            <TextField className="input" id="text"   multiline  rows={5} label="Mensagem" type="text" required/>
-            
-            <Button  className="btn" variant="contained" disableElevation>
-                 Enviar
-            </Button>
-            </div>
+            <input type="tel" className="input" name="telefone" placeholder="Telefone" onChange={valorInput} required  />
+       
+            <input type="email" className="input" name="email" placeholder="Email" onChange={valorInput} required  />
+        
+         
+              <select className="assunto" name="assunto" onChange={valorInput} required>
+              <option value="" disabled selected hidden>Assunto</option>
+                <option value="Trabalhe Conosco'">Trabalhe Conosco</option>
+                <option value="Rastreamento">Rastreamento</option>
+                <option value="Serviço Doméstico">Serviço Doméstico</option>
+                <option value="Serviço Internacionais">Serviço Internacionais</option>
+                <option value="Dúvidas">Dúvidas</option>
+                <option value="Críticas e elogios">Críticas e elogios</option>
+              </select>  
+    
+             <textarea className="txtarea" name="mensagem" placeholder="Mensagem" cols="30" rows="10" onChange={valorInput} required></textarea>
+             <button  type="submit" className="btn"> Enviar </button>         
+          </div>
+        </form>
+          
             <div>
                <div className="endereco">
                      <h2>Messenger Rio</h2>
@@ -91,10 +74,10 @@ function Contato() {
        
        </div>
        <div className="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0335635784513!2d-43.222347884992466!3d-22.912132843822143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e564a76bdc7%3A0x17b8caea2b1cfbf5!2sMessenger%20Express!5e0!3m2!1spt-BR!2sbr!4v1662075986960!5m2!1spt-BR!2sbr" width="720" height="350"  allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0335635784513!2d-43.222347884992466!3d-22.912132843822143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e564a76bdc7%3A0x17b8caea2b1cfbf5!2sMessenger%20Express!5e0!3m2!1spt-BR!2sbr!4v1662075986960!5m2!1spt-BR!2sbr" width="720" height="350"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
        </div>
        <div className="maparesponsivo">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0335635784513!2d-43.222347884992466!3d-22.912132843822143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e564a76bdc7%3A0x17b8caea2b1cfbf5!2sMessenger%20Express!5e0!3m2!1spt-BR!2sbr!4v1662075986960!5m2!1spt-BR!2sbr" width="350" height="350"  allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0335635784513!2d-43.222347884992466!3d-22.912132843822143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e564a76bdc7%3A0x17b8caea2b1cfbf5!2sMessenger%20Express!5e0!3m2!1spt-BR!2sbr!4v1662075986960!5m2!1spt-BR!2sbr" width="350" height="350"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
        </div>
    
    </Container>

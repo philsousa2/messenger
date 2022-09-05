@@ -15,6 +15,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .containerinfo{
@@ -24,7 +25,30 @@ h1{
 }
 .input{
     width: 300px;
-    margin-top: 20px;
+    margin: 5px 0 15px 0;
+    height: 50px;
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    text-align: center;
+    font-size: 15px
+}
+.txtarea{
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px 0 0 0;
+}
+
+.assunto{
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 0 15px 0;
+   
 }
 
 .mapa{
@@ -40,6 +64,25 @@ h1{
 .btn{
     width: 300px;
     margin-top: 20px;
+    background-color: #00457A;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #1E90FF;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+.btn:active{
+    background-color: #ADD8E6;
+    transform: scale(0.9);
+    transition: 0.2s;
 }
 
 .endereco{
@@ -80,6 +123,9 @@ h1{
     }
     .input{
         width: 350px; 
+    }
+    .assunto{
+        width: 350px;
     }
     .btn{
         width: 350px; 
