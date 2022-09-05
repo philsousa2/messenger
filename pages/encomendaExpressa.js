@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from "../styles/pages/encomendaExpressa";
 import Image from 'next/image'
-import Button from '@mui/material/Button';
 import { GoTriangleRight } from "react-icons/go";
 
 function encomendaExpressa() {
@@ -82,9 +81,7 @@ function encomendaExpressa() {
             </div>
             <h3>Consulte a Central de Serviços mais próxima e solicite a visita de um representante comercial.</h3>
             <a href="/Messenger_servicos_web_0816.pdf" download>
-            <Button className="btn" variant="contained" disableElevation>
-            Download PDF
-            </Button>
+            <button   className="btn"> Download PDF </button>
             </a>
         </div>
     </Container>

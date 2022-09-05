@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from "../styles/pages/malote";
 import Image from 'next/image'
-import Button from '@mui/material/Button';
 import { GoTriangleRight } from "react-icons/go";
 
 function importacao() {
@@ -63,9 +62,7 @@ function importacao() {
             </div>
             <h3>Consulte a Central de Serviços e solicite uma cotação: <a href='mailto:imp.brasil@messenger.com.br'>imp.brasil@messenger.com.br</a></h3>
             <a href="/Messenger_IMP_web_0716.pdf" download>
-            <Button className="btn" variant="contained" disableElevation>
-            Download PDF
-            </Button>
+            <button   className="btn"> Download PDF </button>
             </a>
         </div>
     </Container>

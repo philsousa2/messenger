@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container } from "../styles/pages/malote";
 import Image from 'next/image'
-import Button from '@mui/material/Button';
 import { GoTriangleRight } from "react-icons/go";
 
 function malote() {
@@ -58,9 +57,7 @@ function malote() {
             <h3>Consulte o departamento de atendimento a Clientes mais próximo e solicite uma cotação.</h3>
 
             <a href="/Messenger_pak_web_0716.pdf" download>
-            <Button className="btn" variant="contained" disableElevation>
-            Download PDF
-            </Button>
+            <button   className="btn"> Download PDF </button>
             </a>
         </div>
     </Container>

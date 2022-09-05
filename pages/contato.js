@@ -47,6 +47,7 @@ function Contato() {
               </select>  
     
              <textarea className="txtarea" name="mensagem" placeholder="Mensagem" cols="30" rows="10" onChange={valorInput} required></textarea>
+             
              <button  type="submit" className="btn"> Enviar </button>         
           </div>
         </form>

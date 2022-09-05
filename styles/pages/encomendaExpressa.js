@@ -31,7 +31,28 @@ flex-direction: column;
 }
 
 .btn{
-margin: 30px 0 50px 0;
+    width: 200px;
+    margin: 20px 0 40px 0;
+    background-color: #00457A;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #1E90FF;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+.btn:active{
+    background-color: #ADD8E6;
+    transform: scale(0.9);
+    transition: 0.2s;
 }
 
 `
