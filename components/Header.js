@@ -21,11 +21,12 @@ function Header() {
         <div className="LogoFinal"></div>
 
         <div className="Contatos">
-        <Link href="/contato">Fale conosco : +55 (21) 2142-8000</Link>
+
+        <a href="https://api.whatsapp.com/send?phone=552121428080"  target="_blank" rel="noreferrer">+55 (21) 2142-8000|</a>
         <a>|</a>
-        <a href="https://web.archive.org/web/20220127053821/https://messenger.brudam.com.br/site/">Portal do Cliente</a>
+        <a href="https://web.archive.org/web/20220127053821/https://messenger.brudam.com.br/site/"  target="_blank" rel="noreferrer">Portal do Cliente</a>
         <a>|</a>
-        <a href="https://web.archive.org/web/20220127053821/https://messenger.brudam.com.br/agente/loga.php">Portal do Agente</a>
+        <a href="https://web.archive.org/web/20220127053821/https://messenger.brudam.com.br/agente/loga.php"  target="_blank" rel="noreferrer">Portal do Agente</a>
       </div>
       </div>
      
