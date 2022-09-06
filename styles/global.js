@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle , css} from 'styled-components';
 
 
 
@@ -10,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   src: url("./fonts/calibri.ttf");
 }
     
+
+
   * {
     margin: 0;
     padding: 0;
@@ -96,4 +98,5 @@ margin-left: 0;
 }
 }
 }
+
 `

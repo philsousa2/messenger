@@ -11,6 +11,7 @@ export const Container = styled.div`
   box-shadow: 0px 10px 13px -7px #00457A, 5px 5px 15px 5px rgba(0,0,0,0);
   .img{
     display: none;
+    cursor: pointer;
   }
 
   > section {
@@ -57,11 +58,14 @@ export const Container = styled.div`
     }
 
     @media(max-width: 900px) {
+      
       .mobile {
         display: initial;
+        
       }
       > nav {
         display: none;
+        
       }
     }
   }
@@ -106,6 +110,7 @@ display: none;
 
 @media(max-width: 900px) {
   background: #00457A;
+
   .img{
      display: initial;
      margin-right: 45%;

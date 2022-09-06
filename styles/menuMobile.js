@@ -20,6 +20,7 @@ color: #FFF;
 z-index: 99;
 overflow: hidden;
 
+
 ${({ menuVisible }) => menuVisible && css`
     display: flex;
     pointer-events: auto;

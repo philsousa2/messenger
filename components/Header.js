@@ -7,13 +7,16 @@ function Header() {
     <Container>
       <div className="LogoContainer">
         <div className="Logo"></div>
-
+        <Link href="/">
         <div className="img">
         <Image  src="/logomarca.png" alt="Logo" width={280} height={95} margin-left={50} />
         </div>
+        </Link>
+        <Link href="/">
         <div className="img2">
         <Image priority  src="/logobranca.png" alt="Logo" width={280} height={95} margin-left={50} />
         </div>
+        </Link>
         
         <div className="LogoFinal"></div>
 

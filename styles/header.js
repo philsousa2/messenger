@@ -36,12 +36,14 @@ font-size: 40px;
     margin-left: 150px;
     margin-top: 20px;
     z-index: 2;
+    cursor: pointer;
 }
 
 .img2{
     margin-left: 150px;
     z-index: 2;
     display:none;
+    cursor: pointer;
 }
 .Contatos{
 width: 55%;
