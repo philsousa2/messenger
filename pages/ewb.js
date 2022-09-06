@@ -68,13 +68,13 @@ function ewb() {
          <div className="chek">
             <label>Opções Extras:</label>
             <input type="checkbox" id="RetornoDeProtocolo" name="RetornoDeProtocolo" value="Retorno de Protocolo" />
-            <label for="RetornoDeProtocolo">Retorno de Protocolo</label>
+            <label htmlFor="RetornoDeProtocolo">Retorno de Protocolo</label>
 
          <input type="checkbox" id="NextFlyOut" name="NextFlyOut" value="Next Fly Out" />
-         <label for="NextFlyOut">Next Fly Out</label>
+         <label htmlFor="NextFlyOut">Next Fly Out</label>
 
          <input type="checkbox" id="DeliveryDutyPaid" name="DeliveryDutyPaid" value="Delivery Duty Paid" />
-         <label for="DeliveryDutyPaid">Delivery Duty Paid</label>
+         <label htmlFor="DeliveryDutyPaid">Delivery Duty Paid</label>
          </div>
 
         </form>
