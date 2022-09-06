@@ -30,7 +30,7 @@ h1{
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
-    font-size: 15px
+    font-size: 15px;
 }
 .txtarea{
     border-radius: 5px;

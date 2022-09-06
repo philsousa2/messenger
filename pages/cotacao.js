@@ -50,9 +50,9 @@ function Cotacao() {
         <h3>Dados da Carga</h3>
         <br/>
         <select className="embalagem" name="embalagem" onChange={valorInput} required>
-              <option value="" disabled selected hidden>Tipo de Embalagem</option>
-                <option value="Trabalhe Conosco'">CAIXA</option>
-                <option value="Rastreamento">PAC</option>
+              <option value="selected" hidden>Tipo de Embalagem</option>
+                <option value="CAIXA">CAIXA</option>
+                <option value="PAC">PAC</option>
     
               </select>  
          <div className="dimencao">

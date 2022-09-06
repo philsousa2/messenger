@@ -9,11 +9,10 @@ function conta() {
             A Messenger não fatura despesas referentes às taxas e tributos gerados na importação 
             de remessa expressa. Preencha aqui as informações cadastrais da sua empresa, para aprovação 
             do crédito. Nossa Central de Serviços retornará o contato em até dois dias.</p>
+            <h2>Todos os campos são obrigatórios</h2>
             <form className="formulario">
-              <h2>Todos os campos são obrigatórios</h2>
-        
 
-        <input type="text"d className="input2" id="cnpj" placeholder="CNPJ" required />
+        <input type="text" className="input2" id="cnpj" placeholder="CNPJ" required />
         <input type="text" className="input2" id="razaoSocial" placeholder="Razão Socia" required />
         <input type="text" className="input2" name="inscricaoEstadual" placeholder="Inscrição Estadual" required />
         <input type="text" className="input2" name="cnae" placeholder="CNAE" required />

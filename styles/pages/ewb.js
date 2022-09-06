@@ -12,6 +12,9 @@ flex-direction: column;
 h1{
     color: #00457A;
 }
+h3{
+    margin: 20px 0 20px 0;
+}
 
 p{
     width: 70%;
@@ -21,6 +24,9 @@ p{
 span {
     color: #00457A;
     font-weight: bold;
+}
+.radio{
+   margin: 0 5px 0 20px;
 }
 .formulario{
     width: 90%;
@@ -66,7 +72,7 @@ span {
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .input2{
@@ -77,7 +83,7 @@ span {
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .input3{
@@ -88,32 +94,23 @@ span {
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
-    font-size: 15px
+    font-size: 15px;
 }
 
-.inputh{
-    width: 30%;
-    margin-top: -15px;
-    margin-inline: 10px;
-    height: 50px;
-    border-radius: 5px;
-    border: #00457A solid 1px;
-    text-align: center;
-    font-size: 15px
-}
 
-.embalagem{
+.opcao{
     width: 200px;
     height: 50px;
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .txt{
     margin: 10px  0 10px 0;
     margin-inline: 10px;
-
 }
 
 

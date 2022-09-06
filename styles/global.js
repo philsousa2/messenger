@@ -3,12 +3,12 @@ import { createGlobalStyle } from 'styled-components';
 
 
 export const GlobalStyle = createGlobalStyle`
-  @font-face {
+ 
+ @font-face {
   font-family: 'Calibri';
-  src:  url('../fonts/calibri.ttf');
+  src: url("./fonts/calibri.ttf");
 }
-  
-  
+    
   * {
     margin: 0;
     padding: 0;
@@ -94,8 +94,5 @@ margin-left: 0;
   height: 20px;
 }
 }
-
-
-
 }
 `

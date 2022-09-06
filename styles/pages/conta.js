@@ -62,7 +62,7 @@ p{
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .input2{
@@ -73,7 +73,7 @@ p{
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
-    font-size: 15px
+    font-size: 15px;
 }
 
 .input3{
@@ -84,7 +84,7 @@ p{
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
-    font-size: 15px
+    font-size: 15px;
 }
 
 

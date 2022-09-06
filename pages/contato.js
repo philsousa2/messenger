@@ -49,8 +49,8 @@ function Contato() {
         
          
               <select className="assunto" name="assunto" onChange={valorInput} required>
-              <option value="" disabled selected hidden>Assunto</option>
-                <option value="Trabalhe Conosco'">Trabalhe Conosco</option>
+              <option value="DEFAULT" hidden>Assunto</option>
+                <option value="Trabalhe Conosco">Trabalhe Conosco</option>
                 <option value="Rastreamento">Rastreamento</option>
                 <option value="Serviço Doméstico">Serviço Doméstico</option>
                 <option value="Serviço Internacionais">Serviço Internacionais</option>
