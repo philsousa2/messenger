@@ -9,13 +9,17 @@ align-items: center;
 margin-top: 30px;
 flex-direction: column;
 
-.accordion{
-    width: 70%;
+.compliance{
+    width: 60%;
+    margin: 20px 0 40px 0;
 }
+
 .summary{
     background: #00457A;
     color: #FFF;
 }
+
+
 .icon{
     color: #FFF;
     width: 25px;

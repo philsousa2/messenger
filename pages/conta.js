@@ -1,7 +1,5 @@
 import React from 'react'
 import { Container } from "../styles/pages/conta";
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
 
 function conta() {
   return (
@@ -11,36 +9,35 @@ function conta() {
             A Messenger não fatura despesas referentes às taxas e tributos gerados na importação 
             de remessa expressa. Preencha aqui as informações cadastrais da sua empresa, para aprovação 
             do crédito. Nossa Central de Serviços retornará o contato em até dois dias.</p>
-            <div className="formulario">
+            <form className="formulario">
               <h2>Todos os campos são obrigatórios</h2>
-        <TextField type="text"d className="input2" id="cnpj" label="CNPJ" required />
-        <TextField type="text" className="input2" id="razaoSocial" label="Razão Socia" required />
+        
+
+        <input type="text"d className="input2" id="cnpj" placeholder="CNPJ" required />
+        <input type="text" className="input2" id="razaoSocial" placeholder="Razão Socia" required />
+        <input type="text" className="input2" name="inscricaoEstadual" placeholder="Inscrição Estadual" required />
+        <input type="text" className="input2" name="cnae" placeholder="CNAE" required />
         <br/>
-        <TextField type="text" className="input2" id="inscricaoEstadual" label="Inscrição Estadual" required />
-        <TextField type="text" className="input2" id="cnae" label="CNAE" required />
+        <input type="text" className="input" name="nome" placeholder="Nome do Responsável" required />
         <br/>
-        <TextField type="text" className="input" id="nome" label="Nome do Responsável" required />
+        <input type="email" className="input2" name="email" placeholder="Email do Responsável" required />
+        <input type="tel" className="input2" name="telefone" placeholder="Telefone para Contato" required />
         <br/>
-        <TextField type="email" className="input2" id="email" label="Email do Responsável" required />
-        <TextField type="tel" className="input2" id="telefone" label="Telefone para Contato" required />
+        <input type="email" className="input2" name="emailFinanceiro" placeholder="Email do Responsável Financeiro" required />
+        <input type="text" className="input2" name="nomeFinanceiro" placeholder="Contato no Depto Financeiro" required />
         <br/>
-        <TextField type="email" className="input2" id="emailFinanceiro" label="Email do Responsável Financeiro" required />
-        <TextField type="text" className="input2" id="nomeFinanceiro" label="Contato no Depto Financeiro" required />
+        <input type="text" className="input3" name="cep" placeholder="CEP" required />
+        <input type="text"className="input2" name="logradouro" placeholder="Logradouro" required />
+        <input type="text"className="input3" name="numero" placeholder="Número" required />
         <br/>
-        <TextField type="text" className="input3" id="cep" label="CEP" required />
-        <TextField type="text"className="input2" id="logradouro" label="Logradouro" required />
-        <TextField type="text"className="input3" id="numero" label="Número" required />
+        <input type="text" className="input2" name="complemento" placeholder="Complemento" required />
+        <input type="text" className="input3" name="bairro" placeholder="Bairro" required />
+        <input type="text" className="input3" name="municipio" placeholder="Município" required />
         <br/>
-        <TextField type="text" className="input2" id="complemento" label="Complemento" required />
-        <TextField type="text" className="input3" id="bairro" label="Bairro" required />
-        <TextField type="text" className="input3" id="municipio" label="Município" required />
-        <br/>
-        <TextField type="text" className="input4" id="uf" label="UF" required />
-        <TextField type="text" className="input3" id="pais" label="País" required />
-        <Button  className="btn" variant="contained" disableElevation>
-                 Enviar
-            </Button>
-        </div>
+        <input type="text" className="input3" name="uf" placeholder="UF" required />
+        <input type="text" className="input3" name="pais" placeholder="País" required />
+        <button  type="submit" className="btn"> Enviar </button>     
+        </form>
     </Container>
    
 

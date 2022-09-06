@@ -3,12 +3,12 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
 width: 100%;
 height: 250px;
-background: #2a2a2a;
+background: #00457A;
 display: flex;
 justify-content: center;
 flex-direction: column;
 align-items: center;
-color: #9b9b9b;
+color: #FFF;
 text-align: center;
 
 h3{
@@ -20,7 +20,7 @@ h4{
 
 .linha{
 width:60%;
-border: 1px solid #9b9b9b;
+border: 1px solid #FFF;
 margin-top: 10px;
 }
 `

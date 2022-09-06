@@ -6,6 +6,9 @@ import Box from '@mui/material/Box';
 import Perguntas from '../components/Perguntas';
 import { Container } from "../styles/pages/ajuda";
 import Button from '@mui/material/Button';
+import Link from 'next/link'  
+
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -103,13 +106,16 @@ export default function Ajuda() {
                     </Button>
                   </a>
 
-                  <a href="/Form_export_graos_VigiAgro.doc" download>
+                  <Link href="/compliance">
                     <Button className="btn" variant="contained" disableElevation>
-                    Exportação de Grãos VigiAgro
+                    Compliance da Messenger Express com os Requisitos da UE
                     </Button>
-                  </a>
+                  </Link>
               </div>
+          
         </div>
+
+       
       </TabPanel>
     </Box>
     </Container>

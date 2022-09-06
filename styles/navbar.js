@@ -8,7 +8,7 @@ export const Container = styled.div`
   justify-content: right;
   margin-top: -5px;
   background: #00457A; 
-
+  box-shadow: 0px 10px 13px -7px #00457A, 5px 5px 15px 5px rgba(0,0,0,0);
   .img{
     display: none;
   }

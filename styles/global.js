@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: Calibri, sans-serif;
-    font-size: 18px;
+   
   }
   body {
     background: #fff;
