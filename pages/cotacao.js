@@ -52,9 +52,8 @@ function Cotacao() {
         <select className="embalagem" name="embalagem" onChange={valorInput} required>
               <option value="selected" hidden>Tipo de Embalagem</option>
                 <option value="CAIXA">CAIXA</option>
-                <option value="PAC">PAC</option>
-    
-              </select>  
+                <option value="PAC">PAC</option>  
+        </select>  
          <div className="dimencao">
          <label>Peso:</label>
          <input type="text" className="input2" name="peso" placeholder="000kg" onChange={valorInput} required  />

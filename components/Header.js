@@ -12,7 +12,7 @@ function Header() {
         <Image  src="/logomarca.png" alt="Logo" width={280} height={95} margin-left={50} />
         </div>
         <div className="img2">
-        <Image  src="/logobranca.png" alt="Logo" width={280} height={95} margin-left={50} />
+        <Image priority  src="/logobranca.png" alt="Logo" width={280} height={95} margin-left={50} />
         </div>
         
         <div className="LogoFinal"></div>

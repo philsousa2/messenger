@@ -107,6 +107,8 @@ h4{
     border-radius: 5px;
     border: #00457A solid 1px;
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .txt{

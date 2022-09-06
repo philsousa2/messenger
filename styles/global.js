@@ -5,6 +5,7 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
  
  @font-face {
+  
   font-family: 'Calibri';
   src: url("./fonts/calibri.ttf");
 }

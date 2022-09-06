@@ -1,82 +1,65 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Container } from "../styles/pages/coleta";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const currencies = [
-  {
-    value: 'CAIXA',
-    label: 'CAIXA',
-  },
-  {
-    value: 'PAC',
-    label: 'PAC',
-  },
-];
+
 
 function Coleta() {
-  const [currency, setCurrency] = useState('');
-  const handleChange = (event) => {
-    setCurrency(event.target.value);
-  };
 
   return (
     <Container>
          <h1>Solicite uma coleta</h1>
         
-            <div className="formulario">
+            <form className="formulario">
             <h2>Todos os campos são obrigatórios</h2>
          
          <h3>Dados do solicitante</h3>
       
-        <TextField type="text" className="input2" id="nome" label="Seu Nome" required />
-        <TextField type="text" className="input2" id="numeroConta" label="Número da Conta" required />
-        <TextField type="tel"  className="input2" id="telefone" label="telefone" required />
-        <TextField type="email" className="input2" id="email" label="Seu Email" required />
+        <input type="text" className="input" name="nome" placeholder="Seu Nome" required />
+        <input type="text" className="input" id="cnpjpagador" placeholder="CNPJ da conta pagadora" required />
+         <input type="email" className="input" name="email" placeholder="Digite Seu Email" required />
+        <input type="tel" className="input" name="telefone" placeholder="Telefone para Contato" required />
         <br/>
       
         <h3>Dados da Carga</h3>
         <br/>
-        <TextField
-            id="outlined-select-currency"
-            select
-            className="input"
-            required
-            label="Tipo de Embalagem"
-            value={currency}
-            onChange={handleChange}
-            >
-            {currencies.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                {option.label}
-                </MenuItem>
-            ))}
-            </TextField>
-        <TextField type="text" className="input2" id="peso" label="Peso '0,00kg'" required />
-        <TextField type="text" className="input2" id="dimensao" label="Dimensões '000 x 000 x 000'" required />
-        <TextField type="text" className="input2" id="conteudo" label="Descrição do Conteúdo" required />
-        <TextField type="text" className="input2" id="quantidade" label="Quantidade de Volumes" required />
-        <TextField type="text" className="input2" id="valor" label="Valor da Mercadoria" required />
-        <TextField type="text" className="input2" id="notaFiscal" label="Nota Fiscal" required />
+        <select className="opcao" name="remessa"  required>
+                <option value="DEFAULT" hidden >Tipo de Remessa</option>
+                <option value="Documento">Documento</option>
+                <option value="Mercadoria">Mercadoria</option>
+        </select> 
+
+          <div className="dimencao">
+         <label>Peso:</label>
+         <input type="text" className="input2" name="peso" placeholder="000kg"  required  />
+         <label className="labelx">Dimensões em cm:</label>
+         <input type="text" className="input2" name="altura" placeholder="Altura"  required  />
+         <label className="labelx">x</label>
+         <input type="text" className="input2" name="largura" placeholder="Largura" required  />
+         <label className="labelx">x</label>
+         <input type="text" className="input2" name="profundidade" placeholder="Profundidade"  required  />
+         </div>
+         <input type="text" className="input3" name="notaFiscal" placeholder="Nota Fiscal" required />
+         <input type="text" className="input3" name="quantidade" placeholder="Quantidade de Volumes" required  />
+         <input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" required />
+         <input type="text" className="input4" name="conteudo" placeholder="Descrição do Conteúdo" required  />
         <br/>
         <h3>Dados do Transporte</h3>
-        <TextField type="text" className="input" id="endereco" label="Endereço de Origem" required />
-        <br/>
+        <input type="text" className="input4" name="endereco" placeholder="Endereço de Origem" required />
         <h4>Horário da coleta</h4>
         <span className="txt">de</span> 
-        <TextField type="text" className="inputh" id="hora 1" label="00:00" required />
+        <input type="text" className="inputh" name="hora 1" placeholder="00:00" required />
         <span className="txt">até</span>
-         <TextField type="text" className="inputh" id="hora 2" label="00:00" required /> 
+         <input type="text" className="inputh" name="hora 2" placeholder="00:00" required /> 
         <br/>
-        <TextField type="text" className="input" id="destino" label="Endereço de Destino" required />
-        <TextField type="text" className="input" id="obs" label="Observações sobre a carga/manuseio/transporte" required />
+        <input type="text" className="input4" name="destino" placeholder="Endereço de Destino" required />
+        <input type="text" className="input4" name="obs" placeholder="Observações sobre a carga/manuseio/transporte" required />
         <br/>
        
-        <Button  className="btn" variant="contained" disableElevation>
-                 Enviar
-            </Button>
-        </div>
+        <button  type="submit" className="btn"> Enviar </button>     
+        </form>
     </Container>
    
 
