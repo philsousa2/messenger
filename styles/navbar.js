@@ -6,13 +6,15 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: right;
+  margin-top: -5px;
+  background: #00457A; 
 
   .img{
     display: none;
   }
 
   > section {
-    margin: 0 40px 0 40px;
+    margin: -20px 40px 0 40px;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -24,12 +26,14 @@ export const Container = styled.div`
       margin-left: 70px;
       display: flex;
       gap: 1rem;
+      z-index: 2;
       a {
         font-size: 20px;
         position: relative;
         text-decoration: none;
-        color: #fff;
-        margin-left: 25px;
+        color: #00457A; 
+        margin-left: 23px;
+        font-weight: 600;
         
         &:before {
           content: '';
@@ -67,29 +71,31 @@ export const Container = styled.div`
   }
 
   .corte{
-width: 300px;
-height: 55px;
-background: #2a2a2a;
+width: 200px;
+height: 85px;
+background: #FFF;
 position: absolute;
-z-index: -1;
+z-index: 1;
 transform: skew(-40deg);
 }
 .corte2{
-width: 800px;
-height: 55px;
-background: #2a2a2a;
+width: 771px;
+height: 85px;
+background: #FFF;
 position: absolute ;
-z-index: -1;
+z-index: 1;
 margin-left: 86px;
 }
 
 @media(max-width: 1160px) {
   justify-content: center;
-  background: #2a2a2a;
+  background: #FFF;
 
   > section {
     margin: 0 ;
   } 
+ 
+  
   .corte{
 display: none;
 }
@@ -99,9 +105,11 @@ display: none;
 }
 
 @media(max-width: 900px) {
+  background: #00457A;
   .img{
      display: initial;
      margin-right: 45%;
+     margin-top: 10px;
      
   }
    justify-content: center;

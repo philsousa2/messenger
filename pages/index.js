@@ -80,12 +80,7 @@ export default function Home() {
       <h1>Nossos Parceiros</h1>
       <h3>Veja algumas empresas que trabalham com a Messenger em outros países.</h3>
       <div className="parceiroslinks">
-        <div className="img">
-          <a href="http://www.gdalliance.com/Static/Default.aspx" target="_blank" rel="noreferrer" >
-        <Image  src="/parceiro1.jpeg" alt="parceiros" width={200} height={100}  />
-        </a>
-        </div>
-        
+       
         <div className="img">
         <a href="https://www.linexsolutions.com/" target="_blank" rel="noreferrer">
         <Image  src="/parceiro2.png" alt="parceiros" width={250} height={80}  />

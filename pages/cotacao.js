@@ -1,91 +1,101 @@
 import React, { useState } from 'react'
 import { Container } from "../styles/pages/cotacao";
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-
-const currencies = [
-  {
-    value: 'CAIXA',
-    label: 'CAIXA',
-  },
-  {
-    value: 'PAC',
-    label: 'PAC',
-  },
-];
 
 function Cotacao() {
-  const [currency, setCurrency] = useState('');
-  const handleChange = (event) => {
-    setCurrency(event.target.value);
-  };
+  
+  const [formulario, setFormulario] = useState({
+    nome: "",
+    telefone:"",
+    email:"",
+    assunto:"",
+    mensagem:""
+   })
+
+ 
+
+  const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
+
+  const enviarContacao = async e => {
+    e.preventDefault();
+    console.log(formulario.nome, formulario.telefone, formulario.email, formulario.assunto, formulario.mensagem)
+
+  {/**
+    await fetch(" URL DA API  ", {
+      method: 'POST',
+      headers: {
+        'Content-Typ'e: 'application/json'
+      },
+      body: JSON.stringify({formulario})
+    })
+**/}
+
+  }
   
   return (
     <Container>
          <h1>Solicite uma Cotação</h1>
         
-            <div className="formulario">
+            <form className="formulario" onSubmit={enviarContacao}>
             <h2>Todos os campos são obrigatórios</h2>
          
          <h3>Dados do solicitante</h3>
-      
-        <TextField type="text" className="input2" id="nome" label="Seu Nome" required />
-        <TextField type="text" className="input2" id="numeroConta" label="Número da Conta" required />
-        <TextField type="tel"  className="input2" id="telefone" label="telefone" required />
-        <TextField type="email" className="input2" id="email" label="Seu Email" required />
+         <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required  />
+         <input type="text" className="input" name="numeroConta" placeholder="CNPJ da conta pagadora" onChange={valorInput} required  />
+         <input type="tel" className="input" name="telefone" placeholder="Telefone" onChange={valorInput} required  />
+         <input type="email" className="input" name="email" placeholder="Email" onChange={valorInput} required  />
+
         <br/>
       
         <h3>Dados da Carga</h3>
         <br/>
-        <TextField
-            id="outlined-select-currency"
-            select
-            className="input"
-            required
-            label="Tipo de Embalagem"
-            value={currency}
-            onChange={handleChange}
-            >
-            {currencies.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                {option.label}
-                </MenuItem>
-            ))}
-            </TextField>
-        <TextField type="text" className="input2" id="peso" label="Peso '0,00kg'" required />
-        <TextField type="text" className="input2" id="dimensao" label="Dimensões '000 x 000 x 000'" required />
-        <TextField type="text" className="input2" id="conteudo" label="Descrição do Conteúdo" required />
-        <TextField type="text" className="input2" id="quantidade" label="Quantidade de Volumes" required />
-        <TextField type="text" className="input2" id="valor" label="Valor da Mercadoria" required />
-        <TextField type="text" className="input2" id="notaFiscal" label="Nota Fiscal" required />
+        <select className="embalagem" name="embalagem" onChange={valorInput} required>
+              <option value="" disabled selected hidden>Tipo de Embalagem</option>
+                <option value="Trabalhe Conosco'">CAIXA</option>
+                <option value="Rastreamento">PAC</option>
+    
+              </select>  
+         <div className="dimencao">
+         <label>Peso:</label>
+         <input type="text" className="input2" name="peso" placeholder="000kg" onChange={valorInput} required  />
+         <label htmlFor="">Dimensões em cm:</label>
+         <input type="text" className="input2" name="altura" placeholder="Altura" onChange={valorInput} required  />
+         <label>x</label>
+         <input type="text" className="input2" name="largura" placeholder="Largura" onChange={valorInput} required  />
+         <label>x</label>
+         <input type="text" className="input2" name="profundidade" placeholder="Profundidade" onChange={valorInput} required  />
+         </div>
+      
+        
+         <input type="text" className="input3" name="notaFiscal" placeholder="Nota Fiscal" required />
+         <input type="text" className="input3" name="quantidade" placeholder="Quantidade de Volumes" onChange={valorInput} required  />
+         <input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" required />
+         <input type="text" className="input" name="conteudo" placeholder="Descrição do Conteúdo" onChange={valorInput} required  />
+ 
         <br/>
         <h3>Dados do Transporte</h3>
-        <TextField type="text" className="input" id="endereco" label="Endereço de Origem" required />
-        <br/>
-        <TextField type="text" className="input2" id="cidade" label="Cidade" required />
-        <TextField type="text" className="input2" id="pais" label="País" required />
+        <input type="text" className="input" name="endereco" placeholder="Endereço de Origem" required />
+        <input type="text" className="input2" name="cidade" placeholder="Cidade" required />
+        <input type="text" className="input2" name="pais" placeholder="País" required />
         <h4>Horário da coleta</h4>
         <span className="txt">de</span> 
-        <TextField type="text" className="inputh" id="hora 1" label="00:00" required />
+        <input type="text" className="inputh" name="hora 1" placeholder="00:00" required />
         <span className="txt">até</span>
-         <TextField type="text" className="inputh" id="hora 2" label="00:00" required /> 
+         <input type="text" className="inputh" name="hora 2" placeholder="00:00" required /> 
         <br/>
-        <TextField type="text" className="input" id="destino" label="Endereço de Destino" required />
+        <input type="text" className="input" name="destino" placeholder="Endereço de Destino" required />
+      
+        <input type="text" className="input3" name="cidadeDestino" placeholder="Cidade de Destino" required />
+        <input type="text" className="input3" name="paisDestino" placeholder="País de Destino" required />
         <br/>
-        <TextField type="text" className="input2" id="cidadeDestino" label="Cidade de Destino" required />
-        <TextField type="text" className="input2" id="paisDestino" label="País de Destino" required />
-        <br/>
-        <TextField type="text" className="input2" id="dataEntrega" label="Data da Entrega 'DD/MM/YYYY'" required />
-        <TextField type="text" className="input2" id="hodaEntrega" label="Hora da Entrega '00:00'" required />
+        <input type="text" className="input3" name="dataEntrega" placeholder="Data da Entrega 'DD/MM/YYYY'" required />
+        <input type="text" className="input3" name="hodaEntrega" placeholder="Hora da Entrega '00:00'" required />
 
-        <TextField type="text" className="input" id="obs" label="Observações sobre a carga/manuseio/transporte" required />
+        <input type="text" className="input" name="obs" placeholder="Observações sobre a carga/manuseio/transporte" required />
         <br/>
        
-        <Button  className="btn" variant="contained" disableElevation>
-                 Enviar
-            </Button>
-        </div>
+        <button  type="submit" className="btn"> Enviar </button>     
+        </form>
     </Container>
    
 

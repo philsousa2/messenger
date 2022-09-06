@@ -13,12 +13,24 @@ function Contato() {
     mensagem:""
    })
 
+ 
+
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
   const enviarContato = async e => {
     e.preventDefault();
-    e.pass
     console.log(formulario.nome, formulario.telefone, formulario.email, formulario.assunto, formulario.mensagem)
+
+  {/**
+    await fetch(" URL DA API  ", {
+      method: 'POST',
+      headers: {
+        'Content-Typ'e: 'application/json'
+      },
+      body: JSON.stringify({formulario})
+    })
+**/}
+
   }
 
   return (

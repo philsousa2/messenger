@@ -9,7 +9,10 @@ function Header() {
         <div className="Logo"></div>
 
         <div className="img">
-        <Image  src="/logobranca.png" alt="Logo" width={250} height={80} margin-left={50} />
+        <Image  src="/logomarca.png" alt="Logo" width={280} height={95} margin-left={50} />
+        </div>
+        <div className="img2">
+        <Image  src="/logobranca.png" alt="Logo" width={280} height={95} margin-left={50} />
         </div>
         
         <div className="LogoFinal"></div>

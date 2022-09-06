@@ -34,28 +34,79 @@ h4{
 }
 
 .btn{
+    width: 90%;
     margin-top: 20px;
-    height: 55px;
-    width:90%;
-    margin-inline: 20px;
+    background-color: #00457A;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #1E90FF;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+.btn:active{
+    background-color: #ADD8E6;
+    transform: scale(0.9);
+    transition: 0.2s;
 }
 
 .input{
-    width: 84%;
-    margin-top: 20px;
-    margin-inline: 20px;
-}
-
-.input2{
     width: 40%;
     margin-top: 20px;
     margin-inline: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    text-align: center;
+    font-size: 15px
+}
+
+.input2{
+    width: 95px;
+    margin-top: 20px;
+    margin-inline: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    text-align: center;
+    font-size: 15px
+}
+
+.input3{
+    width: 200px;
+    margin-top: 20px;
+    margin-inline: 10px;
+    height: 50px;
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    text-align: center;
+    font-size: 15px
 }
 
 .inputh{
     width: 30%;
     margin-top: -15px;
     margin-inline: 10px;
+    height: 50px;
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    text-align: center;
+    font-size: 15px
+}
+
+.embalagem{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    text-align: center;
 }
 
 .txt{
@@ -103,6 +154,18 @@ h4{
     margin-inline: 0;
 }
 
+.dimencao{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.embalagem{
+    width: 90%;
+}
 .input{  
     width: 90%;
     margin-top: 15px;
@@ -110,6 +173,11 @@ h4{
 }
 
 .input2{
+    width: 90%;
+    margin-top: 15px;
+    margin-inline: 0;
+}
+.input3{
     width: 90%;
     margin-top: 15px;
     margin-inline: 0;

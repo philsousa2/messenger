@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-background-color: #FFF;
+background-color: #00457A;
 width: 100%;
 height: 130px;
 display: flex;
@@ -10,7 +10,7 @@ flex-direction: row;
 height: 130px;
 
 .LogoContainer{
-background-color: #FFF;
+background-color: #00457A;
 height: 130px;
 width: 100%;
 display: flex;
@@ -22,19 +22,26 @@ font-size: 40px;
     position: absolute;
     height: 170px;
     width: 10%;
-    background-color: #00457A;
+    background-color: #FFF;
     z-index: 1;
 }
 .LogoFinal{
     transform: skew(-40deg);
     height: 170px;
     width: 35%;
-    background-color: #00457A;
+    background-color: #FFF;
     margin-left: -350px;
 }
 .img{
     margin-left: 150px;
+    margin-top: 20px;
     z-index: 2;
+}
+
+.img2{
+    margin-left: 150px;
+    z-index: 2;
+    display:none;
 }
 .Contatos{
 width: 55%;
@@ -45,7 +52,8 @@ justify-content: center;
 align-items: center;
 color: black;
 font-size: 18px;
-margin-left: 30px;
+margin-left: 120px;
+color: #FFF;
 }
 .Contatos a {
     margin-left: 30px;
@@ -55,7 +63,6 @@ margin-left: 30px;
 .LogoFinal{
     transform: skew(-40deg);
     width: 40%;
-    background-color: #00457A;
     margin-left: -400px;
 }
 .img{
@@ -69,7 +76,6 @@ margin-left: 30px;
 .LogoFinal{
     transform: skew(-40deg);
     width: 37%;
-    background-color: #00457A;
     margin-left: -400px;
 }
 .img{
@@ -84,7 +90,6 @@ margin-left: 30px;
     .LogoFinal{
     transform: skew(-40deg);
     width: 40%;
-    background-color: #00457A;
     margin-left: -400px;
 }
 
@@ -98,7 +103,6 @@ margin-left: 30px;
     .LogoFinal{
     transform: skew(-40deg);
     width: 40%;
-    background-color: #00457A;
     margin-left: -400px;
 }
 
@@ -115,7 +119,6 @@ margin-left: 30px;
     .LogoFinal{
     transform: skew(-40deg);
     width: 35%;
-    background-color: #00457A;
     margin-left: -400px;
 }
 .img{
@@ -133,7 +136,6 @@ margin-left: 30px;
     .LogoFinal{
     transform: skew(-40deg);
     width: 33%;
-    background-color: #00457A;
     margin-left: -400px;
 }
 
@@ -147,13 +149,11 @@ margin-left: 30px;
     .Logo{
     position: absolute;
     width: 10%;
-    background-color: #00457A;
     z-index: 1;
 }
 .LogoFinal{
     transform: skew(-40deg);
     width: 350px;
-    background-color: #00457A;
     margin-left: -350px;
 }
 
@@ -169,7 +169,6 @@ margin-left: 30px;
     
 .LogoContainer{
 height: 140px;
-background-color: #00457A;
 
 }
 .Logo{
@@ -180,11 +179,17 @@ background-color: #00457A;
 }
 .img{
     z-index: 2;
+    display: none;
+}
+.img2{
+    z-index: 2;
+    display: initial;
 }
 
 .Contatos{
     width: 100%;
     color: #FFF;
+    margin-left: 30px
 }
 }
 

@@ -1,12 +1,20 @@
 import { createGlobalStyle } from 'styled-components';
 
+
+
 export const GlobalStyle = createGlobalStyle`
+  @font-face {
+  font-family: 'Calibri';
+  src:  url('../fonts/calibri.ttf');
+}
+  
+  
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
   }
   body {
     background: #fff;
@@ -27,7 +35,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
 .slide-container{
-  margin-top: -5px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 
 }
