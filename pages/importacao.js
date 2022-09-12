@@ -7,7 +7,7 @@ function importacao() {
   return (
     <Container>
         <div className="Container">
-            <Image  src="/logomarca.png" alt="Logo" width={350} height={120} margin-left={50} />
+            
             <div className="txt">
                 <h1>QUICK IMPORT PARCEL®</h1>
                 <br/> <br/>
