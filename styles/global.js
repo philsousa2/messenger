@@ -42,6 +42,57 @@ export const GlobalStyle = createGlobalStyle`
 
 }
   
+.img1{
+  background-image: url('./1.jpg');
+  animation: img1 7s ease ;
+}
+.img2{
+  background-image: url('./2.jpg');
+  animation: img2 7s ease ;
+}
+.img3{
+  background-image: url('./3.jpg');
+  animation: fotomovimento 6s ease-out ;
+  
+}
+.img4{
+  background-image: url('./4.jpg');
+  animation: fotomovimento 6s ease-out ;
+}
+
+
+
+@keyframes img1 {
+  0% {
+    background-image: url('./1.jpg');
+    background-position: bottom;
+
+    }
+       
+    100%{
+      background-image: url('./1.jpg');
+      background-position: top;
+    } 
+    }
+
+    
+@keyframes img2 {
+  0% {
+    background-image: url('./2.jpg');
+    background-position: bottom;
+
+    }
+       
+    100%{
+      background-image: url('./2.jpg');
+      background-position: top;
+    } 
+    }
+
+
+
+
+
   .each-slide-effect > div {
   display: flex;
   align-items: center;

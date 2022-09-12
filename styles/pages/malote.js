@@ -7,6 +7,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-top: 30px;
+margin-bottom: 40px;
 flex-direction: column;
 
 

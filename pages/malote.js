@@ -7,9 +7,9 @@ function malote() {
   return (
     <Container>
         <div className="Container">
-            <Image  src="/logomarca.png" alt="Logo" width={350} height={120} margin-left={50} />
+           
             <div className="txt">
-                <h1>M PAK® - SERVIÇO DE MALOTE</h1>
+                <h1>SERVIÇO DE MALOTE</h1>
                 <br/> <br/>
                 <p>
                     A Messenger Express oferece serviço regular para transferência consolidada de documentos,
@@ -38,7 +38,8 @@ function malote() {
                     <li><GoTriangleRight/> Não disponível para transferência de <span>valores e produtos restritos</span> </li>
                 </ul>
                 <br/>
-                <p>A Messenger Express possui uma rede de escritórios e agentes, para o atendimento com prazos e
+                {/**
+                 * <p>A Messenger Express possui uma rede de escritórios e agentes, para o atendimento com prazos e
                     tarifas dimensionados às necessidades dos Clientes.</p>
                 <br/> <br/>
                 <h1>SOBRE A MESSENGER</h1>
@@ -58,8 +59,8 @@ function malote() {
 
             <a href="/Messenger_pak_web_0716.pdf" download>
             <button   className="btn"> Download PDF </button>
-            </a>
-        </div>
+  </a> **/}
+        </div></div>
     </Container>
   )
 }
