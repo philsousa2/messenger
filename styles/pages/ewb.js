@@ -24,6 +24,7 @@ p{
 span {
     color: #00457A;
     font-weight: bold;
+    text-decoration: underline;
 }
 .radio{
    margin: 0 5px 0 20px;
