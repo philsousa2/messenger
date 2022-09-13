@@ -48,11 +48,12 @@ function Coleta() {
         <br/>
         <h3>Dados do Transporte</h3>
         <input type="text" className="input4" name="endereco" placeholder="Endereço de Origem" required />
+        <input type="text" className="input3" name="data" placeholder="Data da Coleta 'DD/MM/YYYY'" required />
         <h4>Horário da coleta</h4>
         <span className="txt">de</span> 
-        <input type="text" className="inputh" name="hora 1" placeholder="00:00" required />
+        <input type="text" className="inputh" name="hora1" placeholder="00:00" required />
         <span className="txt">até</span>
-         <input type="text" className="inputh" name="hora 2" placeholder="00:00" required /> 
+         <input type="text" className="inputh" name="hora2" placeholder="00:00" required /> 
         <br/>
         <input type="text" className="input4" name="destino" placeholder="Endereço de Destino" required />
         <input type="text" className="input4" name="obs" placeholder="Observações sobre a carga/manuseio/transporte" required />

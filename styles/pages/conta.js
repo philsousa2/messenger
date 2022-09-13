@@ -13,6 +13,11 @@ h1{
     color: #00457A;
 }
 
+span{
+text-decoration: underline;
+
+}
+
 p{
     width: 70%;
     margin-top: 30px;

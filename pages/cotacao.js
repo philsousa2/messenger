@@ -41,7 +41,7 @@ function Cotacao() {
          
          <h3>Dados do solicitante</h3>
          <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required  />
-         <input type="text" className="input" name="numeroConta" placeholder="CNPJ da conta pagadora" onChange={valorInput} required  />
+         <input type="text" className="input" name="numeroConta" placeholder="CNPJ/CPF Conta Pagadora" onChange={valorInput} required  />
          <input type="tel" className="input" name="telefone" placeholder="Telefone" onChange={valorInput} required  />
          <input type="email" className="input" name="email" placeholder="Email" onChange={valorInput} required  />
 
@@ -73,22 +73,37 @@ function Cotacao() {
  
         <br/>
         <h3>Dados do Transporte</h3>
+        <h4>ORIGEM:</h4>
+        <input type="text" className="input3" name="cepRemetente" placeholder="CEP" required />
         <input type="text" className="input" name="endereco" placeholder="Endereço de Origem" required />
-        <input type="text" className="input2" name="cidade" placeholder="Cidade" required />
-        <input type="text" className="input2" name="pais" placeholder="País" required />
+        <input type="text" className="input3" name="complemento" placeholder="Complemento" required />
+        <input type="text" className="input3" name="cidade" placeholder="Cidade" required />
+        <input type="text" className="input3" name="estado" placeholder="Estado" required />
+        <input type="text" className="input3" name="pais" placeholder="País" required />
+        <input type="text" className="input" name="remetente" placeholder="CPF/CNPJ REMETENTE" required />
+
+        <h4>DESTINO:</h4>
+        <input type="text" className="input3" name="ceDestinatario" placeholder="CEP" required />
+        <input type="text" className="input" name="enderecoDestinatario" placeholder="Endereço de Destino" required />
+        <input type="text" className="input3" name="complementoDestinatario" placeholder="Complemento" required />
+        <input type="text" className="input3" name="cidadeDestinatario" placeholder="Cidade" required />
+        <input type="text" className="input3" name="estadoDestinatario" placeholder="Estado" required />
+        <input type="text" className="input3" name="paisDestinatario" placeholder="País" required />
+        <input type="text" className="input" name="destinatario" placeholder="CPF/CNPJ DESTINATÁRIO" required />
+
         <h4>Horário da coleta</h4>
         <span className="txt">de</span> 
-        <input type="text" className="inputh" name="hora 1" placeholder="00:00" required />
+        <input type="text" className="inputh" name="hora1" placeholder="00:00" required />
         <span className="txt">até</span>
-         <input type="text" className="inputh" name="hora 2" placeholder="00:00" required /> 
+         <input type="text" className="inputh" name="hora2" placeholder="00:00" required /> 
         <br/>
-        <input type="text" className="input" name="destino" placeholder="Endereço de Destino" required />
       
-        <input type="text" className="input3" name="cidadeDestino" placeholder="Cidade de Destino" required />
-        <input type="text" className="input3" name="paisDestino" placeholder="País de Destino" required />
-        <br/>
+        <h4>ENTREGA:</h4>
         <input type="text" className="input3" name="dataEntrega" placeholder="Data da Entrega 'DD/MM/YYYY'" required />
-        <input type="text" className="input3" name="hodaEntrega" placeholder="Hora da Entrega '00:00'" required />
+        <span className="txt">de</span> 
+        <input type="text" className="inputh" name="horaEntrega1" placeholder="00:00" required />
+        <span className="txt">até</span>
+        <input type="text" className="inputh" name="horaEntrega2" placeholder="00:00" required /> 
 
         <input type="text" className="input" name="obs" placeholder="Observações sobre a carga/manuseio/transporte" required />
         <br/>
