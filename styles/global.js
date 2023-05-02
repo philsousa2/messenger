@@ -102,10 +102,21 @@ export const GlobalStyle = createGlobalStyle`
   height: 500px;
 }
 
+.img1{
+  background-image: url('./1.jpg');
+}
+
+.img2{
+  background-image: url('./1.jpg');
+}
+
+.img3{
+  background-image: url('./1.jpg');
+}
 .each-slide-effect span {
   padding: 20px;
   font-size: 20px;
-  background: #efefef;
+
   text-align: center;
 }
 

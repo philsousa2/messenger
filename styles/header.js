@@ -171,6 +171,7 @@ color: #FFF;
     
 .LogoContainer{
 height: 140px;
+background-color: #00457A;
 
 }
 .Logo{
