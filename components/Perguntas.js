@@ -63,7 +63,7 @@ export default function Perguntas() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          .. Ramon fazendo um teste.. O serviço de remessa expressa internacional é destinado ao transporte de documentos e bens que 
+          O serviço de remessa expressa internacional é destinado ao transporte de documentos e bens que 
           requeiram agilidade e simplificação nos trâmites de desembaraço aduaneiro. Na importação, não 
           são aceitos bens destinados a revenda ou á industrialização.
           </Typography>
