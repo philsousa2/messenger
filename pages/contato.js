@@ -21,15 +21,17 @@ function Contato() {
     e.preventDefault();
     console.log(formulario.nome, formulario.telefone, formulario.email, formulario.assunto, formulario.mensagem)
 
-  {/**
-    await fetch(" URL DA API  ", {
+  {
+    const response = await fetch("/contatoMessenger/", {
       method: 'POST',
       headers: {
-        'Content-Typ'e: 'application/json'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({formulario})
     })
-**/}
+    const result = await response.json();
+    console.log(result);
+  }
 
   }
 
