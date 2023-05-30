@@ -83,7 +83,7 @@ function Cotacao() {
         <input type="text" className="input" name="remetente" placeholder="CPF/CNPJ REMETENTE" required />
 
         <h4>DESTINO:</h4>
-        <input type="text" className="input3" name="ceDestinatario" placeholder="CEP" required />
+        <input type="text" className="input3" name="cepDestinatario" placeholder="CEP" required />
         <input type="text" className="input" name="enderecoDestinatario" placeholder="Endereço de Destino" required />
         <input type="text" className="input3" name="complementoDestinatario" placeholder="Complemento" required />
         <input type="text" className="input3" name="cidadeDestinatario" placeholder="Cidade" required />
