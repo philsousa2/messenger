@@ -15,7 +15,7 @@ module.exports = {
     return [
       {
         source: '/contatoMessenger/:path*',
-        destination: 'https://api.upsilan.com.br/contato/:path*'
+        destination: 'https://api.upsilan.com.br/form_contato/:path*'
       }
     ]
   }
