@@ -74,4 +74,4 @@ function Conta() {
   )
 }
 
-export default conta
+export default Conta
