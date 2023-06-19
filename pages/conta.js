@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Container } from "../styles/pages/conta";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
-function conta() {
+function Conta() {
 
   const [formulario, setFormulario] = useState({
     cnpj: "",
