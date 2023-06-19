@@ -16,6 +16,10 @@ module.exports = {
       {
         source: '/contatoMessenger/:path*',
         destination: 'https://api.upsilan.com.br/form_contato/:path*'
+      },
+      {
+        source: '/contaMessenger/:path*',
+        destination: 'https://api.upsilan.com.br/form_conta/:path*'
       }
     ]
   }

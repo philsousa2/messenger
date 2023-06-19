@@ -41,7 +41,7 @@ function Contato() {
     <h1>Envie-nos um e-mail</h1>
     <div className="containerinfo" >
        
-        <form onSubmit={enviarContato}>
+    <form onSubmit={enviarContato}>
           <div className="formulario">
          
             <input type="text" className="input" name="nome" placeholder="Nome" onChange={valorInput} required  />

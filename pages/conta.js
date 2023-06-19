@@ -1,7 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container } from "../styles/pages/conta";
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
 function conta() {
+
+  const [formulario, setFormulario] = useState({
+    cnpj: "",
+    razaoSocial:"",
+    email:"",
+    inscricaoEstadual:"",
+    cnae:""
+   })
+
+   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
+
+   const enviarConta = async e => {
+     e.preventDefault();
+     console.log(formulario.cnpj, formulario.razaoSocial, formulario.email, formulario.inscricaoEstadual, formulario.cnae)
+ 
+   {
+     const response = await fetch("/contaMessenger/", {
+       method: 'POST',
+       headers: {
+         'Content-Type': 'application/json'
+       },
+       body: JSON.stringify({formulario})
+     })
+     const result = await response.json();
+     console.log(result);
+   }
+ 
+   }
   return (
     <Container>
          <h1>Abra sua conta</h1>
@@ -11,10 +40,11 @@ function conta() {
         possivel, em horário útil. <br/><span> A Messenger não fatura despesas referentes às taxas e tributos gerados na
         importação ou exportação de remessa expressa.</span></p>
             <h2>Todos os campos são obrigatórios</h2>
+            <form onSubmit={enviarConta}></form>
             <form className="formulario">
 
         <input type="text" className="input2" id="cnpj" placeholder="CNPJ" required />
-        <input type="text" className="input2" id="razaoSocial" placeholder="Razão Socia" required />
+        <input type="text" className="input2" id="razaoSocial" placeholder="Razão Social" required />
         <input type="text" className="input2" name="inscricaoEstadual" placeholder="Inscrição Estadual" required />
         <input type="text" className="input2" name="cnae" placeholder="CNAE" required />
         <br/>
