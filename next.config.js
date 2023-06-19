@@ -20,6 +20,14 @@ module.exports = {
       {
         source: '/contaMessenger/:path*',
         destination: 'https://api.upsilan.com.br/form_conta/:path*'
+      },
+      {
+        source: '/cotacaoMessenger/:path*',
+        destination: 'https://api.upsilan.com.br/form_cotacao/:path*'
+      },
+      {
+        source: '/coletaMessenger/:path*',
+        destination: 'https://api.upsilan.com.br/form_coleta/:path*'
       }
     ]
   }
