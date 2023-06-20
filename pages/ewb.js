@@ -41,9 +41,9 @@ function Ewb() {
   const enviarEwb = async e => {
     e.preventDefault();
     console.log(formulario.nome, formulario.cnpjpagador, formulario.razaoSocial, formulario.cnpj,
-      formulario.email, formulario.telefone, formulario.endereco, formulario.cep, formulario.cidade, formulario.estado, formulario.pais, 
+      formulario.email, formulario.telefone, formulario.endereco, formulario.cep, formulario.cidade, formulario.estado, formulario.pais,
       formulario.remessa, formulario.peso, formulario.altura, formulario.largura, formulario.profundidade, formulario.notaFiscal, formulario.quantidade,
-      formulario.valor, formulario.conteudo, formulario.observacao, formulario.servico, formulario.RetornoDeProtocolo, formulario.NextFlyOut, formulario.DeliveryDutyPaid, 
+      formulario.valor, formulario.conteudo, formulario.observacao, formulario.servico, formulario.RetornoDeProtocolo, formulario.NextFlyOut, formulario.DeliveryDutyPaid,
       formulario.coletaSim, formulario.coletaNao)
 
     {
