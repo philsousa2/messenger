@@ -6,16 +6,32 @@ function Conta() {
   const [formulario, setFormulario] = useState({
     cnpj: "",
     razaoSocial:"",
-    email:"",
     inscricaoEstadual:"",
-    cnae:""
+    cnae:"",
+    nome: "",
+    email:"",
+    telefone:"",
+    emailFinanceiro:"",
+    nomeFinanceiro:"",
+    cep:"",
+    logradouro: "",
+    numero:"",
+    complemento:"",
+    bairro:"",
+    municipio:"",
+    uf: "",
+    pais:"",
+    documento:""
    })
 
    const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
    const enviarConta = async e => {
      e.preventDefault();
-     console.log(formulario.cnpj, formulario.razaoSocial, formulario.email, formulario.inscricaoEstadual, formulario.cnae)
+     console.log(formulario.cnpj, formulario.razaoSocial, formulario.inscricaoEstadual, formulario.cnae, 
+      formulario.nome, formulario.email, formulario.telefone, formulario.emailFinanceiro, 
+      formulario.nomeFinanceiro, formulario.cep, formulario.logradouro, formulario.numero, 
+      formulario.complemento, formulario.bairro, formulario.municipio, formulario.uf, formulario.pais, formulario.documento)
  
    {
      const response = await fetch("/contaMessenger/", {
@@ -30,7 +46,7 @@ function Conta() {
    }
  
    }
-   
+
   return (
     <Container>
          <h1>Abra sua conta</h1>

@@ -6,19 +6,58 @@ function Cotacao() {
   
   const [formulario, setFormulario] = useState({
     nome: "",
+    numeroConta:"",
     telefone:"",
     email:"",
-    assunto:"",
-    mensagem:""
-   })
 
+    embalagem:"",
+    peso: "",
+    altura:"",
+    largura:"",
+    profundidade:"",
+    notaFiscal:"",
+    quantidade: "",
+    valor:"",
+    conteudo:"",
+
+    cepRemetente:"",
+    endereco:"",
+    complemento: "",
+    cidade:"",
+    estado:"",
+    pais:"",
+    remetente:"",
+
+    cepDestinatario: "",
+    enderecoDestinatario:"",
+    complementoDestinatario:"",
+    cidadeDestinatario:"",
+    estacoDestinatario: "",
+    paisDestinatario:"",
+    destinatario:"",
+
+    hora1:"",
+    hora2:"",
+
+    dataEntrega: "",
+    horaEntrega1:"",
+    horaEntrega2: "",
+    obs:""
+
+   })
  
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
   const enviarCotacao = async e => {
     e.preventDefault();
-    console.log(formulario.nome, formulario.telefone, formulario.email, formulario.assunto, formulario.mensagem)
+    console.log(formulario.nome, formulario.numeroConta, formulario.telefone, formulario.email, 
+      formulario.embalagem, formulario.peso, formulario.altura, formulario.largura, formulario.profundidade,
+      formulario.notaFiscal, formulario.quantidade, formulario.valor, formulario.conteudo, formulario.cepRemetente,
+      formulario.endereco, formulario.complemento, formulario.cidade, formulario.pais, formulario.remetente,
+      formulario.cepDestinatario, formulario.enderecoDestinatario, formulario.complementoDestinatario, formulario.cidadeDestinatario, formulario.estacoDestinatario,
+      formulario.paisDestinatario, formulario.destinatario, formulario.hora1, formulario.hora2, formulario.dataEntrega,
+      formulario.horaEntrega1, formulario.horaEntrega2, formulario.obs)
 
     {
       const response = await fetch("/cotacaoMessenger/", {
@@ -68,9 +107,9 @@ function Cotacao() {
          </div>
       
         
-         <input type="text" className="input3" name="notaFiscal" placeholder="Nota Fiscal" required />
+         <input type="text" className="input3" name="notaFiscal" placeholder="Nota Fiscal" onChange={valorInput} required />
          <input type="text" className="input3" name="quantidade" placeholder="Quantidade de Volumes" onChange={valorInput} required  />
-         <input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" required />
+         <input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" onChange={valorInput} required />
          <input type="text" className="input" name="conteudo" placeholder="Descrição do Conteúdo" onChange={valorInput} required  />
  
         <br/>
