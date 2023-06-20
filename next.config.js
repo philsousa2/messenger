@@ -35,7 +35,7 @@ module.exports = {
       },
       {
         source: '/rastreamentoMessenger/:path*',
-        destination: 'https://api.upsilan.com.br/rastreamento/:path*'
+        destination: 'https://api.upsilan.com.br/rastreamentoBrudam/:path*'
       }
     ]
   }
