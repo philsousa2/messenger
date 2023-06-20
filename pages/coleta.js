@@ -10,16 +10,38 @@ function Coleta() {
 
   const [formulario, setFormulario] = useState({
     nome: "",
-    cnpjpagador:"",
+    cnpj:"",
+    telefone:"",
     email:"",
-    telefone:""
+
+    remessa:"",
+    peso: "",
+    altura:"",
+    largura:"",
+    profundidade:"",
+    notaFiscal:"",
+    quantidade: "",
+    valor:"",
+    conteudo:"",
+
+    endereco:"",
+    data: "",
+    hora1:"",
+    hora2:"",
+    destino:"",
+    obs:""
+
    })
 
    const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
    const enviarColeta = async e => {
      e.preventDefault();
-     console.log(formulario.nome, formulario.cnpjpagador, formulario.email, formulario.telefone)
+     console.log(formulario.nome, formulario.cnpj, formulario.telefone, formulario.email, 
+      formulario.remessa, formulario.peso, formulario.altura, formulario.largura, formulario.profundidade,
+      formulario.notaFiscal, formulario.quantidade, formulario.valor, formulario.conteudo,
+      formulario.endereco, formulario.data, formulario.hora1, formulario.hora2,
+      formulario.destino, formulario.obs)
  
    {
      const response = await fetch("/coletaMessenger/", {
