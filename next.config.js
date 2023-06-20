@@ -32,6 +32,10 @@ module.exports = {
       {
         source: '/ewbMessenger/:path*',
         destination: 'https://api.upsilan.com.br/ewb/:path*'
+      },
+      {
+        source: '/rastreamentoMessenger/:path*',
+        destination: 'https://api.upsilan.com.br/rastreamento/:path*'
       }
     ]
   }
