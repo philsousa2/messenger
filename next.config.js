@@ -28,6 +28,10 @@ module.exports = {
       {
         source: '/coletaMessenger/:path*',
         destination: 'https://api.upsilan.com.br/form_coleta/:path*'
+      },
+      {
+        source: '/ewbMessenger/:path*',
+        destination: 'https://api.upsilan.com.br/ewb/:path*'
       }
     ]
   }
