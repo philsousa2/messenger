@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Container } from "../styles/pages/rastreamento";
 
 
-function Rastreamento() {
+function Rastreamento({dadosRastreamento}) {
 
   const [formulario, setFormulario] = useState({
     rastreamento: ""
@@ -25,7 +25,7 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-    console.log(result);
+    console.log(dadosRastreamento);
   }
 
   }
