@@ -25,7 +25,7 @@ function Rastreamento({rastreamento1}) {
     })
     const data = await response.json();
 
-    console.log(data[0]);
+    console.log(data);
    
   }
   
