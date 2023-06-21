@@ -10,7 +10,17 @@ function Rastreamento() {
   const [dadosDomumento, setDadosdocumento] = useState();
   const [mostrarFormulario, setMostrarFormulario] = useState(true);
 
-  const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value });
+  const valorInput = e => {
+    const inputNumero = e.target.value;
+    setFormulario({ ...formulario, [e.target.name]: inputNumero });
+  };
+
+  const bloquearCaracteresNaoNumericos = e => {
+    const tecla = e.key;
+    if (isNaN(tecla)) {
+      e.preventDefault();
+    }
+  };
 
   const enviarRastreamento = async e => {
     e.preventDefault();
@@ -30,7 +40,7 @@ function Rastreamento() {
         setDados(result.data[0].dados);
         setDadosdocumento(result.data[0].documento)
         setMostrarFormulario(false);
-        console.log(result);
+       
       } else {
         setDados([]);
         setMostrarFormulario(true);
@@ -54,23 +64,18 @@ function Rastreamento() {
         <form className='formulario' onSubmit={enviarRastreamento}>
           <h1>Rastreamento</h1>
           <p>As informações exibidas no sistema de rastreamento são relativas aos locais onde as atualizações são feitas, não implicando, portanto, registro dos locais por onde as cargas transitam. Para mais informações, consulte a Central de Serviços.</p>
-          <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
+          <input type="tel" className="input" name="rastreamento" placeholder="Informe o código" onChange={valorInput} onKeyPress={bloquearCaracteresNaoNumericos} required />
           <button type="submit" className="btn">Buscar</button>
         </form>
       ) : (
         <>
-          
-
           {dados && dados.length > 0 ? (
             <div className="Info">
-                     <h1>{dadosDomumento}</h1>
+              <h1>{dadosDomumento}</h1>
               {dados.map(item => (
-               
-                <div key={item.id}>
-                  
-                  <p>Data: {item.data}</p>
-                  <p>Status: {item.descricao}</p>
-
+                <div className="itensInfo" key={item.id}>
+                  <p><b>Data/Hora:</b> {item.data} <br/>
+                  <b>Status:</b> {item.descricao}</p>
                 </div>
               ))}
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
@@ -79,7 +84,7 @@ function Rastreamento() {
             <div className="Msgerro">
               <h1>Número não encontrado</h1>
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
-              </div>
+            </div>
           )}
         </>
       )}

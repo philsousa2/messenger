@@ -111,6 +111,8 @@ display: none;
 
 @media(max-width: 900px) {
   background: #00457A;
+  margin: auto;
+  width: 100%;
 
   .img{
      display: initial;

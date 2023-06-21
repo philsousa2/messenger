@@ -30,8 +30,12 @@ p{
     
 }
 
-.info{
+.Info{
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: -1px 1px 20px 4px rgba(0,0,0,0.32);
     border-radius: 20px;
     padding: 40px 200px 40px 200px;
@@ -40,11 +44,18 @@ p{
     text-align: center;
     color: #00457A;
 }
+.itensInfo{
+    width: 100%;
+    margin-top: -18px;
+    border-bottom: 2px solid #00457A;
+}
+
 .Msgerro{
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     box-shadow: -1px 1px 20px 4px rgba(0,0,0,0.32);
     border-radius: 20px;
     padding: 40px 100px 40px 100px;
@@ -104,6 +115,19 @@ p{
 }
 
 @media(max-width: 900px) {
+
+    .Info{
+        padding: 15px;
+    }
+
+    .Msgerro{
+        padding: 130px 0 130px 0;
+    }
+.itensInfo{
+    width: 300px;
+    margin-top: -18px;
+    border-bottom: 2px solid #00457A;
+}
  
 h4{
     margin: 30px 0 0px 0;
