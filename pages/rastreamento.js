@@ -28,7 +28,7 @@ function Rastreamento() {
   
     setDados(data);
     console.log(data);
-    console.log(dados.data[0]);
+    console.log(dados.data);
     
   }
   
