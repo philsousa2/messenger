@@ -42,22 +42,22 @@ export const GlobalStyle = createGlobalStyle`
   
 .img1 {
   background-image: url('./1.jpg');
-  
+  animation: fotomovimento 6s ease ;
 }
 
 .img2 {
   background-image: url('./2.jpg');
-  
+  animation: fotomovimento 6s ease ;
 }
 
 .img3 {
   background-image: url('./3.jpg');
-  
+  animation: fotomovimento 6s ease ;
 }
 
 .img4 {
   background-image: url('./4.jpg');
-  
+  animation: fotomovimento 6s ease ;
 }
 
 
