@@ -25,8 +25,8 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const data = await response.json();
-    setDados(data[0]);
-    console.log(data);
+    setDados(data);
+    console.log(data.dados);
     console.log(dados);
    
   }
@@ -43,7 +43,11 @@ function Rastreamento() {
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
     <div >
-                
+    <div>
+        {dados.map((item, index) => (
+          <p key={index}>{item.data[0]}</p>
+        ))}
+      </div>
           
             </div>   
   
