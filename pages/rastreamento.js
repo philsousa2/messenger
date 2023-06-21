@@ -61,9 +61,7 @@ function Rastreamento() {
         </form>
       ) : (
         <>
-          {erro && (
-            <div className="erro">{erro}</div>
-          )}
+          
 
           {dados && dados.length > 0 ? (
             <>
@@ -81,7 +79,7 @@ function Rastreamento() {
             </>
           ) : (
             <div className="erro">
-              <h1>Número não encontrado</h1>
+              <h1>{erro}</h1>
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
               </div>
           )}
