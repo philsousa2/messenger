@@ -7,22 +7,36 @@ function Rastreamento() {
   });
 
   const [dados, setDados] = useState([]);
+  const [erro, setErro] = useState(null);
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value });
 
   const enviarRastreamento = async e => {
     e.preventDefault();
 
-    const response = await fetch("/rastreamentoMessenger/", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ formulario })
-    });
+    try {
+      const response = await fetch("/rastreamentoMessenger/", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ formulario })
+      });
 
-    const result = await response.json();
-    setDados(result.data[0].dados);
+      const result = await response.json();
+
+      if (result.status === 1) {
+        setDados(result.data[0].dados);
+        setErro(null);
+      } else {
+        setDados([]);
+        setErro("Número não encontrado");
+      }
+    } catch (error) {
+      console.error(error);
+      setDados([]);
+      setErro("Ocorreu um erro ao buscar o rastreamento");
+    }
   };
 
   return (
@@ -35,15 +49,20 @@ function Rastreamento() {
       </form>
 
       <div>
-        {dados.map(item => (
-          <div key={item.id}>
-            <h2>{item.tipo}</h2>
-            <p>Número: {item.numero}</p>
-            <p>Status: {item.status}</p>
-            <p>Data: {item.data}</p>
-            <p>Descrição: {item.descricao}</p>
-          </div>
-        ))}
+        {erro ? (
+          <p>{erro}</p>
+        ) : (
+          dados.map(item => (
+            <div key={item.id}>
+              <h2>{item.tipo}</h2>
+              <p>Número: {item.numero}</p>
+              <p>Status: {item.status}</p>
+              <p>Data: {item.data}</p>
+              <p>Descrição: {item.descricao}</p>
+              
+            </div>
+          ))
+        )}
       </div>
     </Container>
   );
