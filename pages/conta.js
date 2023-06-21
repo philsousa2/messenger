@@ -58,8 +58,8 @@ function Conta() {
       <h2>Todos os campos são obrigatórios</h2>
       <form onSubmit={enviarConta} className="formulario">
 
-        <input type="text" className="input2" id="cnpj" name="cnpj" placeholder="CNPJ" onChange={valorInput} required />
-        <input type="text" className="input2" id="razaoSocial" name="razaoSocial" placeholder="Razão Social" onChange={valorInput} required />
+        <input type="text" className="input2" name="cnpj" placeholder="CNPJ" onChange={valorInput} required />
+        <input type="text" className="input2" name="razaoSocial" placeholder="Razão Social" onChange={valorInput} required />
         <input type="text" className="input2" name="inscricaoEstadual" placeholder="Inscrição Estadual" onChange={valorInput} required />
         <input type="text" className="input2" name="cnae" placeholder="CNAE" onChange={valorInput} required />
         <br />
