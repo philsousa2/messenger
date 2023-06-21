@@ -5,88 +5,88 @@ function Conta() {
 
   const [formulario, setFormulario] = useState({
     cnpj: "",
-    razaoSocial:"",
-    inscricaoEstadual:"",
-    cnae:"",
+    razaoSocial: "",
+    inscricaoEstadual: "",
+    cnae: "",
     nome: "",
-    email:"",
-    telefone:"",
-    emailFinanceiro:"",
-    nomeFinanceiro:"",
-    cep:"",
+    email: "",
+    telefone: "",
+    emailFinanceiro: "",
+    nomeFinanceiro: "",
+    cep: "",
     logradouro: "",
-    numero:"",
-    complemento:"",
-    bairro:"",
-    municipio:"",
+    numero: "",
+    complemento: "",
+    bairro: "",
+    municipio: "",
     uf: "",
-    pais:"",
-    documento:""
-   })
+    pais: "",
+    documento: ""
+  })
 
-   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
+  const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value })
 
-   const enviarConta = async e => {
-     e.preventDefault();
-     console.log(formulario.cnpj, formulario.razaoSocial, formulario.inscricaoEstadual, formulario.cnae, 
-      formulario.nome, formulario.email, formulario.telefone, formulario.emailFinanceiro, 
-      formulario.nomeFinanceiro, formulario.cep, formulario.logradouro, formulario.numero, 
+  const enviarConta = async e => {
+    e.preventDefault();
+    console.log(formulario.cnpj, formulario.razaoSocial, formulario.inscricaoEstadual, formulario.cnae,
+      formulario.nome, formulario.email, formulario.telefone, formulario.emailFinanceiro,
+      formulario.nomeFinanceiro, formulario.cep, formulario.logradouro, formulario.numero,
       formulario.complemento, formulario.bairro, formulario.municipio, formulario.uf, formulario.pais, formulario.documento)
- 
-   {
-     const response = await fetch("/contaMessenger/", {
-       method: 'POST',
-       headers: {
-         'Content-Type': 'application/json'
-       },
-       body: JSON.stringify({formulario})
-     })
-     const result = await response.json();
-     console.log(result);
-   }
- 
-   }
+
+    {
+      const response = await fetch("/contaMessenger/", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ formulario })
+      })
+      const result = await response.json();
+      console.log(result);
+    }
+
+  }
 
   return (
     <Container>
-         <h1>Abra sua conta</h1>
-        <p>A conta Messenger permite a utilização dos serviços com pagamento faturado. Preencha aqui as
+      <h1>Abra sua conta</h1>
+      <p>A conta Messenger permite a utilização dos serviços com pagamento faturado. Preencha aqui as
         informações cadastrais da sua empresa, para aprovação do crédito. Anexar contrato social, Inscrição
         Estadual ou Municipal conforme o caso. Nossa Central de Serviços retornará o contato o mais breve
-        possivel, em horário útil. <br/><span> A Messenger não fatura despesas referentes às taxas e tributos gerados na
-        importação ou exportação de remessa expressa.</span></p>
-            <h2>Todos os campos são obrigatórios</h2>
-            <form onSubmit={enviarConta} className="formulario">
+        possivel, em horário útil. <br /><span> A Messenger não fatura despesas referentes às taxas e tributos gerados na
+          importação ou exportação de remessa expressa.</span></p>
+      <h2>Todos os campos são obrigatórios</h2>
+      <form onSubmit={enviarConta} className="formulario">
 
-        <input type="text" className="input2" id="cnpj" placeholder="CNPJ" onChange={valorInput} required />
-        <input type="text" className="input2" id="razaoSocial" placeholder="Razão Social" onChange={valorInput} required />
+        <input type="text" className="input2" id="cnpj" name="cnpj" placeholder="CNPJ" onChange={valorInput} required />
+        <input type="text" className="input2" id="razaoSocial" name="razaoSocial" placeholder="Razão Social" onChange={valorInput} required />
         <input type="text" className="input2" name="inscricaoEstadual" placeholder="Inscrição Estadual" onChange={valorInput} required />
         <input type="text" className="input2" name="cnae" placeholder="CNAE" onChange={valorInput} required />
-        <br/>
+        <br />
         <input type="text" className="input" name="nome" placeholder="Nome do Responsável" onChange={valorInput} required />
-        <br/>
+        <br />
         <input type="email" className="input2" name="email" placeholder="Email do Responsável" onChange={valorInput} required />
         <input type="tel" className="input2" name="telefone" placeholder="Telefone para Contato" onChange={valorInput} required />
-        <br/>
+        <br />
         <input type="email" className="input2" name="emailFinanceiro" placeholder="Email do Responsável Financeiro" onChange={valorInput} required />
         <input type="text" className="input2" name="nomeFinanceiro" placeholder="Contato no Depto Financeiro" onChange={valorInput} required />
-        <br/>
+        <br />
         <input type="text" className="input3" name="cep" placeholder="CEP" onChange={valorInput} required />
-        <input type="text"className="input2" name="logradouro" placeholder="Logradouro" onChange={valorInput} required />
-        <input type="text"className="input3" name="numero" placeholder="Número" onChange={valorInput} required />
-        <br/>
+        <input type="text" className="input2" name="logradouro" placeholder="Logradouro" onChange={valorInput} required />
+        <input type="text" className="input3" name="numero" placeholder="Número" onChange={valorInput} required />
+        <br />
         <input type="text" className="input2" name="complemento" placeholder="Complemento" onChange={valorInput} required />
         <input type="text" className="input3" name="bairro" placeholder="Bairro" onChange={valorInput} required />
         <input type="text" className="input3" name="municipio" placeholder="Município" onChange={valorInput} required />
-        <br/>
+        <br />
         <input type="text" className="input3" name="uf" placeholder="UF" onChange={valorInput} required />
         <input type="text" className="input3" name="pais" placeholder="País" onChange={valorInput} required />
         <input type="file" name="documento" onChange={valorInput} />
-        <button  type="submit" className="btn"> Enviar </button>     
-        </form>
+        <button type="submit" className="btn"> Enviar </button>
+      </form>
     </Container>
-    
-    )
+
+  )
 }
 
 export default Conta
