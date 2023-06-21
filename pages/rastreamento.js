@@ -8,6 +8,7 @@ function Rastreamento() {
     rastreamento: ""
    })
 
+  const [dados, setDados] = useState([]);
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
@@ -24,8 +25,9 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const data = await response.json();
-
+    setDados(data);
     console.log(data);
+    console.log(dados);
    
   }
   
