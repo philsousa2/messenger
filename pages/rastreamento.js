@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Container } from "../styles/pages/rastreamento";
 
 
@@ -7,6 +7,8 @@ function Rastreamento() {
   const [formulario, setFormulario] = useState({
     rastreamento: ""
    })
+
+ 
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
@@ -23,26 +25,8 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-    console.log(result);
+   // console.log(result);
   }
-  const [dados, setDados] = useState(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch('/rastreamentoMessenger/'); // Substitua 'URL_DA_API' pela URL correta da sua API
-        const json = await response.json();
-        setDados(json);
-      } catch (error) {
-        console.error('Erro ao obter dados:', error);
-      }
-    }
-    ;
-
-    fetchData();
-  }, []);
-  console.log(dados)
-
 
   }
 
@@ -54,10 +38,6 @@ function Rastreamento() {
     <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
-<div>
-<h3>Status:</h3><h4>{Object.name}</h4>
-</div>
-
     </Container>
   )
 }
