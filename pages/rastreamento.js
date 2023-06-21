@@ -45,7 +45,7 @@ function Rastreamento({rastreamento1}) {
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
     <div >
-                <ul className={styles.cards_container}>
+                <ul >
                 {rastreamento1.map((rastreio) =>(
                  <li key={rastreio.id} className={rastreio.data}>
                  </li>
