@@ -45,7 +45,7 @@ function Rastreamento() {
     <div >
     <div>
        <ul>
-    {data.dados.map((item, index) => (
+    {dados.dados.map((item, index) => (
       <li key={index}>{item[0]}</li>
     ))}
     </ul>
