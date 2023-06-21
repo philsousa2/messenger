@@ -25,7 +25,7 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const data = await response.json();
-    setDados(data[0].dados);
+    setDados(data[0]);
     console.log(data);
     console.log(dados);
    
