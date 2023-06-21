@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Container } from "../styles/pages/rastreamento";
 
 
-function Rastreamento({Object}) {
+function Rastreamento() {
 
   const [formulario, setFormulario] = useState({
     rastreamento: ""
@@ -27,8 +27,6 @@ function Rastreamento({Object}) {
     const result = await response.json();
     console.log(result);
   }
-  const objetoJson = JSON.stringify(Object);
-  console.log(objetoJson);
 
   }
 
@@ -38,12 +36,8 @@ function Rastreamento({Object}) {
         <h1>Rastreamento</h1>
         <p>As informações exibidas no sistema de rastreamento são relativas aos locais onde as atualizações são feitas, não implicando, portanto, registro dos locais por onde as cargas transitam. Para mais informações, consulte a Central de Serviços.</p>
     <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
-    <button  type="submit" className="btn"> Buscar </button>
+    <button  type="submit" className="btn"> Buscar </button>   
     </form>
-<div>
-<h3>Status:</h3><h4>{Object.name}</h4>
-</div>
-
     </Container>
   )
 }
