@@ -65,7 +65,7 @@ function Rastreamento() {
             <div className="alerta">{erro}</div>
           ) : (
             <>
-              {dados.length > 0 ? (
+              {dados && dados.length > 0 ? (
                 <>
                   {dados.map(item => (
                     <div key={item.id}>
@@ -86,7 +86,7 @@ function Rastreamento() {
                 </>
               )}
             </>
-          )} 
+          )}
         </>
       )}
     </Container>
