@@ -23,7 +23,7 @@ function Rastreamento({ rastreamento1 }) {
 
     const data = await response.json();
     if (data && data[0] && data[0].data && data[0].data[0] && data[0].data[0].dados) {
-      setDados(data[0].data[0].dados);
+      setDados(data.data[0].dados);
     } else {
       setDados([]);
     }
