@@ -62,7 +62,7 @@ function Rastreamento() {
           
 
           {dados && dados.length > 0 ? (
-            <>
+            <div className="Info">
                      <h1>{dadosDomumento}</h1>
               {dados.map(item => (
                
@@ -74,9 +74,9 @@ function Rastreamento() {
                 </div>
               ))}
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
-            </>
+            </div>
           ) : (
-            <div className="erro">
+            <div className="Msgerro">
               <h1>Número não encontrado</h1>
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
               </div>
