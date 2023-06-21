@@ -24,13 +24,9 @@ function Rastreamento({rastreamento1}) {
       body: JSON.stringify({formulario})
     })
     const data = await response.json();
-    console.log(data);
-    return {
-      props: {
-        rastreamento1: data.items,
-      },
-    };
-    
+    const result  = JSON.parse(data);
+    console.log(result[0]);
+   
   }
   
   }
@@ -45,14 +41,8 @@ function Rastreamento({rastreamento1}) {
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
     <div >
-                <ul >
-                {rastreamento1.map((rastreio) =>(
-                 <li key={rastreio.id} className={rastreio.data}>
-                 </li>
-                 ))}
-                </ul>
-        
-            
+                
+          
             </div>   
   
     </Container>
