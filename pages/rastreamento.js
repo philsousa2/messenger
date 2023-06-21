@@ -42,14 +42,9 @@ function Rastreamento() {
     <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
-   
     <div>
-        <ul>
-          {dados.map((item, index) => (
-            <li key={index}>{item.descricao}</li>
-          ))}
-        </ul>
-      </div>
+ 
+</div>
   
     </Container>
   )
