@@ -9,7 +9,6 @@ function Rastreamento() {
     rastreamento: ""
    })
 
- 
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
