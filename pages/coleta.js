@@ -66,7 +66,7 @@ function Coleta() {
         <h3>Dados do solicitante</h3>
 
         <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required />
-        <input type="text" className="input" id="cnpjpagador" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
+        <input type="text" className="input" name="cnpjpagador" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
         <input type="email" className="input" name="email" placeholder="Digite Seu Email" onChange={valorInput} required />
         <input type="tel" className="input" name="telefone" placeholder="Telefone para Contato" onChange={valorInput} required />
         <br />
