@@ -8,7 +8,6 @@ function Rastreamento() {
     rastreamento: ""
    })
 
-  //const [dados, setDados] = useState([]);
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
@@ -25,10 +24,10 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const data = await response.json();
-   // setDados(data.data[0]);
-    console.log(data);
-  
-   
+    const result  = JSON.parse(data);
+    console.log(result);
+ 
+    
   }
   
   }
@@ -42,9 +41,10 @@ function Rastreamento() {
     <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
-    <div>
- 
-</div>
+    <div >
+                
+          
+            </div>   
   
     </Container>
   )
