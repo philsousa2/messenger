@@ -26,7 +26,7 @@ function Rastreamento() {
     })
     const data = await response.json();
     setDados(data);
-    console.log(data.dados);
+    console.log(data);
     console.log(dados);
    
   }
@@ -42,12 +42,13 @@ function Rastreamento() {
     <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
-    <div >
     <div>
-  
-      </div>
-          
-            </div>   
+  <ul>
+    {dados.dados.map((item, index) => (
+      <li key={index}>{item}</li>
+    ))}
+  </ul>
+</div>
   
     </Container>
   )
