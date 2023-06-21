@@ -42,7 +42,6 @@ function Rastreamento() {
             <p>Status: {item.status}</p>
             <p>Data: {item.data}</p>
             <p>Descrição: {item.descricao}</p>
-            {/* Renderizar outras informações conforme necessário */}
           </div>
         ))}
       </div>
