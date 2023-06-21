@@ -26,9 +26,9 @@ function Rastreamento() {
     })
     const data = await response.json();
   
-    setDados(data);
+ 
     console.log(data);
-    console.log(dados);
+    
     
   }
   
