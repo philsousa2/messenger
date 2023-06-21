@@ -61,31 +61,26 @@ function Rastreamento() {
         </form>
       ) : (
         <>
-          {erro ? (
-            <div className="alerta">{erro}</div>
-          ) : (
+          {erro && (
+            <div className="erro">{erro}</div>
+          )}
+
+          {dados && dados.length > 0 ? (
             <>
-              {dados && dados.length > 0 ? (
-                <>
-                  {dados.map(item => (
-                    <div key={item.id}>
-                      <h2>{item.tipo}</h2>
-                      <p>Número: {item.numero}</p>
-                      <p>Status: {item.status}</p>
-                      <p>Data: {item.data}</p>
-                      <p>Descrição: {item.descricao}</p>
-                      {/* Renderizar outras informações conforme necessário */}
-                    </div>
-                  ))}
-                  <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
-                </>
-              ) : (
-                <>
-                  <div className="alerta">Número não encontrado</div>
-                  <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
-                </>
-              )}
+              {dados.map(item => (
+                <div key={item.id}>
+                  <h2>{item.tipo}</h2>
+                  <p>Número: {item.numero}</p>
+                  <p>Status: {item.status}</p>
+                  <p>Data: {item.data}</p>
+                  <p>Descrição: {item.descricao}</p>
+                  {/* Renderizar outras informações conforme necessário */}
+                </div>
+              ))}
+              <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
             </>
+          ) : (
+            <div className="erro">Número não encontrado</div>
           )}
         </>
       )}
