@@ -22,7 +22,11 @@ function Rastreamento({ rastreamento1 }) {
     });
 
     const data = await response.json();
-    setDados(data[0].data[0].dados);
+    if (data && data[0] && data[0].data && data[0].data[0] && data[0].data[0].dados) {
+      setDados(data[0].data[0].dados);
+    } else {
+      setDados([]);
+    }
   };
 
   return (
