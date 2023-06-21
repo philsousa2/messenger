@@ -42,9 +42,12 @@ p{
 }
 .Msgerro{
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-shadow: -1px 1px 20px 4px rgba(0,0,0,0.32);
     border-radius: 20px;
-    padding: 40px 200px 40px 200px;
+    padding: 40px 100px 40px 100px;
     background:  #F8F8FF;
     margin: 40px 0 80px 0;
     text-align: center;
