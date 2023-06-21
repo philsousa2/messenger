@@ -7,6 +7,7 @@ function Rastreamento() {
   });
 
   const [dados, setDados] = useState([]);
+  const [dadosDomumento, setDadosdocumento] = useState();
   const [mostrarFormulario, setMostrarFormulario] = useState(true);
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value });
@@ -27,6 +28,7 @@ function Rastreamento() {
 
       if (result.status === 1) {
         setDados(result.data[0].dados);
+        setDadosdocumento(result.data[0].documento)
         setMostrarFormulario(false);
         console.log(result);
       } else {
@@ -61,11 +63,11 @@ function Rastreamento() {
 
           {dados && dados.length > 0 ? (
             <>
-                     
+                     <h1>{dadosDomumento}</h1>
               {dados.map(item => (
                
                 <div key={item.id}>
-                  <h1>{item.documento}</h1>
+                  
                   <p>Data: {item.data}</p>
                   <p>Status: {item.descricao}</p>
 
