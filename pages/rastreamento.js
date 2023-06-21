@@ -4,7 +4,7 @@ import { Container } from "../styles/pages/rastreamento";
 
 
 function Rastreamento() {
-
+  const [dados, setDados] = useState(null);
   const [formulario, setFormulario] = useState({
     rastreamento: ""
    })
@@ -19,6 +19,7 @@ function Rastreamento() {
     const banana= "bananaa"
 
   {
+    
     const response = await fetch("/rastreamentoMessenger/", {
       method: 'POST',
       headers: {
@@ -27,9 +28,12 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
+    setDados(json);
     console.log(result);
+    console.log(dados);
+    
   }
-  console.log(banana);
+  
   }
 
   return (
@@ -40,6 +44,18 @@ function Rastreamento() {
     <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
+
+    <div>
+      {dados ? (
+        <div>
+          <p>Propriedade 1: {dados[0]}</p>
+          <p>Propriedade 2: {dados.documento}</p>
+        </div>
+      ) : (
+        <p>Carregando...</p>
+      )}
+    </div>
+  
     </Container>
   )
 }
