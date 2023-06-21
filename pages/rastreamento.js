@@ -2,20 +2,20 @@ import React, { useState } from 'react'
 import { Container } from "../styles/pages/rastreamento";
 
 
-
 function Rastreamento() {
 
   const [formulario, setFormulario] = useState({
     rastreamento: ""
    })
 
+ 
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
   const enviarRastreamento = async e => {
     e.preventDefault();
 
-    const banana= "bananaa"
+    
 
   {
     const response = await fetch("/rastreamentoMessenger/", {
@@ -26,9 +26,9 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-    console.log(result);
+   console.log(result);
   }
-  console.log(banana);
+
   }
 
   return (
