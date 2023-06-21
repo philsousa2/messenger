@@ -28,9 +28,9 @@ function Ewb() {
     observacao: "",
 
     servico: "",
-    RetornoDeProtocolo: "",
-    NextFlyOut: "",
-    DeliveryDutyPaid: "",
+    retornoDeProtocolo: "",
+    nextFlyOut: "",
+    deliveryDutyPaid: "",
     coletaSim: "",
     coletaNao: ""
 
@@ -43,8 +43,8 @@ function Ewb() {
     console.log(formulario.nome, formulario.cnpjpagador, formulario.razaoSocial, formulario.cnpj,
       formulario.email, formulario.telefone, formulario.endereco, formulario.cep, formulario.cidade, formulario.estado, formulario.pais,
       formulario.remessa, formulario.peso, formulario.altura, formulario.largura, formulario.profundidade, formulario.notaFiscal, formulario.quantidade,
-      formulario.valor, formulario.conteudo, formulario.observacao, formulario.servico, formulario.RetornoDeProtocolo, formulario.NextFlyOut, formulario.DeliveryDutyPaid,
-      formulario.coletaSim, formulario.coletaNao)
+      formulario.valor, formulario.conteudo, formulario.observacao, formulario.servico, formulario.retornoDeProtocolo, formulario.nextFlyOut,
+      formulario.deliveryDutyPaid, formulario.coletaSim, formulario.coletaNao)
 
     {
       const response = await fetch("/ewbMessenger/", {
