@@ -7,7 +7,6 @@ function Rastreamento() {
   });
 
   const [dados, setDados] = useState([]);
-  const [erro, setErro] = useState(null);
   const [mostrarFormulario, setMostrarFormulario] = useState(true);
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value });
@@ -28,17 +27,14 @@ function Rastreamento() {
 
       if (result.status === 1) {
         setDados(result.data[0].dados);
-        setErro(null);
         setMostrarFormulario(false);
       } else {
         setDados([]);
-        setErro("Número não encontrado");
         setMostrarFormulario(true);
       }
     } catch (error) {
       console.error(error);
       setDados([]);
-      setErro("Ocorreu um erro ao buscar o rastreamento");
       setMostrarFormulario(true);
     }
   };
@@ -46,7 +42,6 @@ function Rastreamento() {
   const novoRastreamento = () => {
     setFormulario({ rastreamento: "" });
     setDados([]);
-    setErro(null);
     setMostrarFormulario(true);
   };
 
@@ -79,7 +74,7 @@ function Rastreamento() {
             </>
           ) : (
             <div className="erro">
-              <h1>{erro}</h1>
+              <h1>Número não encontrado</h1>
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
               </div>
           )}
