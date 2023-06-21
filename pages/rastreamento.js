@@ -80,7 +80,10 @@ function Rastreamento() {
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
             </>
           ) : (
-            <div className="erro">Número não encontrado</div>
+            <div className="erro">
+              <h1>Número não encontrado</h1>
+              <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
+              </div>
           )}
         </>
       )}
