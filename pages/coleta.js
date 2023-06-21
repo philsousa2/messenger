@@ -10,10 +10,9 @@ function Coleta() {
 
   const [formulario, setFormulario] = useState({
     nome: "",
-    cnpj: "",
+    cnpjpagador: "",
     telefone: "",
     email: "",
-
     remessa: "",
     peso: "",
     altura: "",
@@ -23,7 +22,6 @@ function Coleta() {
     quantidade: "",
     valor: "",
     conteudo: "",
-
     endereco: "",
     data: "",
     hora1: "",
@@ -37,7 +35,7 @@ function Coleta() {
 
   const enviarColeta = async e => {
     e.preventDefault();
-    console.log(formulario.nome, formulario.cnpj, formulario.telefone, formulario.email,
+    console.log(formulario.nome, formulario.cnpjpagador, formulario.telefone, formulario.email,
       formulario.remessa, formulario.peso, formulario.altura, formulario.largura, formulario.profundidade,
       formulario.notaFiscal, formulario.quantidade, formulario.valor, formulario.conteudo,
       formulario.endereco, formulario.data, formulario.hora1, formulario.hora2,
