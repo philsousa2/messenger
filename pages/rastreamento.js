@@ -43,11 +43,7 @@ function Rastreamento() {
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
     <div>
-  <ul>
-    {dados.dados.map((item, index) => (
-      <li key={index}>{item}</li>
-    ))}
-  </ul>
+ 
 </div>
   
     </Container>
