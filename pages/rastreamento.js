@@ -15,8 +15,6 @@ function Rastreamento() {
   const enviarRastreamento = async e => {
     e.preventDefault();
 
-    
-
   {
     const response = await fetch("/rastreamentoMessenger/", {
       method: 'POST',
@@ -26,7 +24,7 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-   console.log(result);
+    console.log(result);
   }
 
   }
