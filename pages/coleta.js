@@ -10,10 +10,9 @@ function Coleta() {
 
   const [formulario, setFormulario] = useState({
     nome: "",
-    cnpj: "",
+    cnpjpagador: "",
     telefone: "",
     email: "",
-
     remessa: "",
     peso: "",
     altura: "",
@@ -23,7 +22,6 @@ function Coleta() {
     quantidade: "",
     valor: "",
     conteudo: "",
-
     endereco: "",
     data: "",
     hora1: "",
@@ -37,7 +35,7 @@ function Coleta() {
 
   const enviarColeta = async e => {
     e.preventDefault();
-    console.log(formulario.nome, formulario.cnpj, formulario.telefone, formulario.email,
+    console.log(formulario.nome, formulario.cnpjpagador, formulario.telefone, formulario.email,
       formulario.remessa, formulario.peso, formulario.altura, formulario.largura, formulario.profundidade,
       formulario.notaFiscal, formulario.quantidade, formulario.valor, formulario.conteudo,
       formulario.endereco, formulario.data, formulario.hora1, formulario.hora2,
@@ -68,7 +66,7 @@ function Coleta() {
         <h3>Dados do solicitante</h3>
 
         <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required />
-        <input type="text" className="input" id="cnpjpagador" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
+        <input type="text" className="input" name="cnpjpagador" id="cnpjpagador" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
         <input type="email" className="input" name="email" placeholder="Digite Seu Email" onChange={valorInput} required />
         <input type="tel" className="input" name="telefone" placeholder="Telefone para Contato" onChange={valorInput} required />
         <br />
