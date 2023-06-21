@@ -25,7 +25,7 @@ function Rastreamento({dadosRastreamento}) {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-    console.log(dadosRastreamento);
+    console.log({dadosRastreamento});
   }
 
   }
