@@ -28,6 +28,7 @@ function Rastreamento() {
       if (result.status === 1) {
         setDados(result.data[0].dados);
         setMostrarFormulario(false);
+        console.log(result);
       } else {
         setDados([]);
         setMostrarFormulario(true);
