@@ -1,6 +1,4 @@
-import { createGlobalStyle , css} from 'styled-components';
-
-
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
  
@@ -42,55 +40,47 @@ export const GlobalStyle = createGlobalStyle`
 
 }
   
-.img1{
+.img1 {
   background-image: url('./1.jpg');
-  animation: img1 7s ease ;
-}
-.img2{
-  background-image: url('./2.jpg');
-  animation: img2 7s ease ;
-}
-.img3{
-  background-image: url('./3.jpg');
-  animation: fotomovimento 6s ease-out ;
   
 }
-.img4{
+
+.img2 {
+  background-image: url('./2.jpg');
+  
+}
+
+.img3 {
+  background-image: url('./3.jpg');
+  
+}
+
+.img4 {
   background-image: url('./4.jpg');
-  animation: fotomovimento 6s ease-out ;
+  
 }
 
 
 
-@keyframes img1 {
+@keyframes fotomovimento {
   0% {
-    background-image: url('./1.jpg');
     background-position: bottom;
-
-    }
-       
-    100%{
-      background-image: url('./1.jpg');
-      background-position: top;
-    } 
-    }
-
-    
-@keyframes img2 {
-  0% {
-    background-image: url('./2.jpg');
-    background-position: bottom;
-
-    }
-       
-    100%{
-      background-image: url('./2.jpg');
-      background-position: top;
-    } 
-    }
-
-
-
+    opacity: 0;
+  }
+  
+  10% {
+    opacity: 1;
+  }
+  
+  90% {
+    opacity: 1;
+  }
+  
+  100% {
+    background-position: top;
+    opacity: 0;
+  } 
+}
 
 
   .each-slide-effect > div {
@@ -102,17 +92,7 @@ export const GlobalStyle = createGlobalStyle`
   height: 500px;
 }
 
-.img1{
-  background-image: url('./1.jpg');
-}
 
-.img2{
-  background-image: url('./1.jpg');
-}
-
-.img3{
-  background-image: url('./1.jpg');
-}
 .each-slide-effect span {
   padding: 20px;
   font-size: 20px;
