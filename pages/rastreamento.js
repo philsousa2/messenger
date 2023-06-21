@@ -3,7 +3,7 @@ import { Container } from "../styles/pages/rastreamento";
 
 
 
-function Rastreamento() {
+function Rastreamento({rastreamento1}) {
   const [formulario, setFormulario] = useState({
     rastreamento: ""
    })
@@ -23,10 +23,13 @@ function Rastreamento() {
       },
       body: JSON.stringify({formulario})
     })
-    const result = await response.json();
-  
-    console.log(result);
-  
+    const data = await response.json();
+    console.log(data);
+    return {
+      props: {
+        rastreamento1: data.items,
+      },
+    };
     
   }
   
@@ -41,7 +44,16 @@ function Rastreamento() {
     <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
-   
+    <div >
+                <ul className={styles.cards_container}>
+                {rastreamento1.map((rastreio) =>(
+                 <li key={rastreio.id} className={rastreio.data}>
+                 </li>
+                 ))}
+                </ul>
+        
+            
+            </div>   
   
     </Container>
   )
