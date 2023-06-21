@@ -4,19 +4,15 @@ import { Container } from "../styles/pages/rastreamento";
 
 
 function Rastreamento() {
-  const [dados, setDados] = useState(null);
   const [formulario, setFormulario] = useState({
     rastreamento: ""
    })
 
- 
 
   const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value})
 
   const enviarRastreamento = async e => {
     e.preventDefault();
-
-    const banana= "bananaa"
 
   {
     
@@ -28,15 +24,16 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-    setDados(json);
+  
     console.log(result);
-    console.log(dados);
+  
     
   }
   
   }
 
   return (
+    
     <Container>
     <form className='formulario' onSubmit={enviarRastreamento}>
         <h1>Rastreamento</h1>
@@ -44,7 +41,11 @@ function Rastreamento() {
     <input type="text" className="input" name="rastreamento" placeholder="Minuta/ Nota Fiscal/ Pedido/ CT-e" onChange={valorInput} required />
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
-
+    <div>
+      {result.map((elemento, index) => (
+        <p key={index}>{elemento}</p>
+      ))}
+    </div>
   
     </Container>
   )
