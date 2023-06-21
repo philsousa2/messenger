@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Container } from "../styles/pages/rastreamento";
+import { log } from 'console';
 
 
-function Rastreamento() {
+function Rastreamento({rastreamentoMEssenger}) {
 
   const [formulario, setFormulario] = useState({
     rastreamento: ""
@@ -26,7 +27,8 @@ function Rastreamento() {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-   console.log(result);
+   console.log("batata");
+   console.log(rastreamentoMEssenger);
   }
 
   }
