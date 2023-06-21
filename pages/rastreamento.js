@@ -27,8 +27,8 @@ function Rastreamento({rastreamentoMEssenger}) {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-   console.log("batata2s");
-   console.log(rastreamentoMEssenger);
+   console.log(result);
+   console.log(rastreamentoMEssenger.data);
   }
 
   }
