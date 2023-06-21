@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  margin: auto;
   width: 100%;
   height: 65px;
   display: flex;
@@ -15,7 +16,7 @@ export const Container = styled.div`
   }
 
   > section {
-    margin: -20px 40px 0 40px;
+    margin: -20px 52px 0 40px;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -24,7 +25,7 @@ export const Container = styled.div`
     }
    
     > nav {
-      margin-left: 70px;
+      margin-left: 68px;
       display: flex;
       gap: 1rem;
       z-index: 2;
