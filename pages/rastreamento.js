@@ -45,16 +45,6 @@ function Rastreamento() {
     <button  type="submit" className="btn"> Buscar </button>   
     </form>
 
-    <div>
-      {dados ? (
-        <div>
-          <p>Propriedade 1: {dados[0]}</p>
-          <p>Propriedade 2: {dados.documento}</p>
-        </div>
-      ) : (
-        <p>Carregando...</p>
-      )}
-    </div>
   
     </Container>
   )
