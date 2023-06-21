@@ -28,7 +28,6 @@ function Rastreamento({rastreamentoMEssenger}) {
     })
     const result = await response.json();
    console.log(result);
-   console.log(rastreamentoMEssenger.data);
   }
 
   }
