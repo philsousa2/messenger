@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { Container } from "../styles/pages/rastreamento";
-import { log } from 'console';
 
 
-function Rastreamento({rastreamentoMEssenger}) {
+
+function Rastreamento() {
 
   const [formulario, setFormulario] = useState({
     rastreamento: ""
@@ -16,7 +16,7 @@ function Rastreamento({rastreamentoMEssenger}) {
   const enviarRastreamento = async e => {
     e.preventDefault();
 
-    
+    const banana= "bananaa"
 
   {
     const response = await fetch("/rastreamentoMessenger/", {
@@ -27,7 +27,7 @@ function Rastreamento({rastreamentoMEssenger}) {
       body: JSON.stringify({formulario})
     })
     const result = await response.json();
-   console.log(result);
+   console.log(banana);
   }
 
   }
