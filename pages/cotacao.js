@@ -82,7 +82,7 @@ function Cotacao() {
 
         <h3>Dados do solicitante</h3>
         <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required />
-        <input type="text" className="input" name="numeroConta" placeholder="CNPJ/CPF Conta Pagadora" onChange={valorInput} required />
+        <input type="text" className="input" name="numeroConta" placeholder="CNPJ/CPF ou Conta Pagadora" onChange={valorInput} required />
         <input type="tel" className="input" name="telefone" placeholder="Telefone" onChange={valorInput} required />
         <input type="email" className="input" name="email" placeholder="Email" onChange={valorInput} required />
 
