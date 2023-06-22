@@ -1,131 +1,118 @@
-import React, { useEffect } from 'react';
-import { Zoom } from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css';
+import React, { useState, useEffect } from 'react';
 import { GoCheck } from "react-icons/go";
-import { useState } from 'react';
-    
 
-    const Banner = () => {
-        const [close, setClose] = useState(false)
-        
-        useEffect(() => {
-            const e = document.getElementById("cont");
-            e.style.animation = "none";
-            e.style.opacity = 0;
-            setClose(false);
-            
-            setTimeout(function() {
-             e.style.opacity = 1;
-               e.style.animation = "";
-            }, 200);
-        
-          }, [close])
+const Banner = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [intervalId, setIntervalId] = useState(null);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 9000); // Tempo de 9 segundos
 
-        return (
-          <div className="slide-container">
-            <Zoom>
-                <div className="each-slide-effect">
-                    <div className="img1" > 
-                  
-                        <h1 className="titulo">Atendimento Transparente e funcional</h1>
-                        <div className="info">
-                            <div className="infotxt">
-                                <GoCheck   className="icon"/>
-                                <h2>Informações claras e diretas</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Flexibilidade no atendimento</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Agilidade nos procedimentos</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Atendimento pessoal e simples</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="each-slide-effect">
-                    <div className="img2">
-       
-                    <h1 className="titulo"> Importações e exportações simplificadas </h1>
-                        <div className="info">
-                     
-                            <div className="infotxt" >
-                                <GoCheck   className="icon" />
-                                <h2>Importações na modalidade courier</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Exportações mais rápidas e práticas</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Rede presente em mais de 200 países</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Operações no aeroportos GIC e GRU</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="each-slide-effect" >
-                    <div className="img3">
-                  
-                    <h1 className="titulo" >Soluções logísticas</h1>
-                        <div className="info">
-                            <div className="infotxt">
-                                <GoCheck   className="icon"/>
-                                <h2>Envios sem preocupações</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Facilidade na solicitação de serviços</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Formato prático, simples e rápido</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Solicitações fáceis de cotação e serviços</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="each-slide-effect">
-                    <div className="img4">
-                    <h1 className="titulo" >Entregas rápidas e seguras</h1>
-                        <div className="info">
-                            <div className="infotxt">
-                                <GoCheck   className="icon"/>
-                                <h2>Rastreamento 100% digital</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Importações</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Exportações</h2>
-                            </div>
-                            <div className="infotxt">
-                                <GoCheck  className="icon"/>
-                                <h2>Coletas e entregas em todo Brasil</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Zoom>
-            </div>
-        );
+    setIntervalId(interval);
+
+    return () => {
+      clearInterval(interval);
     };
-    
-export default Banner;
+  }, []);
 
-   
+  const slides = [
+    {
+      background: './1.jpg',
+      title: 'Atendimento Transparente e funcional',
+      content1: 'Informações claras e diretas',
+      content2:'Flexibilidade no atendimento',
+      content3: 'Agilidade nos procedimentos',
+      content4: 'Atendimento pessoal e simples',
+    },
+    {
+      background: './2.jpg',
+      title: 'Importações e exportações simplificadas',
+      content1: 'Importações na modalidade courier',
+      content2:'Exportações mais rápidas e práticas',
+      content3: 'Rede presente em mais de 200 países',
+      content4: 'Operações no aeroportos GIC e GRU',
+    },
+    {
+      background: './3.jpg',
+      title: 'Soluções logísticas',
+      content1: 'Envios sem preocupações',
+      content2:'Facilidade na solicitação de serviços',
+      content3: 'Formato prático, simples e rápido',
+      content4: 'Solicitações fáceis de cotação e serviços',
+    },
+    {
+      background: './4.jpg',
+      title: 'Entregas rápidas e seguras',
+      content1: 'Rastreamento 100% digital',
+      content2:'Importações',
+      content3: 'Exportações',
+      content4: 'Coletas e entregas em todo Brasil',
+    },
+  ];
+
+  const goToSlide = (index) => {
+    setActiveSlide(index);
+    resetTimer();
+  };
+
+  const prevSlide = () => {
+    setActiveSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+    resetTimer();
+  };
+
+  const nextSlide = () => {
+    setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    resetTimer();
+  };
+
+  const resetTimer = () => {
+    clearInterval(intervalId);
+    const interval = setInterval(() => {
+      setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 9000); // Tempo de 9 segundos
+    setIntervalId(interval);
+  };
+
+  return (
+    <div className="banner">
+      <div className="slides-container">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slide ${index === activeSlide ? 'active' : ''}`}
+            style={{
+              backgroundImage: `url(${slide.background})`,
+              animationDuration: '5s',
+            }}
+          >
+            <div className="slide-content">
+                <div className='infoContainerBanner'>
+              <h2 className='tituloBanner'>{slide.title}</h2>
+              <div className='infoBanner'>
+              <h2><GoCheck  />{slide.content1}</h2>
+              <h2><GoCheck  />{slide.content2}</h2>
+              <h2><GoCheck  />{slide.content3}</h2>
+              <h2><GoCheck  />{slide.content4}</h2>
+            </div>
+        
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="controls">
+        <button className="prev-button" onClick={prevSlide}>
+          &lt;
+        </button>
+        <button className="next-button" onClick={nextSlide}>
+          &gt;
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Banner;
