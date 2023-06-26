@@ -75,9 +75,7 @@ function Rastreamento() {
               {dados.map(item => (
                 <div className="itensInfo" key={item.id}>
                   <p><b>Data/Hora:</b> {item.data} <br/>
-                  <b>Status:</b> {item.descricao}<br/>
-                  <b>Recebido por:</b> {item.entrega_nome}<br/>
-                  <b>Grau:</b> {item.entrega_grau}</p>
+                  <b>Status:</b> {item.descricao}</p>
                 </div>
               ))}
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
