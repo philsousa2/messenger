@@ -27,15 +27,8 @@ function Contato() {
       });
 
       if (response.ok) {
-        setFormulario({
-          nome: '',
-          telefone: '',
-          email: '',
-          assunto: '',
-          mensagem: ''
-        });
-
         alert('Contato enviado com sucesso!');
+        window.location.reload()
       } else {
         throw new Error('Ocorreu um erro ao enviar o contato.');
       }
