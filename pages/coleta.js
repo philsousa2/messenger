@@ -1,10 +1,5 @@
 import React, { useState } from 'react'
 import { Container } from "../styles/pages/coleta";
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-
-
 
 function Coleta() {
 
