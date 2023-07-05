@@ -24,16 +24,12 @@ function Conta() {
     documento: ""
   })
 
-  const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value })
+  const valorInput = (e) => setFormulario({ ...formulario, [e.target.name]: e.target.value })
 
   const enviarConta = async e => {
     e.preventDefault();
-    console.log(formulario.cnpj, formulario.razaoSocial, formulario.inscricaoEstadual, formulario.cnae,
-      formulario.nome, formulario.email, formulario.telefone, formulario.emailFinanceiro,
-      formulario.nomeFinanceiro, formulario.cep, formulario.logradouro, formulario.numero,
-      formulario.complemento, formulario.bairro, formulario.municipio, formulario.uf, formulario.pais, formulario.documento)
-
-    {
+   
+    try {
       const response = await fetch("/contaMessenger/", {
         method: 'POST',
         headers: {
@@ -41,11 +37,18 @@ function Conta() {
         },
         body: JSON.stringify({ formulario })
       })
-      const result = await response.json();
-      console.log(result);
+      if (response.ok) {
+        alert('A solicitação de cadastro foi feita com sucesso! Seu cadastro foi enviado e está sendo processado. Agradecemos por escolher nosso serviço. Em breve, você receberá um e-mail de confirmação com mais informações.');
+        window.location.reload()
+        
+      } else {
+        throw new Error('Ocorreu um erro ao solicitar o Cadastro');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Ocorreu um erro na abertura de conta. Por favor, tente novamente.');
     }
-
-  }
+  };
 
   return (
     <Container>
