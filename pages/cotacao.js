@@ -59,47 +59,9 @@ function Cotacao() {
         body: JSON.stringify({ formulario })
       });
       if (response.ok) {
-        setFormulario({
-          nome: '',
-          numeroConta: '',
-          telefone: '',
-          email: '',
-
-          embalagem: '',
-          peso: '',
-          altura: '',
-          largura: '',
-          profundidade: '',
-          notaFiscal: '',
-          quantidade: '',
-          valor: '',
-          conteudo: '',
-
-          cepRemetente: '',
-          endereco: '',
-          complemento: '',
-          cidade: '',
-          estado: '',
-          pais: '',
-          remetente: '',
-
-          cepDestinatario: '',
-          enderecoDestinatario: '',
-          complementoDestinatario: '',
-          cidadeDestinatario: '',
-          estadoDestinatario: '',
-          paisDestinatario: '',
-          destinatario: '',
-
-          hora1:'',
-          hora2: '',
-
-          dataEntrega: '',
-          horaEntrega1: '',
-          horaEntrega2: '',
-          obs: ''
-        });
         alert('Contação enviada com sucesso!');
+        window.location.reload()
+        
       } else {
         throw new Error('Ocorreu um erro ao solicitar a cotação.');
       }
