@@ -61,48 +61,46 @@ function Cotacao() {
       });
       if (response.ok) {
         setFormulario({
-        
-          nome: "",
-          numeroConta: "",
-          telefone: "",
-          email: "",
+          nome: '',
+          numeroConta: '',
+          telefone: '',
+          email: '',
 
-          embalagem: "",
-          peso: "",
-          altura: "",
-          largura: "",
-          profundidade: "",
-          notaFiscal: "",
-          quantidade: "",
-          valor: "",
-          conteudo: "",
+          embalagem: '',
+          peso: '',
+          altura: '',
+          largura: '',
+          profundidade: '',
+          notaFiscal: '',
+          quantidade: '',
+          valor: '',
+          conteudo: '',
 
-          cepRemetente: "",
-          endereco: "",
-          complemento: "",
-          cidade: "",
-          estado: "",
-          pais: "",
-          remetente: "",
+          cepRemetente: '',
+          endereco: '',
+          complemento: '',
+          cidade: '',
+          estado: '',
+          pais: '',
+          remetente: '',
 
-          cepDestinatario: "",
-          enderecoDestinatario: "",
-          complementoDestinatario: "",
-          cidadeDestinatario: "",
-          estacoDestinatario: "",
-          paisDestinatario: "",
-          destinatario: "",
+          cepDestinatario: '',
+          enderecoDestinatario: '',
+          complementoDestinatario: '',
+          cidadeDestinatario: '',
+          estacoDestinatario: '',
+          paisDestinatario: '',
+          destinatario: '',
 
-          hora1: "",
-          hora2: "",
+          hora1:'',
+          hora2: '',
 
-          dataEntrega: "",
-          horaEntrega1: "",
-          horaEntrega2: "",
-          obs: ""
+          dataEntrega: '',
+          horaEntrega1: '',
+          horaEntrega2: '',
+          obs: ''
         });
-
-        alert('Contação enviadA com sucesso!');
+        alert('Contação enviada com sucesso!');
       } else {
         throw new Error('Ocorreu um erro ao solicitar a cotação.');
       }
