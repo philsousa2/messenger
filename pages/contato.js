@@ -112,6 +112,7 @@ function Contato() {
               placeholder="Mensagem"
               value={formulario.mensagem}
               onChange={valorInput}
+              cols="30" rows="10"
               required
             ></textarea>
 
