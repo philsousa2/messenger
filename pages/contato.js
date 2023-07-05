@@ -16,14 +16,7 @@ function Contato() {
 
   const enviarContato = async (e) => {
     e.preventDefault();
-    console.log(
-      formulario.nome,
-      formulario.telefone,
-      formulario.email,
-      formulario.assunto,
-      formulario.mensagem
-    );
-
+   
     try {
       const response = await fetch('/contatoMessenger/', {
         method: 'POST',

@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import { Container } from "../styles/pages/cotacao";
 import TextField from '@mui/material/TextField';
 
 function Cotacao() {
+
   const [formulario, setFormulario] = useState({
     nome: "",
     numeroConta: "",
     telefone: "",
     email: "",
+
     embalagem: "",
     peso: "",
     altura: "",
@@ -17,6 +19,7 @@ function Cotacao() {
     quantidade: "",
     valor: "",
     conteudo: "",
+
     cepRemetente: "",
     endereco: "",
     complemento: "",
@@ -24,34 +27,29 @@ function Cotacao() {
     estado: "",
     pais: "",
     remetente: "",
+
     cepDestinatario: "",
     enderecoDestinatario: "",
     complementoDestinatario: "",
     cidadeDestinatario: "",
-    estadoDestinatario: "",
+    estacoDestinatario: "",
     paisDestinatario: "",
     destinatario: "",
+
     hora1: "",
     hora2: "",
+
     dataEntrega: "",
     horaEntrega1: "",
     horaEntrega2: "",
     obs: ""
+
   });
 
-  const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value });
+  const valorInput = (e) => setFormulario({ ...formulario, [e.target.name]: e.target.value })
 
   const enviarCotacao = async e => {
     e.preventDefault();
-    console.log(
-      formulario.nome, formulario.numeroConta, formulario.telefone, formulario.email,
-      formulario.embalagem, formulario.peso, formulario.altura, formulario.largura, formulario.profundidade,
-      formulario.notaFiscal, formulario.quantidade, formulario.valor, formulario.conteudo, formulario.cepRemetente,
-      formulario.endereco, formulario.complemento, formulario.cidade, formulario.pais, formulario.remetente,
-      formulario.cepDestinatario, formulario.enderecoDestinatario, formulario.complementoDestinatario, formulario.cidadeDestinatario, formulario.estadoDestinatario,
-      formulario.paisDestinatario, formulario.destinatario, formulario.hora1, formulario.hora2, formulario.dataEntrega,
-      formulario.horaEntrega1, formulario.horaEntrega2, formulario.obs
-    );
 
     try {
       const response = await fetch("/cotacaoMessenger/", {
@@ -61,54 +59,58 @@ function Cotacao() {
         },
         body: JSON.stringify({ formulario })
       });
-      const result = await response.json();
-      console.log(result);
+      if (response.ok) {
+        setFormulario({
+        
+          nome: "",
+          numeroConta: "",
+          telefone: "",
+          email: "",
 
-      // Limpar os campos do formulário
-      setFormulario({
-        nome: "",
-        numeroConta: "",
-        telefone: "",
-        email: "",
-        embalagem: "",
-        peso: "",
-        altura: "",
-        largura: "",
-        profundidade: "",
-        notaFiscal: "",
-        quantidade: "",
-        valor: "",
-        conteudo: "",
-        cepRemetente: "",
-        endereco: "",
-        complemento: "",
-        cidade: "",
-        estado: "",
-        pais: "",
-        remetente: "",
-        cepDestinatario: "",
-        enderecoDestinatario: "",
-        complementoDestinatario: "",
-        cidadeDestinatario: "",
-        estadoDestinatario: "",
-        paisDestinatario: "",
-        destinatario: "",
-        hora1: "",
-        hora2: "",
-        dataEntrega: "",
-        horaEntrega1: "",
-        horaEntrega2: "",
-        obs: ""
-      });
+          embalagem: "",
+          peso: "",
+          altura: "",
+          largura: "",
+          profundidade: "",
+          notaFiscal: "",
+          quantidade: "",
+          valor: "",
+          conteudo: "",
 
-      // Exibir alerta de envio com sucesso
-      alert("Cotação enviada com sucesso!");
+          cepRemetente: "",
+          endereco: "",
+          complemento: "",
+          cidade: "",
+          estado: "",
+          pais: "",
+          remetente: "",
 
+          cepDestinatario: "",
+          enderecoDestinatario: "",
+          complementoDestinatario: "",
+          cidadeDestinatario: "",
+          estacoDestinatario: "",
+          paisDestinatario: "",
+          destinatario: "",
+
+          hora1: "",
+          hora2: "",
+
+          dataEntrega: "",
+          horaEntrega1: "",
+          horaEntrega2: "",
+          obs: ""
+        });
+
+        alert('Contação enviadA com sucesso!');
+      } else {
+        throw new Error('Ocorreu um erro ao solicitar a cotação.');
+      }
     } catch (error) {
-      console.error("Erro ao enviar a cotação:", error);
+      console.error(error);
+      alert('Ocorreu um erro ao solicitar a cotação. Por favor, tente novamente.');
     }
   };
-
 
   return (
     <Container>
