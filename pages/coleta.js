@@ -31,17 +31,12 @@ function Coleta() {
 
   })
 
-  const valorInput = e => setFormulario({ ...formulario, [e.target.name]: e.target.value })
+  const valorInput = (e) => setFormulario({ ...formulario, [e.target.name]: e.target.value })
 
   const enviarColeta = async e => {
     e.preventDefault();
-    console.log(formulario.nome, formulario.cnpjpagador, formulario.telefone, formulario.email,
-      formulario.remessa, formulario.peso, formulario.altura, formulario.largura, formulario.profundidade,
-      formulario.notaFiscal, formulario.quantidade, formulario.valor, formulario.conteudo,
-      formulario.endereco, formulario.data, formulario.hora1, formulario.hora2,
-      formulario.destino, formulario.obs)
-
-    {
+    
+    try {
       const response = await fetch("/coletaMessenger/", {
         method: 'POST',
         headers: {
@@ -49,11 +44,19 @@ function Coleta() {
         },
         body: JSON.stringify({ formulario })
       })
-      const result = await response.json();
-      console.log(result);
+      
+      if (response.ok) {
+        alert('A solicitação de coleta foi feita com sucesso!');
+        window.location.reload()
+        
+      } else {
+        throw new Error('Ocorreu um erro ao solicitar sua coleta');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Ocorreu um erro na solicitação de coleta. Por favor, tente novamente.');
     }
-
-  }
+  };
 
   return (
     <Container>
