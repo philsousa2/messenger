@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Container } from "../styles/pages/cotacao";
-import TextField from '@mui/material/TextField';
 
 function Cotacao() {
 
@@ -88,7 +87,7 @@ function Cotacao() {
           enderecoDestinatario: '',
           complementoDestinatario: '',
           cidadeDestinatario: '',
-          estacoDestinatario: '',
+          estadoDestinatario: '',
           paisDestinatario: '',
           destinatario: '',
 
