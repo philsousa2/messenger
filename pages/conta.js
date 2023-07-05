@@ -38,7 +38,7 @@ function Conta() {
         body: JSON.stringify({ formulario })
       })
       if (response.ok) {
-        alert('A solicitação de cadastro foi feita com sucesso! Seu cadastro foi enviado e está sendo processado. Agradecemos por escolher nosso serviço. Em breve, você receberá um e-mail de confirmação com mais informações.');
+        alert('A solicitação de cadastro foi feita com sucesso! Nossa Central de Serviços retornará o contato o mais breve possivel, em horário útil.');
         window.location.reload()
         
       } else {
