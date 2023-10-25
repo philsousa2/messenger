@@ -28,7 +28,7 @@ function Conta() {
 
   const enviarConta = async e => {
     e.preventDefault();
-   
+
     try {
       const response = await fetch("/contaMessenger/", {
         method: 'POST',
@@ -40,7 +40,7 @@ function Conta() {
       if (response.ok) {
         alert('A solicitação de cadastro foi feita com sucesso! Nossa Central de Serviços retornará o contato o mais breve possivel, em horário útil.');
         window.location.reload()
-        
+
       } else {
         throw new Error('Ocorreu um erro ao solicitar o Cadastro');
       }
@@ -53,11 +53,8 @@ function Conta() {
   return (
     <Container>
       <h1>Abra sua conta</h1>
-      <p>A conta Messenger permite a utilização dos serviços com pagamento faturado. Preencha aqui as
-        informações cadastrais da sua empresa, para aprovação do crédito. Anexar contrato social, Inscrição
-        Estadual ou Municipal conforme o caso. Nossa Central de Serviços retornará o contato o mais breve
-        possivel, em horário útil. <br /><span> A Messenger não fatura despesas referentes às taxas e tributos gerados na
-          importação ou exportação de remessa expressa.</span></p>
+      <p>A conta Messenger permite a utilização dos serviços com pagamento faturado. Preencha aqui as informações cadastrais da sua empresa, para aprovação do crédito. Anexar contrato social, Inscrição Estadual ou Municipal conforme o caso. Nossa Central de Serviços retornará o contato o mais breve possivel, em horário útil.<br />
+        <span> A Messenger não fatura despesas referentes às taxas e tributos gerados na importação ou exportação de remessa expressa.</span></p>
       <h2>Todos os campos são obrigatórios</h2>
       <form onSubmit={enviarConta} className="formulario">
 
