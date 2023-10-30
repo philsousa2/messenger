@@ -69,7 +69,7 @@ function Ewb() {
         <h3>Dados do Remetente</h3>
         <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required />
         <input type="text" className="input" id="cnpjpagador" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
-        <input type="text" className="input" id="razaoSocial" placeholder="Razão Socia" onChange={valorInput} required />
+        <input type="text" className="input" id="razaoSocial" placeholder="Razão Social" onChange={valorInput} required />
         <input type="text" className="input" id="cnpj" placeholder="CNPJ ou CPF do Remetente" onChange={valorInput} required />
         <br />
         <input type="email" className="input" name="email" placeholder="Email do Responsável" onChange={valorInput} required />
