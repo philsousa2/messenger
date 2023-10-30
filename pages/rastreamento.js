@@ -6,6 +6,8 @@ function Rastreamento() {
     rastreamento: ""
   });
 
+  const ultimaAtualizacao = dados.filter(item => item.descricao === "Entregue")[0];
+
   const [dados, setDados] = useState([]);
   const [dadosDomumento, setDadosdocumento] = useState();
   const [mostrarFormulario, setMostrarFormulario] = useState(true);
@@ -21,6 +23,8 @@ function Rastreamento() {
       e.preventDefault();
     }
   };
+
+  
 
   const enviarRastreamento = async e => {
     e.preventDefault();
@@ -77,8 +81,11 @@ function Rastreamento() {
                 <div className="itensInfo" key={item.id}>
                   <p><b>Data/Hora:</b> {item.data} <br/>
                   <b>Status:</b> {item.descricao}<br/>
-                  <b>Entregue para:</b> {item.entrega_nome}<br/>
-                  <b>Grau:</b> {item.entrega_grau}</p>
+                  {ultimaAtualizacao === item &&
+                    <p><b>Entregue para:</b> {item.entrega_nome}<br/>
+                      <b>Grau:</b> {item.entrega_grau}</p>
+
+                    }</p>
                 </div>
               ))}
               <button className="btn" onClick={novoRastreamento}>Realizar novo rastreamento</button>
