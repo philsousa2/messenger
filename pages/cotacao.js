@@ -89,9 +89,9 @@ function Cotacao() {
         <h3>Dados da Carga</h3>
         <br />
         <select className="embalagem" name="embalagem" onChange={valorInput} required>
-          <option value="selected" hidden>Tipo de Embalagem</option>
-          <option value="CAIXA">CAIXA</option>
-          <option value="PAC">PAC</option>
+          <option value="selected" hidden>Tipo da Carga</option>
+          <option value="MERCADORIA">Mercadoria</option>
+          <option value="DOC">Documento</option>
         </select>
         <div className="dimencao">
           <label>Peso:</label>
@@ -114,7 +114,7 @@ function Cotacao() {
         <h3>Dados do Transporte</h3>
         <h4>ORIGEM:</h4>
         <input type="text" className="input3" name="cepRemetente" placeholder="CEP" onChange={valorInput} required />
-        <input type="text" className="input" name="endereco" placeholder="Endereço de Origem" onChange={valorInput} required />
+        <input type="text" className="input" name="endereco" placeholder="Endereço" onChange={valorInput} required />
         <input type="text" className="input3" name="complemento" placeholder="Complemento" onChange={valorInput} required />
         <input type="text" className="input3" name="cidade" placeholder="Cidade" onChange={valorInput} required />
         <input type="text" className="input3" name="estado" placeholder="Estado" onChange={valorInput} required />
@@ -123,26 +123,28 @@ function Cotacao() {
 
         <h4>DESTINO:</h4>
         <input type="text" className="input3" name="cepDestinatario" placeholder="CEP" onChange={valorInput} required />
-        <input type="text" className="input" name="enderecoDestinatario" placeholder="Endereço de Destino" onChange={valorInput} required />
+        <input type="text" className="input" name="enderecoDestinatario" placeholder="Endereço" onChange={valorInput} required />
         <input type="text" className="input3" name="complementoDestinatario" placeholder="Complemento" onChange={valorInput} required />
         <input type="text" className="input3" name="cidadeDestinatario" placeholder="Cidade" onChange={valorInput} required />
         <input type="text" className="input3" name="estadoDestinatario" placeholder="Estado" onChange={valorInput} required />
         <input type="text" className="input3" name="paisDestinatario" placeholder="País" onChange={valorInput} required />
         <input type="text" className="input" name="destinatario" placeholder="CPF/CNPJ DESTINATÁRIO" onChange={valorInput} required />
 
-        <h4>Horário da coleta</h4>
+        <h4>COLETA</h4>
         <span className="txt">de</span>
-        <input type="text" className="inputh" name="hora1" placeholder="00:00" onChange={valorInput} required />
+        <input type="text" className="input3" name="dataColeta" placeholder="Data" onChange={valorInput} required />
+        <span className="txt">de</span>
+        <input type="text" className="inputh" name="hora1" placeholder="Hora Inicial" onChange={valorInput} required />
         <span className="txt">até</span>
-        <input type="text" className="inputh" name="hora2" placeholder="00:00" onChange={valorInput} required />
+        <input type="text" className="inputh" name="hora2" placeholder="Hora Final" onChange={valorInput} required />
         <br />
 
         <h4>ENTREGA:</h4>
-        <input type="text" className="input3" name="dataEntrega" placeholder="Data da Entrega 'DD/MM/YYYY'" onChange={valorInput} required />
+        <input type="text" className="input3" name="dataEntrega" placeholder="Data" onChange={valorInput} required />
         <span className="txt">de</span>
-        <input type="text" className="inputh" name="horaEntrega1" placeholder="00:00" onChange={valorInput} required />
+        <input type="text" className="inputh" name="horaEntrega1" placeholder="Hora Inicial" onChange={valorInput} required />
         <span className="txt">até</span>
-        <input type="text" className="inputh" name="horaEntrega2" placeholder="00:00" onChange={valorInput} required />
+        <input type="text" className="inputh" name="horaEntrega2" placeholder="Hora Final" onChange={valorInput} required />
 
         <input type="text" className="input" name="obs" placeholder="Observações sobre a carga/manuseio/transporte" onChange={valorInput} required />
         <br />
