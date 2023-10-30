@@ -73,7 +73,7 @@ function Rastreamento() {
           {dados && dados.length > 0 ? (
             <div className="Info">
               <h1>{dadosDomumento}</h1>
-              {dados.map(item => (
+              {dados.map((item, index) => (
                 <div className="itensInfo" key={item.id}>
                   <p><b>Data/Hora:</b> {item.data} <br/>
                   <b>Status:</b> {item.descricao}<br/>
