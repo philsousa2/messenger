@@ -56,9 +56,7 @@ function encomendaExpressa() {
                 <br/> <br/>
                 <p>No Brasil, a Messenger Express é responsável pelas operações
                 de empresas internacionais de courier e carga expressa como,
-                International Bonded Couriers – IBC, Inc., Overseas Courier
-                Service - OCS e Cacesa Express, além de integrar a rede Global
-                Distribution Alliance – GDA.
+                International Bonded Couriers – IBC, Inc., Overseas Courier Service - OCS e Cacesa Express, além de integrar a rede Global Distribution Alliance – GDA. Por OCS- Overseas Courier Service e Triton Logistics.
                 </p>
                 <br/>
                 <p>Opera globalmente através de uma estrutura com oito centros de

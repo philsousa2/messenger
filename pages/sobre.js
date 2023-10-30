@@ -17,7 +17,7 @@ function sobre() {
             <br/>
             <p>
             Atualmente, a Messenger é responsável pelas operações brasileiras de provedores internacionais
-            de serviços courier, linehaul e carga expressa, como IBC Inc., Linex, OCS, além de integrar a Global Distribution Alliance - GDA.
+            de serviços courier, linehaul e carga expressa, como International Bonded Couriers – IBC, Inc., Overseas Courier Service - OCS e Cacesa Express, além de integrar a rede Global Distribution Alliance – GDA. Por OCS- Overseas Courier Service e Triton Logistics. 
             </p>
             <br/>
             <p>
