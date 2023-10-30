@@ -23,9 +23,7 @@ function Rastreamento() {
       e.preventDefault();
     }
   };
-
   
-
   const enviarRastreamento = async e => {
     e.preventDefault();
 
