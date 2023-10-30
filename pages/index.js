@@ -84,7 +84,7 @@ export default function Home() {
   
         <div className="img">
           <a href="https://www.ocsmiddleeast.com/" target="_blank" rel="noreferrer">
-        <Image  src="/parceiro3.jpg" alt="parceiros" width={250} height={80} />
+        <Image  src="/parceiro3.jpg" alt="parceiros" width={220} height={80} />
         </a>
         </div>
 
