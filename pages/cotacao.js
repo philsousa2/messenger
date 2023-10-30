@@ -90,8 +90,8 @@ function Cotacao() {
         <br />
         <select className="embalagem" name="embalagem" onChange={valorInput} required>
           <option value="selected" hidden>Tipo da Carga</option>
-          <option value="MERCADORIA">Mercadoria</option>
-          <option value="DOC">Documento</option>
+          <option value="Mercadoria">Mercadoria</option>
+          <option value="Documento">Documento</option>
         </select>
         <div className="dimencao">
           <label>Peso:</label>

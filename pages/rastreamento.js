@@ -63,7 +63,8 @@ function Rastreamento() {
       {mostrarFormulario ? (
         <form className='formulario' onSubmit={enviarRastreamento}>
           <h1>Rastreamento</h1>
-          <p>As informações exibidas no sistema de rastreamento são relativas aos locais onde as atualizações são feitas, não implicando, portanto, registro dos locais por onde as cargas transitam. Para mais informações, consulte a Central de Serviços.</p>
+          <p>Para consultas basta colocar o número de rastreio (e-WB, MD, NFe, AWB ou outro) e pressionar buscar.
+          As informações exibidas no sistema de rastreamento são relativas aos locais onde as atualizações são feitas, não implicando, portanto, registro dos locais por onde as cargas transitam. Para mais informações, constate a Central de Serviços.</p>
           <input type="tel" className="input" name="rastreamento" placeholder="Informe o número do pedido ou da minuta." onChange={valorInput} onKeyPress={bloquearCaracteresNaoNumericos} required />
           <button type="submit" className="btn">Buscar</button>
         </form>

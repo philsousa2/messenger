@@ -64,7 +64,7 @@ function Coleta() {
         <h3>Dados do solicitante</h3>
 
         <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required />
-        <input type="text" className="input" name="cnpjpagador" id="cnpjpagador" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
+        <input type="text" className="input" name="cnpjpagador" id="cnpjpagador" placeholder="CNPJ conta pagadora" onChange={valorInput} required />
         <input type="email" className="input" name="email" placeholder="Digite Seu Email" onChange={valorInput} required />
         <input type="tel" className="input" name="telefone" placeholder="Telefone para Contato" onChange={valorInput} required />
         <br />
@@ -72,7 +72,7 @@ function Coleta() {
         <h3>Dados da Carga</h3>
         <br />
         <select className="opcao" name="remessa" onChange={valorInput} required>
-          <option value="DEFAULT" hidden >Tipo de Remessa</option>
+          <option value="DEFAULT" hidden >Tipo de Embalagem</option>
           <option value="Documento">Documento</option>
           <option value="Mercadoria">Mercadoria</option>
         </select>
@@ -94,7 +94,7 @@ function Coleta() {
         <br />
         <h3>Dados do Transporte</h3>
         <input type="text" className="input4" name="endereco" placeholder="Endereço de Origem" onChange={valorInput} required />
-        <input type="text" className="input3" name="data" placeholder="Data da Coleta 'DD/MM/YYYY'" onChange={valorInput} required />
+        <input type="text" className="input3" name="data" placeholder="Data da Coleta" onChange={valorInput} required />
         <h4>Horário da coleta</h4>
         <span className="txt">de</span>
         <input type="text" className="inputh" name="hora1" placeholder="00:00" onChange={valorInput} required />
