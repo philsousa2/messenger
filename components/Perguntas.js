@@ -140,7 +140,7 @@ export default function Perguntas() {
           <Typography>
           Bens usados ou recondicionados, bebidas alcoólicas (na importação), moeda corrente, créditos ao portador, 
           armas e munições, fumo, animais e vegetais silvestres, 
-          pedras preciosas e semipreciosas. A Messenger faz restrições ao transporte de outros materiais.Saiba mais
+          pedras preciosas e semipreciosas. A Messenger faz restrições ao transporte de outros materiais.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -151,8 +151,7 @@ export default function Perguntas() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          As atividades das empresas de remessa expressa, também denominadas couriers, são regulamentadas pela IN R FB 1073 / 
-          2010. Existe também uma associação das empresas operadoras de serviços courier chamada ABRAEC.Saiba mais
+          As atividades das empresas de remessa expressa, também denominadas couriers, são regulamentadas pela IN-RFB 1737/2017.
           </Typography>
         </AccordionDetails>
       </Accordion>

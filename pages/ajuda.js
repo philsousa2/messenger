@@ -70,14 +70,10 @@ export default function Ajuda() {
         <div className="links">
        <h1>Links Úteis</h1>
        <ul>
-        <li><a href="https://idg.receita.fazenda.gov.br/orientacao/aduaneira/encomendas-e-remessas/remessa-expressa/perguntas-e-respostas" target="_blank" rel="noreferrer"><h3>FAQ da Receita Federal sobre remessa expressa</h3></a></li>
-        <li><a href="http://www.agricultura.gov.br/comunicacao/noticias/2015/09/mapa-define-regras-de-fiscalizacao-de-embalagens-de-madeira" target="_blank" rel="noreferrer"><h3>Regras para importação e exportação de embalagens de madeira</h3></a></li>
-        <li><a href="http://www.receitalazenda.gov.br/" target="_blank" rel="noreferrer"><h3>Receita Federal Brasileira</h3></a></li>
-        <li><a href="http://portal.anvisa.gov.br/" target="_blank" rel="noreferrer"><h3>ANVISA - Agência Nacional de Vigilância Sanitária</h3></a></li>
-        <li><a href="http://sistemasweb.agricultura.gov.br/pages/SIGVIG.html" target="_blank" rel="noreferrer"><h3>VigiAgro</h3></a></li>
-        <li><a href="http://www.abraec.org.br/" target="_blank" rel="noreferrer"><h3>ABRAEC -AssociaçãoBrasileira das Empresas de Transporte Internacional Expresso deCargas</h3></a></li>
-        <li><a href="http://www.aduaneiras.com.br/?gclid=Cj0KEQjwl-e4BRCwqeWkv8TWqOoBEiQAMocbPyWEFCWhsc-iSpjxg4VAFMHH9R2sdBy3v-mKEyNiiAwaAq5q8P8HAQ" target="_blank" rel="noreferrer"><h3>Consulta e conversão de moedas</h3></a></li>
-        <li><a href="http://www.bcb.gov.br/" target="_blank" rel="noreferrer"><h3>Banco Central do Brasil</h3></a></li>
+        <li><a href="https://www.gov.br/receitafederal/pt-br/assuntos/aduana-e-comercio-exterior/manuais/remessas-postal-e-expressa" target="_blank" rel="noreferrer"><h3>FAQ da Receita Federal sobre remessa expressa</h3></a></li>
+        <li><a href="https://www.gov.br/anvisa/pt-br" target="_blank" rel="noreferrer"><h3>ANVISA - Agência Nacional de Vigilância Sanitária</h3></a></li>
+        <li><a href="http://www.abraec.org.br/" target="_blank" rel="noreferrer"><h3>ANVISA Importação Pessoa Física, CPF</h3></a></li>
+        <li><a href="https://www.bcb.gov.br/conversao" target="_blank" rel="noreferrer"><h3>Banco Central do Brasil</h3></a></li>
        </ul>
        </div>
       </TabPanel>
