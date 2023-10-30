@@ -60,13 +60,13 @@ export const GlobalStyle = createGlobalStyle`
 
 .slide.active {
   opacity: 0.5;
+  animation-name: fotomovimento;
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
 }
 
 @keyframes fotomovimento {
   0% {
-    background-position: bottom;
     opacity: 0.5;
   }
   20% {
@@ -76,7 +76,6 @@ export const GlobalStyle = createGlobalStyle`
     opacity: 1;
   }
   100% {
-    background-position: top;
     opacity: 1;
   }
 }
