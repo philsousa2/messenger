@@ -67,6 +67,7 @@ export const GlobalStyle = createGlobalStyle`
 
 @keyframes fotomovimento {
   0% {
+    //background-position: bottom;
     opacity: 0.5;
   }
   20% {
@@ -76,6 +77,7 @@ export const GlobalStyle = createGlobalStyle`
     opacity: 1;
   }
   100% {
+    //background-position: top;
     opacity: 1;
   }
 }
