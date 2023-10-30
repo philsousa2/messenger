@@ -77,7 +77,7 @@ function Rastreamento() {
                 <div className="itensInfo" key={item.id}>
                   <p><b>Data/Hora:</b> {item.data} <br/>
                   <b>Status:</b> {item.descricao}<br/>
-                  {index === dados.length +1 &&(
+                  {index ===  0 &&(
                   <>
                   <b>Entregue para:</b> {item.entrega_nome}<br/>
                   <b>Grau:</b> {item.entrega_grau}
