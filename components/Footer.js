@@ -5,12 +5,16 @@ import { Container } from "../styles/footer";
 function Footer() {
   return (
     <Container>
-      <Image  src="/logobranca.png" alt="Logo" width={250} height={80} margin-left={50} />
+      <div>  
+        <Image  src="/logobranca.png" alt="Logo" width={250} height={80} margin-left={50} />
+      </div>
       
+      <div className="texto">
       <h3>Serviços de encomenda expressa nacional e internacional
-Exportação e importação pelo Regime de Tributação Simplificada</h3>
-<div className="linha"></div>
-<h4>© Copyright 2022 by Messenger Express | Desenvolvido por Phelipe Sousa e Bruno Tubio</h4>
+        Exportação e importação pelo Regime de Tributação Simplificada</h3>
+        <div className="linha"></div>
+        <h4>© Copyright 2022 by Messenger Express | Desenvolvido por Phelipe Sousa e Bruno Tubio</h4>
+      </div>
     </Container>
   )
 }

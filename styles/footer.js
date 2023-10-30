@@ -6,7 +6,8 @@ height: 250px;
 background: #00457A;
 display: flex;
 justify-content: center;
-flex-direction: column;
+flex-direction: row;
+flex-wrap: wrap;
 align-items: center;
 color: #FFF;
 text-align: center;
@@ -22,5 +23,9 @@ h4{
 width:60%;
 border: 1px solid #FFF;
 margin-top: 10px;
+}
+
+.texto{
+    width: 400px;
 }
 `
