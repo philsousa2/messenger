@@ -19,7 +19,7 @@ const Banner = () => {
 
   const slides = [
     {
-      background: './1.jpg',
+      background: './primeira.jpg',
       title: 'Atendimento Transparente e funcional',
       content1: 'Informações claras e diretas',
       content2:'Flexibilidade no atendimento',
@@ -27,7 +27,7 @@ const Banner = () => {
       content4: 'Atendimento pessoal e simples',
     },
     {
-      background: './2.jpg',
+      background: './1.jpg',
       title: 'Importações e exportações simplificadas',
       content1: 'Importações na modalidade courier',
       content2:'Exportações mais rápidas e práticas',
@@ -43,7 +43,7 @@ const Banner = () => {
       content4: 'Solicitações fáceis de cotação e serviços',
     },
     {
-      background: './4.jpg',
+      background: './ultima.jpg',
       title: 'Entregas rápidas e seguras',
       content1: 'Rastreamento 100% digital',
       content2:'Importações',
