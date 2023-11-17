@@ -16,7 +16,7 @@ export const Container = styled.div`
   }
 
   > section {
-    margin: -5px 80px 0 0px;
+    margin: -5px 52px 0 40px;
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -76,7 +76,7 @@ export const Container = styled.div`
   }
 
   .corte{
-width: 20%;
+width: 200px;
 height: 50px;
 background: #FFF;
 position: absolute;
@@ -84,7 +84,7 @@ z-index: 1;
 transform: skew(-40deg);
 }
 .corte2{
-width: 60%;
+width: 771px;
 height: 50px;
 background: #FFF;
 position: absolute ;
