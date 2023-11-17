@@ -20,27 +20,27 @@ font-size: 40px;
 }
 .Logo{
     position: absolute;
-    height: 100px;
+    height: 120px;
     width: 10%;
     background-color: #FFF;
     z-index: 1;
 }
 .LogoFinal{
     transform: skew(-40deg);
-    height: 100px;
+    height: 120px;
     width: 35%;
     background-color: #FFF;
     margin-left: -350px;
 }
 .img{
-    margin-left: 150px;
+    margin-left: 200px;
     margin-top: 20px;
     z-index: 2;
     cursor: pointer;
 }
 
 .img2{
-    margin-left: 150px;
+    margin-left: 200px;
     z-index: 2;
     display:none;
     cursor: pointer;
