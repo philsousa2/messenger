@@ -77,7 +77,7 @@ export const Container = styled.div`
 
   .corte{
 width: 200px;
-height: 85px;
+height: 50px;
 background: #FFF;
 position: absolute;
 z-index: 1;
