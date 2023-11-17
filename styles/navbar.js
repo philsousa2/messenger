@@ -76,7 +76,7 @@ export const Container = styled.div`
   }
 
   .corte{
-width: 200px;
+width: 20%;
 height: 50px;
 background: #FFF;
 position: absolute;
@@ -84,7 +84,7 @@ z-index: 1;
 transform: skew(-40deg);
 }
 .corte2{
-width: 771px;
+width: 50%;
 height: 50px;
 background: #FFF;
 position: absolute ;
