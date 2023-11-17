@@ -11,12 +11,12 @@ function Header() {
         <div className="Logo"></div>
         <Link href="/">
         <div className="img">
-        <Image  className='imgLogo' src="/logomarca.png" alt="Logo"  margin-left={50} />
+        <Image  src="/logomarca.png" alt="Logo" width={280} height={95} margin-left={50} />
         </div>
         </Link>
         <Link href="/">
         <div className="img2">
-        <Image priority className='imgLogo'  src="/logobranca.png" alt="Logo"  margin-left={50} />
+        <Image priority  src="/logobranca.png" alt="Logo" width={280} height={95} margin-left={50} />
         </div>
         </Link>
         
