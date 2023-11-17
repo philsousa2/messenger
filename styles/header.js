@@ -20,14 +20,14 @@ font-size: 40px;
 }
 .Logo{
     position: absolute;
-    height: 170px;
+    height: 150px;
     width: 10%;
     background-color: #FFF;
     z-index: 1;
 }
 .LogoFinal{
     transform: skew(-40deg);
-    height: 170px;
+    height: 150px;
     width: 35%;
     background-color: #FFF;
     margin-left: -350px;
