@@ -27,7 +27,7 @@ margin-top: 10px;
 
 .linha2{
    height:60%;
-   width: 10px;
+   width: 1px;
     border: 1px solid #FFF;
     margin-top: 10px;
     margin-left: 50px;
