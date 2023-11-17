@@ -59,7 +59,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 .slide.active {
-  opacity: 0.5;
+  opacity: 1;
+  position: absolute;
   animation-name: fotomovimento2;
   animation-duration: 6s;
   animation-timing-function: ease-in-out;
@@ -85,15 +86,19 @@ export const GlobalStyle = createGlobalStyle`
 @keyframes fotomovimento2 {
   0% {
     transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0; /* Invisível */
   }
   20% {
     transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1; /* Torna-se visível */
   }
   90% {
     transform: translateX(0); /* Permanece na posição inicial */
+    opacity: 1; /* Mantém-se visível */
   }
   100% {
     transform: translateX(-100%); /* Desliza para fora da tela à esquerda */
+    opacity: 0; /* Torna-se invisível */
   }
 }
 
