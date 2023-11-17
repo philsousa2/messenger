@@ -84,7 +84,7 @@ z-index: 1;
 transform: skew(-40deg);
 }
 .corte2{
-width: 80%;
+width: 60%;
 height: 50px;
 background: #FFF;
 position: absolute ;
