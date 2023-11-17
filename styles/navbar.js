@@ -16,7 +16,7 @@ export const Container = styled.div`
   }
 
   > section {
-    margin: -10px 120px 0 40px;
+    margin: -10px 52px 0 40px;
     display: flex;
     align-items: center;
     gap: 2rem;
