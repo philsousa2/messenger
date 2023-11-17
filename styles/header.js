@@ -28,22 +28,26 @@ font-size: 40px;
 .LogoFinal{
     transform: skew(-40deg);
     height: 150px;
-    width: 35%;
+    width: 15%;
     background-color: #FFF;
     margin-left: -350px;
 }
 .img{
-    margin-left: 200px;
+    margin-left: 400px;
     margin-top: 20px;
     z-index: 2;
     cursor: pointer;
 }
 
 .img2{
-    margin-left: 200px;
+    margin-left: 400px;
     z-index: 2;
     display:none;
     cursor: pointer;
+}
+
+.imgLogo{
+ width: 150px
 }
 .Contatos{
 width: 55%;
