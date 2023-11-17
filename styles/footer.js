@@ -20,10 +20,18 @@ h4{
 }
 
 .linha{
-width:60%;
+width:100%;
 border: 1px solid #FFF;
 margin-top: 10px;
 }
+
+.linha2{
+   height:60%
+    border: 1px solid #FFF;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px
+    }
 
 .texto{
     width: 400px;
