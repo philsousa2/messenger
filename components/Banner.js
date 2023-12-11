@@ -1,32 +1,21 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 're-carousel'
+import IndicatorDots from './indicator-dots'
+import Buttons from './buttons'
 
-class Banner extends Component {
-    render() {
-        return (
-            <Carousel>
-                <div>
-                    <img src="./primeira.jpg" />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src="./1.jpg" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="./3.jpg" />
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel>
-        );
-    }
-};
+const Banner = () => {
+  
+    return <Carousel loop auto widgets={[IndicatorDots, Buttons]}>
+      <div style={{backgroundColor: 'tomato', height: '100%'}}>Frame 1</div>
+      <div style={{backgroundColor: 'orange', height: '100%'}}>Frame 2</div>
+      <div style={{backgroundColor: 'orchid', height: '100%'}}>Frame 3</div>
+    </Carousel>
+  }
+ 
 
-ReactDOM.render(<Banner />, document.querySelector('.demo-carousel'));
-/** 
-  const slides = [
+export default Banner;
+
+/**
+ * const slides = [
     {
       background: './primeira.jpg',
       title: 'Atendimento Transparente e funcional',
@@ -60,4 +49,5 @@ ReactDOM.render(<Banner />, document.querySelector('.demo-carousel'));
       content4: 'Coletas e entregas em todo Brasil',
     },
   ];
-*/
+ * 
+ */
