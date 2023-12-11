@@ -25,9 +25,6 @@ class Banner extends Component {
 };
 
 ReactDOM.render(<Banner />, document.querySelector('.demo-carousel'));
-
-export default Banner;
-
 /** 
   const slides = [
     {
