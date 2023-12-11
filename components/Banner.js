@@ -1,23 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { GoCheck } from "react-icons/go";
+ //carousels/Bootstrap.js
+ import { useState } from "react";
+ import { items } from "../public/Items.json";
+ import { Carousel } from "react-bootstrap";
+ import "bootstrap/dist/css/bootstrap.min.css";
+ import styles from "../styles/Bootstrap.module.css";
+ export default function Banner() {
+   const { bootstrap } = items;
+   const [index, setIndex] = useState(0);
+   const handleSelect = (selectedIndex, e) => {
+     setIndex(selectedIndex);
+   };
+   return (
+     <Carousel activeIndex={index} onSelect={handleSelect}>
+       {bootstrap.map((item) => (
+         <Carousel.Item key={item.id} className={styles.itemP} interval={4000}>
+           <img src={item.imageUrl} alt="slides" />
+           <Carousel.Caption className={styles.caption}>
+             <h3>{item.title}</h3>
+             <p>{item.body}</p>
+             <button className="btn btn-danger">Visit Docs</button>
+           </Carousel.Caption>
+         </Carousel.Item>
+       ))}
+     </Carousel>
+   );
+ }
 
-const Banner = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 9000); // Tempo de 9 segundos
-
-    setIntervalId(interval);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  const slides = [
+/**
+ *   const slides = [
     {
       background: './primeira.jpg',
       title: 'Atendimento Transparente e funcional',
@@ -52,67 +63,4 @@ const Banner = () => {
     },
   ];
 
-  const goToSlide = (index) => {
-    setActiveSlide(index);
-    resetTimer();
-  };
-
-  const prevSlide = () => {
-    setActiveSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
-    resetTimer();
-  };
-
-  const nextSlide = () => {
-    setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    resetTimer();
-  };
-
-  const resetTimer = () => {
-    clearInterval(intervalId);
-    const interval = setInterval(() => {
-      setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 9000); // Tempo de 9 segundos
-    setIntervalId(interval);
-  };
-
-  return (
-    <div className="banner">
-      <div className="slides-container">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`slide ${index === activeSlide ? 'active' : ''}`}
-            style={{
-              backgroundImage: `url(${slide.background})`,
-              animationDuration: '5s',
-            }}
-          >
-            <div className="slide-content">
-                <div className='infoContainerBanner'>
-              <h2 className='tituloBanner'>{slide.title}</h2>
-              <div className='infoBanner'>
-              <h2><GoCheck  />{slide.content1}</h2>
-              <h2><GoCheck  />{slide.content2}</h2>
-              <h2><GoCheck  />{slide.content3}</h2>
-              <h2><GoCheck  />{slide.content4}</h2>
-            </div>
-        
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="controls">
-        <button className="prev-button" onClick={prevSlide}>
-          &lt;
-        </button>
-        <button className="next-button" onClick={nextSlide}>
-          &gt;
-        </button>
-      </div>
-    </div>
-  );
-};
-
-export default Banner;
+ */
