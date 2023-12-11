@@ -1,21 +1,23 @@
-import Carousel from 're-carousel'
-import IndicatorDots from './indicator-dots'
-import Buttons from './buttons'
+import React, { useState, useEffect } from 'react';
+import { GoCheck } from "react-icons/go";
 
 const Banner = () => {
-  
-    return <Carousel loop auto widgets={[IndicatorDots, Buttons]}>
-      <div style={{backgroundColor: 'tomato', height: '100%'}}>Frame 1</div>
-      <div style={{backgroundColor: 'orange', height: '100%'}}>Frame 2</div>
-      <div style={{backgroundColor: 'orchid', height: '100%'}}>Frame 3</div>
-    </Carousel>
-  }
- 
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [intervalId, setIntervalId] = useState(null);
 
-export default Banner;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 9000); // Tempo de 9 segundos
 
-/**
- * const slides = [
+    setIntervalId(interval);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  const slides = [
     {
       background: './primeira.jpg',
       title: 'Atendimento Transparente e funcional',
@@ -49,5 +51,68 @@ export default Banner;
       content4: 'Coletas e entregas em todo Brasil',
     },
   ];
- * 
- */
+
+  const goToSlide = (index) => {
+    setActiveSlide(index);
+    resetTimer();
+  };
+
+  const prevSlide = () => {
+    setActiveSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+    resetTimer();
+  };
+
+  const nextSlide = () => {
+    setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    resetTimer();
+  };
+
+  const resetTimer = () => {
+    clearInterval(intervalId);
+    const interval = setInterval(() => {
+      setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 9000); // Tempo de 9 segundos
+    setIntervalId(interval);
+  };
+
+  return (
+    <div className="banner">
+      <div className="slides-container">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slide ${index === activeSlide ? 'active' : ''}`}
+            style={{
+              backgroundImage: `url(${slide.background})`,
+              animationDuration: '5s',
+            }}
+          >
+            <div className="slide-content">
+                <div className='infoContainerBanner'>
+              <h2 className='tituloBanner'>{slide.title}</h2>
+              <div className='infoBanner'>
+              <h2><GoCheck  />{slide.content1}</h2>
+              <h2><GoCheck  />{slide.content2}</h2>
+              <h2><GoCheck  />{slide.content3}</h2>
+              <h2><GoCheck  />{slide.content4}</h2>
+            </div>
+        
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="controls">
+        <button className="prev-button" onClick={prevSlide}>
+          &lt;
+        </button>
+        <button className="next-button" onClick={nextSlide}>
+          &gt;
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Banner;
