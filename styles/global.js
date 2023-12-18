@@ -473,11 +473,6 @@ border-radius: 100px;
 
 
 
-
-
-
-
-
 @media(max-width: 1100px) {
   .infoBanner{
     font-size: 13px;
