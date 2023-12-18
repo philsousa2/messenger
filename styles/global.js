@@ -197,7 +197,6 @@ border-radius: 100px;
   padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
-  animation: textoMovimento 2s ease;;
 }
 
 .TxtinfoH2.reset-animation {
