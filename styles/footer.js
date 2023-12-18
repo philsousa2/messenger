@@ -48,6 +48,9 @@ margin-top: 10px;
          .img{
             margin-top: 30px
          }
+         .texto{
+            margin-botton: 30px
+        }
   }
   
 
