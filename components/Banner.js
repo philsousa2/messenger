@@ -8,6 +8,17 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+      
+    }, 9000); // Tempo de 9 segundos
+
+    setIntervalId(interval);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+
 // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
 const h2Elements = document.querySelectorAll('.TxtinfoH2');
 h2Elements.forEach((h2) => {
@@ -65,20 +76,6 @@ h2Elements04.forEach((h204) => {
              void check04.offsetWidth; // Trigger reflow to restart the animation
              check04.classList.add('reset-animation');
            });
-
-
-
-
-    }, 9000); // Tempo de 9 segundos
-
-    setIntervalId(interval);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-
 
   
   const slides = [
