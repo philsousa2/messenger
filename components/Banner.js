@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { GoCheck } from "react-icons/go";
-import Image from 'next/image'
+
 
 const Banner = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -10,12 +10,7 @@ const Banner = () => {
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
 
-      // troca de animação 
-    const slidesContainer = document.querySelector('.slides-container');
-    slidesContainer.classList.toggle('animation1');
-    slidesContainer.classList.toggle('animation2');
-
-
+  
       // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
     const h2Elements = document.querySelectorAll('.TxtinfoH2');
     h2Elements.forEach((h2) => {
@@ -81,7 +76,7 @@ const Banner = () => {
     return () => {
       clearInterval(interval);
     };
-  }, [activeSlide]);
+  }, []);
 
 
 
@@ -202,10 +197,6 @@ const Banner = () => {
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
 
-    // Alterna entre animações
-    const slidesContainer = document.querySelector('.slides-container');
-    slidesContainer.classList.toggle('animation1');
-    slidesContainer.classList.toggle('animation2');
 
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
     const h2Elements = document.querySelectorAll('.TxtinfoH2');
