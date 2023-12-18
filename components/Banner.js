@@ -113,7 +113,7 @@ const Banner = () => {
               <h2 className='tituloBanner'>{slide.title}</h2>
               <div className='infoBanner'>
                 
-              
+
               <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2'>{slide.content1}</h2></div>
 
               <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2'>{slide.content2}</h2></div>

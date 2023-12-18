@@ -180,7 +180,7 @@ border-radius: 100px;
 .infoBanner{
   color: #FFF
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: left;
   flex-direction: column;
   margin-left: 60%;
@@ -188,7 +188,7 @@ border-radius: 100px;
 }
 .Txtinfo{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: left;
   margin-top: 7px;
   height: 40px;
@@ -197,6 +197,7 @@ border-radius: 100px;
   padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
+  animation: textoMovimento 2s ease;;
 }
 
 .TxtinfoH2.reset-animation {
