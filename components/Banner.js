@@ -264,13 +264,10 @@ const Banner = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`slide ${index === activeSlide ? 'active' : ''} ${index % 2 === 0 ? 'fotomovimento' : 'fotomovimento2'}`}
-            
+            className={`slide ${index === activeSlide ? 'active' : ''}`}
             style={{
               backgroundImage: `url(${slide.background})`,
               animationDuration: '12s',
-              animationName: index % 2 === 0 ? 'fotomovimento' : 'fotomovimento2',
-              animationTimingFunction: 'ease-in-out',
             }}
           >
           
