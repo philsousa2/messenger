@@ -277,6 +277,10 @@ border-radius: 100px;
 
 
 @keyframes textoMovimento02 {
+  0% {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0;
+  }
   20% {
     transform: translateX(100%); /* Começa fora da tela à direita */
     opacity: 0;
@@ -293,6 +297,10 @@ border-radius: 100px;
 }
 
 @keyframes textoMovimento03 {
+  0% {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0;
+  }
   40% {
     transform: translateX(100%); /* Começa fora da tela à direita */
     opacity: 0;
@@ -309,6 +317,10 @@ border-radius: 100px;
 }
 
 @keyframes textoMovimento04 {
+  0% {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0;
+  }
   60% {
     transform: translateX(100%); /* Começa fora da tela à direita */
     opacity: 0;
