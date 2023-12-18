@@ -180,8 +180,12 @@ border-radius: 100px;
   flex-direction: column;
   margin-left: 60%;
 }
-
-.inFoBanner h2 {
+.Txtinfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Txtinfo h2 {
   padding: 20px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);

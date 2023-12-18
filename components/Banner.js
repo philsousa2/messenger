@@ -91,10 +91,10 @@ const Banner = () => {
                 <div className='infoContainerBanner'>
               <h2 className='tituloBanner'>{slide.title}</h2>
               <div className='infoBanner'>
-              <div><div className="checkbox"><GoCheck  /></div><h2>{slide.content1}</h2></div>
-              <div><div className="checkbox"><GoCheck  /></div><h2>{slide.content2}</h2></div>
-              <div><div className="checkbox"><GoCheck  /></div><h2>{slide.content3}</h2></div>
-              <div><div className="checkbox"><GoCheck  /></div><h2>{slide.content4}</h2></div>
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2>{slide.content1}</h2></div>
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2>{slide.content2}</h2></div>
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2>{slide.content3}</h2></div>
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2>{slide.content4}</h2></div>
             </div>
         
               </div>
