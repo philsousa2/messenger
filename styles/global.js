@@ -174,8 +174,6 @@ border-radius: 100px;
 
 .infoBanner{
   color: #FFF
-  border-radius: 15px;
-  padding: 20px ;
   display: flex;
   flex-direction: column;
   margin-left: 60%;
@@ -184,6 +182,7 @@ border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15px
 }
 .Txtinfo h2 {
   padding: 5px ;
@@ -194,6 +193,7 @@ border-radius: 100px;
   background: #00457A;
   padding: 5px ;
   height: 100%;
+  width: 40px;
   color: #FFF;
   display: flex;
   justify-content: center;
