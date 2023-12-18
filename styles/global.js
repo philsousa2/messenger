@@ -188,10 +188,10 @@ border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: left;
-  margin-top: 5px
-  height: 100px;
+  margin-top: 7px;
+  height: 40px;
 }
-.Txtinfo h2 {
+.TxtinfoH2 {
   padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
