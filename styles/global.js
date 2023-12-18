@@ -62,8 +62,8 @@ export const GlobalStyle = createGlobalStyle`
   opacity: 1;
   position: absolute;
   animation-name: fotomovimento;
-  animation-duration: 10s;
-  animation-timing-function: ease;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fotomovimento {
