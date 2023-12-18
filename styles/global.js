@@ -182,22 +182,22 @@ border-radius: 100px;
   display: flex;
   flex-direction: column;
   margin-left: 60%;
-  margin-top: -150px;
+  margin-top: -70px;
 }
 .Txtinfo{
   display: flex;
   justify-content: center;
   align-items: left;
   margin-top: 5px
-  height: 50px;
+  height: 100px;
 }
 .Txtinfo h2 {
   padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
   animation-name: textoMovimento;
-  animation-duration: 6s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
 }
 .checkbox{
   background: #00457A;
