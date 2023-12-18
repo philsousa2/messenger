@@ -332,6 +332,7 @@ border-radius: 100px;
   color: #FFF;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .checkbox02{
   background: #00457A;
@@ -340,6 +341,7 @@ border-radius: 100px;
   color: #FFF;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .checkbox03{
   background: #00457A;
@@ -348,6 +350,7 @@ border-radius: 100px;
   color: #FFF;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .checkbox04{
   background: #00457A;
@@ -356,6 +359,7 @@ border-radius: 100px;
   color: #FFF;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 
