@@ -186,13 +186,14 @@ border-radius: 100px;
   align-items: center;
 }
 .Txtinfo h2 {
-  padding: 20px ;
+  padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
 .checkbox{
-  background: #blue
-  padding: 20px ;
+  background: #00457A;
+  padding: 5px ;
+  height: 100%;
   color: #FFF;
   display: flex;
   justify-content: center;
