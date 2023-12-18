@@ -180,6 +180,8 @@ border-radius: 100px;
 .infoBanner{
   color: #FFF
   display: flex;
+  justify-content: center;
+  align-items: left;
   flex-direction: column;
   margin-left: 60%;
   margin-top: -70px;
@@ -195,10 +197,17 @@ border-radius: 100px;
   padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
-  animation-name: textoMovimento;
-  animation-duration: 2s;
-  animation-timing-function: ease;
 }
+
+.TxtinfoH2.reset-animation {
+  animation: none;
+}
+
+.TxtinfoH2.reset-animation {
+  animation: textoMovimento 2s ease; /* Substitua 'fadeInUp' pelo nome da sua animação */
+}
+
+
 .checkbox{
   background: #00457A;
   height: 100%;
@@ -209,13 +218,6 @@ border-radius: 100px;
   align-items: center;
 }
 
-.TxtinfoH2.reset-animation {
-  animation: none;
-}
-
-.TxtinfoH2.reset-animation {
-  animation: textoMovimento 2s ease; /* Substitua 'fadeInUp' pelo nome da sua animação */
-}
 
 
 @keyframes textoMovimento {
