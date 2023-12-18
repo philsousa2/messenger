@@ -66,6 +66,16 @@ export const GlobalStyle = createGlobalStyle`
   animation-timing-function: ease-in-out;
 }
 
+.animation1 {
+  animation-name: fotomovimento;
+  animation-duration: 12s;
+}
+
+.animation2 {
+  animation-name: fotomovimento2;
+  animation-duration: 12s;
+}
+
 @keyframes fotomovimento {
   0% {
     background-position: bottom;
@@ -83,21 +93,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 }
 
+
 @keyframes fotomovimento2 {
   0% {
-    transform: translateX(100%); /* Começa fora da tela à direita */
-
+    background-position: top ;
+    opacity: 0.5;
   }
   20% {
-    transform: translateX(0); /* Desliza para a posição inicial */
-  
+    opacity: 1;
   }
   90% {
-    transform: translateX(0); /* Permanece na posição inicial */
-  
+    opacity: 1;
   }
   100% {
-    transform: translateX(-100%); /* Desliza para fora da tela à esquerda */
+    background-position: bottom;
+    opacity: 1;
   }
 }
 
