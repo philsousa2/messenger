@@ -392,11 +392,11 @@ border-radius: 100px;
 }
 
 @keyframes checkmovimento {
-  10% {
+  0% {
     transform: scale(0);
     opacity: 0;
   }
-  30% {
+  20% {
     transform: scale(1);
     opacity: 1;
   }
@@ -409,11 +409,15 @@ border-radius: 100px;
 
 
 @keyframes checkmovimento02 {
-  30% {
+  0% {
     transform: scale(0);
     opacity: 0;
   }
-  50% {
+  20% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
     transform: scale(1);
     opacity: 1;
   }
@@ -426,11 +430,15 @@ border-radius: 100px;
 
 
 @keyframes checkmovimento03 {
-  50% {
+  0% {
     transform: scale(0);
     opacity: 0;
   }
-  70% {
+  40% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  60% {
     transform: scale(1);
     opacity: 1;
   }
@@ -448,7 +456,11 @@ border-radius: 100px;
     transform: scale(0);
     opacity: 0;
   }
-  20% {
+  60% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
     transform: scale(1);
     opacity: 1;
   }
