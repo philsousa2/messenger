@@ -37,4 +37,17 @@ margin-top: 10px;
 .texto{
     width: 400px;
 }
+
+@media(max-width: 800px) {
+    height: 100%;
+    .linha2{
+       display: none;
+
+         }
+  }
+  
+
+
 `
+
+
