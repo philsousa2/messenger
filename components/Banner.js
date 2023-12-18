@@ -83,23 +83,23 @@ const Banner = () => {
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_002'
     const h2Elements02 = document.querySelectorAll('.TxtinfoH2002');
     h2Elements02.forEach((h2) => {
-      h2.classList.remove('reset-animation02');
+      h2.classList.remove('reset-animation');
       void h2.offsetWidth; // Trigger reflow to restart the animation
-      h2.classList.add('reset-animation02');
+      h2.classList.add('reset-animation');
     });
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_003'
     const h2Elements03 = document.querySelectorAll('.TxtinfoH2003');
     h2Elements03.forEach((h2) => {
       h2.classList.remove('reset-animation03');
       void h2.offsetWidth; // Trigger reflow to restart the animation
-      h2.classList.add('reset-animation03');
+      h2.classList.add('reset-animation');
     });
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_004'
     const h2Elements04 = document.querySelectorAll('.TxtinfoH2004');
     h2Elements04.forEach((h2) => {
-      h2.classList.remove('reset-animation04');
+      h2.classList.remove('reset-animation');
       void h2.offsetWidth; // Trigger reflow to restart the animation
-      h2.classList.add('reset-animation04');
+      h2.classList.add('reset-animation');
     });
 
     const interval = setInterval(() => {
