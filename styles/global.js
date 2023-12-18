@@ -66,15 +66,6 @@ export const GlobalStyle = createGlobalStyle`
   animation-timing-function: ease-in-out;
 }
 
-.animation1 {
-  animation-name: fotomovimento;
-  animation-duration: 12s;
-}
-
-.animation2 {
-  animation-name: fotomovimento2;
-  animation-duration: 12s;
-}
 
 @keyframes fotomovimento {
   0% {

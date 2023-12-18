@@ -90,20 +90,20 @@ const Banner = () => {
       content4: 'Atendimento pessoal e simples',
     },
     {
-      background: './3.jpg',
-      title: 'Soluções logísticas',
-      content1: 'Envios sem preocupações',
-      content2:'Facilidade na solicitação de serviços',
-      content3: 'Formato prático, simples e rápido',
-      content4: 'Solicitações fáceis de cotação e serviços',
-    },
-    {
       background: './1.jpg',
       title: 'Importações e exportações simplificadas',
       content1: 'Importações na modalidade courier',
       content2:'Exportações mais rápidas e práticas',
       content3: 'Rede presente em mais de 200 países',
       content4: 'Operações no aeroportos GIC e GRU',
+    },
+    {
+      background: './3.jpg',
+      title: 'Soluções logísticas',
+      content1: 'Envios sem preocupações',
+      content2:'Facilidade na solicitação de serviços',
+      content3: 'Formato prático, simples e rápido',
+      content4: 'Solicitações fáceis de cotação e serviços',
     },
     {
       background: './ultima.jpg',
@@ -261,17 +261,16 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className="slides-container">
-    {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`slide ${
-            index === activeSlide ? 'active' : ''
-          } ${index % 2 === 0 ? 'animation1' : 'animation2'}`}
-          style={{
-            backgroundImage: `url(${slide.background})`,
-            animationDuration: '12s',
-          }}
-        >
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`slide ${index === activeSlide ? 'active' : ''}`}
+            style={{
+              backgroundImage: `url(${slide.background})`,
+              animationDuration: '12s',
+              animationName: index % 2 === 0 ? 'fotomovimento' : 'fotomovimento2',
+            }}
+          >
           
             <div className="slide-content">
                 <div className='infoContainerBanner'>
