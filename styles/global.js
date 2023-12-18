@@ -101,6 +101,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 }
 
+
+
+
+
+
 .controls {
   position: absolute;
   top: 50%;
@@ -177,21 +182,25 @@ border-radius: 100px;
   display: flex;
   flex-direction: column;
   margin-left: 60%;
+  margin-top: -150px;
 }
 .Txtinfo{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 15px
+  align-items: left;
+  margin-top: 5px
+  height: 50px;
 }
 .Txtinfo h2 {
   padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
+  animation-name: textoMovimento;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
 }
 .checkbox{
   background: #00457A;
-  padding: 5px ;
   height: 100%;
   width: 40px;
   color: #FFF;
@@ -199,6 +208,25 @@ border-radius: 100px;
   justify-content: center;
   align-items: center;
 }
+
+
+@keyframes textoMovimento {
+  0% {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1;
+  }
+
+}
+
+
 
 @media(max-width: 1100px) {
   .infoBanner{
