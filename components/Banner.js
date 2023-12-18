@@ -272,8 +272,10 @@ const Banner = () => {
   };
 
   return (
-    <div className={`banner ${activeSlide % 2 === 0 ? 'animation1' : 'animation2'}`}>
-    <div className="slides-container">
+    <div className="banner">
+    <div
+      className={`slides-container ${activeSlide % 2 === 0 ? 'animation1' : 'animation2'}`}
+    >
       {slides.map((slide, index) => (
         <div
           key={index}

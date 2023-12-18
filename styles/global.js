@@ -61,7 +61,7 @@ export const GlobalStyle = createGlobalStyle`
 .slide.active {
   opacity: 1;
   position: absolute;
- 
+  animation-name: fotomovimento;
   animation-duration: 12s;
   animation-timing-function: ease-in-out;
 }
