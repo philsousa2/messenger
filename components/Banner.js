@@ -94,7 +94,9 @@ const Banner = () => {
                 
               <div className='Txtinfo'>
                 <div className="checkbox"><GoCheck  /></div>
+                {slides.map((slide, index) => (
                 <div key={index} className={`TxtinfoH2 ${index === activeSlide ? 'active' : ''}`} style={{animationDuration: '2s', }} > <h2>{slide.content1}</h2></div>
+                  ))}
               </div>
 
               <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 key={index} className={`TxtinfoH2 ${index === activeSlide ? 'active' : ''}`}>{slide.content2}</h2></div>
@@ -108,7 +110,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
-        ))}
+      ))}
       </div>
 
       <div className="controls">
