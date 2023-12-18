@@ -49,7 +49,7 @@ margin-top: 10px;
             margin-top: 30px
          }
          .texto{
-            margin-botton: 30px
+            margin-button: 30px
         }
   }
   
