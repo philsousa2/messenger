@@ -205,7 +205,7 @@ border-radius: 100px;
 }
 
 .TxtinfoH2.reset-animation {
-  animation: textoMovimento 2s ease; /* Substitua 'fadeInUp' pelo nome da sua animação */
+  animation: textoMovimento 2s ease; 
   transition-delay: 0s;
 }
 
