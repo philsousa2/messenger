@@ -44,6 +44,10 @@ margin-top: 10px;
        display: none;
 
          }
+
+         .img{
+            margin-top: 30px
+         }
   }
   
 

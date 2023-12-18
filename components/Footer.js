@@ -5,7 +5,7 @@ import { Container } from "../styles/footer";
 function Footer() {
   return (
     <Container>
-      <div>  
+      <div className='img'>  
         <Image  src="/logobranca.png" alt="Logo" width={250} height={80} margin-left={50} />
       </div>
       <div className="linha2"></div>
