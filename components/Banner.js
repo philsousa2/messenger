@@ -82,56 +82,56 @@ const Banner = () => {
     });
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_002'
     const h2Elements02 = document.querySelectorAll('.TxtinfoH2002');
-    h2Elements02.forEach((h2) => {
-      h2.classList.remove('reset-animation');
-      void h2.offsetWidth; // Trigger reflow to restart the animation
-      h2.classList.add('reset-animation');
+    h2Elements02.forEach((h202) => {
+      h202.classList.remove('reset-animation02');
+      void h202.offsetWidth; // Trigger reflow to restart the animation
+      h202.classList.add('reset-animation02');
     });
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_003'
     const h2Elements03 = document.querySelectorAll('.TxtinfoH2003');
-    h2Elements03.forEach((h2) => {
-      h2.classList.remove('reset-animation03');
-      void h2.offsetWidth; // Trigger reflow to restart the animation
-      h2.classList.add('reset-animation');
+    h2Elements03.forEach((h203) => {
+      h203.classList.remove('reset-animation03');
+      void h203.offsetWidth; // Trigger reflow to restart the animation
+      h203.classList.add('reset-animation03');
     });
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_004'
     const h2Elements04 = document.querySelectorAll('.TxtinfoH2004');
-    h2Elements04.forEach((h2) => {
-      h2.classList.remove('reset-animation');
-      void h2.offsetWidth; // Trigger reflow to restart the animation
-      h2.classList.add('reset-animation');
+    h2Elements04.forEach((h204) => {
+      h204.classList.remove('reset-animation04');
+      void h204.offsetWidth; // Trigger reflow to restart the animation
+      h204.classList.add('reset-animation04');
     });
 
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
- // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
- const h2Elements = document.querySelectorAll('.TxtinfoH2');
- h2Elements.forEach((h2) => {
-   h2.classList.remove('reset-animation');
-   void h2.offsetWidth; // Trigger reflow to restart the animation
-   h2.classList.add('reset-animation');
- });
- // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_002'
- const h2Elements02 = document.querySelectorAll('.TxtinfoH2002');
- h2Elements02.forEach((h2) => {
-   h2.classList.remove('reset-animation');
-   void h2.offsetWidth; // Trigger reflow to restart the animation
-   h2.classList.add('reset-animation');
- });
- // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_003'
- const h2Elements03 = document.querySelectorAll('.TxtinfoH2003');
- h2Elements03.forEach((h2) => {
-   h2.classList.remove('reset-animation');
-   void h2.offsetWidth; // Trigger reflow to restart the animation
-   h2.classList.add('reset-animation');
- });
- // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_004'
- const h2Elements04 = document.querySelectorAll('.TxtinfoH2004');
- h2Elements04.forEach((h2) => {
-   h2.classList.remove('reset-animation');
-   void h2.offsetWidth; // Trigger reflow to restart the animation
-   h2.classList.add('reset-animation');
- });
+    // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
+    const h2Elements = document.querySelectorAll('.TxtinfoH2');
+    h2Elements.forEach((h2) => {
+      h2.classList.remove('reset-animation');
+      void h2.offsetWidth; // Trigger reflow to restart the animation
+      h2.classList.add('reset-animation');
+    });
+    // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_002'
+    const h2Elements02 = document.querySelectorAll('.TxtinfoH2002');
+    h2Elements02.forEach((h202) => {
+      h202.classList.remove('reset-animation02');
+      void h202.offsetWidth; // Trigger reflow to restart the animation
+      h202.classList.add('reset-animation02');
+    });
+    // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_003'
+    const h2Elements03 = document.querySelectorAll('.TxtinfoH2003');
+    h2Elements03.forEach((h203) => {
+      h203.classList.remove('reset-animation03');
+      void h203.offsetWidth; // Trigger reflow to restart the animation
+      h203.classList.add('reset-animation03');
+    });
+    // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2_004'
+    const h2Elements04 = document.querySelectorAll('.TxtinfoH2004');
+    h2Elements04.forEach((h204) => {
+      h204.classList.remove('reset-animation04');
+      void h204.offsetWidth; // Trigger reflow to restart the animation
+      h204.classList.add('reset-animation04');
+    });
     }, 9000);
 
     setIntervalId(interval);
