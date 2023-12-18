@@ -102,6 +102,36 @@ const Banner = () => {
       h204.classList.add('reset-animation');
     });
 
+              //check01
+              const CheckElements = document.querySelectorAll('.checkbox');
+              CheckElements.forEach((check01) => {
+                check01.classList.remove('reset-animation');
+                void check01.offsetWidth; // Trigger reflow to restart the animation
+                check01.classList.add('reset-animation');
+              });
+              //check02
+              const CheckElements02 = document.querySelectorAll('.checkbox02');
+              CheckElements02.forEach((check02) => {
+                check02.classList.remove('reset-animation');
+                void check02.offsetWidth; // Trigger reflow to restart the animation
+                check02.classList.add('reset-animation');
+              });
+              //check03
+              const CheckElements03 = document.querySelectorAll('.checkbox03');
+              CheckElements03.forEach((check03) => {
+                check03.classList.remove('reset-animation');
+                void check03.offsetWidth; // Trigger reflow to restart the animation
+                check03.classList.add('reset-animation');
+              });
+               //check04
+               const CheckElements04 = document.querySelectorAll('.checkbox04');
+               CheckElements04.forEach((check04) => {
+                 check04.classList.remove('reset-animation');
+                 void check04.offsetWidth; // Trigger reflow to restart the animation
+                 check04.classList.add('reset-animation');
+               });
+
+
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
@@ -157,11 +187,11 @@ const Banner = () => {
               
               <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2'>{slide.content1}</h2></div>
 
-              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2002'>{slide.content2}</h2></div>
+              <div className='Txtinfo'><div className="checkbox02"><GoCheck  /></div><h2 className='TxtinfoH2002'>{slide.content2}</h2></div>
 
-              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2003'>{slide.content3}</h2></div>
+              <div className='Txtinfo'><div className="checkbox03"><GoCheck  /></div><h2 className='TxtinfoH2003'>{slide.content3}</h2></div>
 
-              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2004'>{slide.content4}</h2></div>
+              <div className='Txtinfo'><div className="checkbox04"><GoCheck  /></div><h2 className='TxtinfoH2004'>{slide.content4}</h2></div>
               
             </div>
         
