@@ -83,6 +83,14 @@ const Banner = () => {
 
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
+      // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
+      const h2Elements = document.querySelectorAll('.TxtinfoH2');
+      h2Elements.forEach((h2) => {
+        h2.classList.remove('reset-animation');
+        void h2.offsetWidth; // Trigger reflow to restart the animation
+        h2.classList.add('reset-animation');
+      });
+
     }, 9000);
 
     setIntervalId(interval);

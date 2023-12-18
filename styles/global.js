@@ -180,7 +180,7 @@ border-radius: 100px;
 .infoBanner{
   color: #FFF
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: left;
   flex-direction: column;
   margin-left: 60%;
