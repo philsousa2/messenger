@@ -268,7 +268,7 @@ const Banner = () => {
             style={{
               backgroundImage: `url(${slide.background})`,
               animationDuration: '12s',
-              animationName: index % 2 === 0 ? 'fotomovimento' : 'fotomovimento2',
+              
             }}
           >
           
