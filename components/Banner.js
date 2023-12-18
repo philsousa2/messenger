@@ -267,7 +267,7 @@ const Banner = () => {
             className={`slide ${index === activeSlide ? 'active' : ''}`}
             style={{
               backgroundImage: `url(${slide.background})`,
-              animationDuration: '5s',
+              animationDuration: '8s',
             }}
           >
           
