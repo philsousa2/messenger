@@ -374,21 +374,21 @@ border-radius: 100px;
   animation: none;
 }
 .checkbox02.reset-animation {
-  animation: checkmovimento 2s ease; 
+  animation: checkmovimento02 2s ease; 
 }
 
 .checkbox03.reset-animation {
   animation: none;
 }
 .checkbox03.reset-animation {
-  animation: checkmovimento 2s ease; 
+  animation: checkmovimento03 2s ease; 
 }
 
 .checkbox04.reset-animation {
   animation: none;
 }
 .checkbox04.reset-animation {
-  animation: checkmovimento 2s ease; 
+  animation: checkmovimento04 2s ease; 
 }
 
 @keyframes checkmovimento {
