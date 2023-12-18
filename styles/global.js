@@ -224,24 +224,24 @@ border-radius: 100px;
   animation: textoMovimento 2s ease; 
 }
 
-.TxtinfoH2.reset-animation02 {
+.TxtinfoH2002.reset-animation{
   animation: none;
 }
-.TxtinfoH2.reset-animation02 {
+.TxtinfoH2002.reset-animation {
   animation: textoMovimento02 2s ease; 
 }
 
-.TxtinfoH2.reset-animation03 {
+.TxtinfoH2003.reset-animation {
   animation: none;
 }
-.TxtinfoH2.reset-animation03 {
+.TxtinfoH2003.reset-animation {
   animation: textoMovimento03 2s ease; 
 }
 
-.TxtinfoH2.reset-animation04 {
+.TxtinfoH2004.reset-animation {
   animation: none;
 }
-.TxtinfoH2.reset-animation04 {
+.TxtinfoH2004.reset-animation {
   animation: textoMovimento04 2s ease; 
 }
 
