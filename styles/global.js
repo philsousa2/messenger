@@ -198,16 +198,53 @@ border-radius: 100px;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
+.TxtinfoH2002 {
+  padding: 5px ;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.TxtinfoH2003 {
+  padding: 5px ;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.TxtinfoH2004 {
+  padding: 5px ;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.8);
+}
+
 
 .TxtinfoH2.reset-animation {
   animation: none;
-  transition-delay: 0s;
 }
-
 .TxtinfoH2.reset-animation {
   animation: textoMovimento 2s ease; 
-  transition-delay: 0s;
 }
+
+.TxtinfoH2.reset-animation02 {
+  animation: none;
+}
+.TxtinfoH2.reset-animation02 {
+  animation: textoMovimento02 2s ease; 
+}
+
+.TxtinfoH2.reset-animation03 {
+  animation: none;
+}
+.TxtinfoH2.reset-animation03 {
+  animation: textoMovimento03 2s ease; 
+}
+
+.TxtinfoH2.reset-animation04 {
+  animation: none;
+}
+.TxtinfoH2.reset-animation04 {
+  animation: textoMovimento04 2s ease; 
+}
+
 
 
 .checkbox{
@@ -237,6 +274,56 @@ border-radius: 100px;
   }
 
 }
+
+
+@keyframes textoMovimento02 {
+  20% {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1;
+  }
+
+}
+
+@keyframes textoMovimento03 {
+  40% {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1;
+  }
+
+}
+
+@keyframes textoMovimento04 {
+  60% {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0); /* Desliza para a posição inicial */
+    opacity: 1;
+  }
+
+}
+
 
 
 
