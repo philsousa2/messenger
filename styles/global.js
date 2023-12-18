@@ -173,13 +173,18 @@ border-radius: 100px;
 }
 
 .infoBanner{
-  color: #FFF;
-  background: rgba(0, 0, 0, 0.8);
+  color: #FFF
   border-radius: 15px;
   padding: 20px ;
   display: flex;
   flex-direction: column;
   margin-left: 60%;
+}
+
+.inFoBanner h2 {
+  padding: 20px ;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 
