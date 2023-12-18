@@ -68,7 +68,7 @@ export const GlobalStyle = createGlobalStyle`
 
 @keyframes fotomovimento {
   0% {
-    //background-position: bottom;
+    background-position: bottom;
     opacity: 0.5;
   }
   20% {
@@ -78,7 +78,7 @@ export const GlobalStyle = createGlobalStyle`
     opacity: 1;
   }
   100% {
-    //background-position: top;
+    background-position: top;
     opacity: 1;
   }
 }
@@ -220,28 +220,28 @@ border-radius: 100px;
   animation: none;
 }
 .TxtinfoH2.reset-animation {
-  animation: textoMovimento 2s ease; 
+  animation: textoMovimento 2.5s ease; 
 }
 
 .TxtinfoH2002.reset-animation{
   animation: none;
 }
 .TxtinfoH2002.reset-animation {
-  animation: textoMovimento02 2s ease; 
+  animation: textoMovimento02 2.5s ease; 
 }
 
 .TxtinfoH2003.reset-animation {
   animation: none;
 }
 .TxtinfoH2003.reset-animation {
-  animation: textoMovimento03 2s ease; 
+  animation: textoMovimento03 2.5s ease; 
 }
 
 .TxtinfoH2004.reset-animation {
   animation: none;
 }
 .TxtinfoH2004.reset-animation {
-  animation: textoMovimento04 2s ease; 
+  animation: textoMovimento04 2.5s ease; 
 }
 
 
@@ -366,28 +366,28 @@ border-radius: 100px;
   animation: none;
 }
 .checkbox.reset-animation {
-  animation: checkmovimento 2s ease; 
+  animation: checkmovimento 2.5s ease; 
 }
 
 .checkbox02.reset-animation {
   animation: none;
 }
 .checkbox02.reset-animation {
-  animation: checkmovimento02 2s ease; 
+  animation: checkmovimento02 2.5s ease; 
 }
 
 .checkbox03.reset-animation {
   animation: none;
 }
 .checkbox03.reset-animation {
-  animation: checkmovimento03 2s ease; 
+  animation: checkmovimento03 2.5s ease; 
 }
 
 .checkbox04.reset-animation {
   animation: none;
 }
 .checkbox04.reset-animation {
-  animation: checkmovimento04 2s ease; 
+  animation: checkmovimento04 2.5s ease; 
 }
 
 @keyframes checkmovimento {
