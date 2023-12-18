@@ -58,22 +58,19 @@ export const GlobalStyle = createGlobalStyle`
   animation-fill-mode: forwards;
 }
 
-.slide.active {
-  opacity: 1;
-  position: absolute;
-  animation-name: fotomovimento;
-  animation-duration: 12s;
-  animation-timing-function: ease-in-out;
-}
 
 .animation1 {
   animation-name: fotomovimento;
   animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  position: absolute;
 }
 
 .animation2 {
   animation-name: fotomovimento2;
   animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  position: absolute;
 }
 
 @keyframes fotomovimento {
