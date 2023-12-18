@@ -197,7 +197,7 @@ border-radius: 100px;
   background: rgba(0, 0, 0, 0.8);
   animation-name: textoMovimento;
   animation-duration: 2s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease;
 }
 .checkbox{
   background: #00457A;
@@ -207,6 +207,14 @@ border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.TxtinfoH2.reset-animation {
+  animation: none;
+}
+
+.TxtinfoH2.reset-animation {
+  animation: textoMovimento 2s ease; /* Substitua 'fadeInUp' pelo nome da sua animação */
 }
 
 
