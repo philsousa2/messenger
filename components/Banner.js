@@ -270,7 +270,7 @@ const Banner = () => {
               animationDuration: '5s',
             }}
           >
-            <Image  src="/primeira.png" className='IMGBANNER' />
+          
             <div className="slide-content">
                 <div className='infoContainerBanner'>
               <h2 className='tituloBanner'>{slide.title}</h2>
