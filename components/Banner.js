@@ -74,22 +74,29 @@ const Banner = () => {
     clearInterval(intervalId);
 
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
-    const h2Elements = document.querySelectorAll('.TxtinfoH2');
-    h2Elements.forEach((h2) => {
-      h2.classList.remove('reset-animation');
-      void h2.offsetWidth; // Trigger reflow to restart the animation
-      h2.classList.add('reset-animation');
-    });
+  const h2Elements = document.querySelectorAll('.TxtinfoH2');
+  h2Elements.forEach((h2, index) => {
+    const delay = index * 0.5; // Ajuste o atraso conforme necessário
+    h2.style.transitionDelay = `${delay}s`;
+
+    h2.classList.remove('reset-animation');
+    void h2.offsetWidth; // Trigger reflow to restart the animation
+    h2.classList.add('reset-animation');
+  });
 
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
       // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
-      const h2Elements = document.querySelectorAll('.TxtinfoH2');
-      h2Elements.forEach((h2) => {
-        h2.classList.remove('reset-animation');
-        void h2.offsetWidth; // Trigger reflow to restart the animation
-        h2.classList.add('reset-animation');
-      });
+  const h2Elements = document.querySelectorAll('.TxtinfoH2');
+  h2Elements.forEach((h2, index) => {
+    const delay = index * 0.5; // Ajuste o atraso conforme necessário
+    h2.style.transitionDelay = `${delay}s`;
+
+    h2.classList.remove('reset-animation');
+    void h2.offsetWidth; // Trigger reflow to restart the animation
+    h2.classList.add('reset-animation');
+  });
+
 
     }, 9000);
 
