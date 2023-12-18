@@ -246,19 +246,6 @@ border-radius: 100px;
 }
 
 
-
-.checkbox{
-  background: #00457A;
-  height: 100%;
-  width: 40px;
-  color: #FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
 @keyframes textoMovimento {
   0% {
     transform: translateX(100%); /* Começa fora da tela à direita */
@@ -335,6 +322,41 @@ border-radius: 100px;
   }
 
 }
+
+
+
+.checkbox{
+  background: #00457A;
+  height: 100%;
+  width: 40px;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: checkmovimento 2s ease;
+}
+
+
+
+
+@keyframes checkmovimento {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+
+
 
 
 
