@@ -262,16 +262,16 @@ const Banner = () => {
     <div className="banner">
       <div className="slides-container">
     {slides.map((slide, index) => (
-      <div
-        key={index}
-        className={`slide ${
-          index === activeSlide ? 'active' : ''
-        } ${index % 2 === 0 ? 'animation1' : 'animation2'}`}
-        style={{
-          backgroundImage: `url(${slide.background})`,
-          animationDuration: '12s',
-        }}
-      >
+        <div
+          key={index}
+          className={`slide ${
+            index === activeSlide ? 'active' : ''
+          } ${index % 2 === 0 ? 'animation1' : 'animation2'}`}
+          style={{
+            backgroundImage: `url(${slide.background})`,
+            animationDuration: '12s',
+          }}
+        >
           
             <div className="slide-content">
                 <div className='infoContainerBanner'>
