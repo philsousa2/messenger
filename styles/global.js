@@ -181,7 +181,7 @@ border-radius: 100px;
   margin-left: 60%;
 }
 
-.inFoBanner h2 {
+.h2Banner {
   padding: 20px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
