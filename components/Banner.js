@@ -92,20 +92,20 @@ const Banner = () => {
       content4: 'Atendimento pessoal e simples',
     },
     {
-      background: './1.jpg',
-      title: 'Importações e exportações simplificadas',
-      content1: 'Importações na modalidade courier',
-      content2:'Exportações mais rápidas e práticas',
-      content3: 'Rede presente em mais de 200 países',
-      content4: 'Operações no aeroportos GIC e GRU',
-    },
-    {
       background: './3.jpg',
       title: 'Soluções logísticas',
       content1: 'Envios sem preocupações',
       content2:'Facilidade na solicitação de serviços',
       content3: 'Formato prático, simples e rápido',
       content4: 'Solicitações fáceis de cotação e serviços',
+    },
+    {
+      background: './1.jpg',
+      title: 'Importações e exportações simplificadas',
+      content1: 'Importações na modalidade courier',
+      content2:'Exportações mais rápidas e práticas',
+      content3: 'Rede presente em mais de 200 países',
+      content4: 'Operações no aeroportos GIC e GRU',
     },
     {
       background: './ultima.jpg',
