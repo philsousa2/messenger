@@ -9,8 +9,6 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-
-  
       // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
     const h2Elements = document.querySelectorAll('.TxtinfoH2');
     h2Elements.forEach((h2) => {
@@ -196,8 +194,6 @@ const Banner = () => {
 
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-
-
     // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
     const h2Elements = document.querySelectorAll('.TxtinfoH2');
     h2Elements.forEach((h2) => {
@@ -264,18 +260,18 @@ const Banner = () => {
 
   return (
     <div className="banner">
-    <div
-      className={`slides-container ${activeSlide % 2 === 0 ? 'animation1' : 'animation2'}`}
-    >
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`slide ${index === activeSlide ? 'active' : ''}`}
-          style={{
-            backgroundImage: `url(${slide.background})`,
-            animationDuration: '12s',
-          }}
-        >
+      <div className="slides-container">
+    {slides.map((slide, index) => (
+      <div
+        key={index}
+        className={`slide ${
+          index === activeSlide ? 'active' : ''
+        } ${index % 2 === 0 ? 'animation1' : 'animation2'}`}
+        style={{
+          backgroundImage: `url(${slide.background})`,
+          animationDuration: '12s',
+        }}
+      >
           
             <div className="slide-content">
                 <div className='infoContainerBanner'>
