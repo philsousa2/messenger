@@ -17,6 +17,9 @@ const Banner = () => {
     };
   }, []);
 
+
+
+  
   const slides = [
     {
       background: './primeira.jpg',
@@ -69,9 +72,19 @@ const Banner = () => {
 
   const resetTimer = () => {
     clearInterval(intervalId);
+
+    // Adiciona uma classe para reiniciar a animação dos elementos com a classe 'TxtinfoH2'
+    const h2Elements = document.querySelectorAll('.TxtinfoH2');
+    h2Elements.forEach((h2) => {
+      h2.classList.remove('reset-animation');
+      void h2.offsetWidth; // Trigger reflow to restart the animation
+      h2.classList.add('reset-animation');
+    });
+
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 9000); // Tempo de 9 segundos
+    }, 9000);
+
     setIntervalId(interval);
   };
 
@@ -92,18 +105,14 @@ const Banner = () => {
               <h2 className='tituloBanner'>{slide.title}</h2>
               <div className='infoBanner'>
                 
-              <div className='Txtinfo'>
-                <div className="checkbox"><GoCheck  /></div>
-                {slides.map((slide, index) => (
-                <div key={index} className={`TxtinfoH2 ${index === activeSlide ? 'active' : ''}`} style={{animationDuration: '2s', }} > <h2>{slide.content1}</h2></div>
-                  ))}
-              </div>
+              
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2'>{slide.content1}</h2></div>
 
-              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 key={index} className={`TxtinfoH2 ${index === activeSlide ? 'active' : ''}`}>{slide.content2}</h2></div>
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2'>{slide.content2}</h2></div>
 
-              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 key={index} className={`TxtinfoH2 ${index === activeSlide ? 'active' : ''}`}>{slide.content3}</h2></div>
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2'>{slide.content3}</h2></div>
 
-              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 key={index} className={`TxtinfoH2 ${index === activeSlide ? 'active' : ''}`}>{slide.content4}</h2></div>
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2'>{slide.content4}</h2></div>
               
             </div>
         
