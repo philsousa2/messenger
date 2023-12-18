@@ -181,12 +181,19 @@ border-radius: 100px;
   margin-left: 60%;
 }
 
-.h2Banner {
+.inFoBanner h2 {
   padding: 20px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
-
+.checkbox{
+  background: #blue
+  padding: 20px ;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media(max-width: 1100px) {
   .infoBanner{
