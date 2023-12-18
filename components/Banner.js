@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { GoCheck } from "react-icons/go";
+import Image from 'next/image'
 
 const Banner = () => {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -269,6 +270,7 @@ const Banner = () => {
               animationDuration: '5s',
             }}
           >
+            <Image  src="/primeira.png" className='IMGBANNER' />
             <div className="slide-content">
                 <div className='infoContainerBanner'>
               <h2 className='tituloBanner'>{slide.title}</h2>

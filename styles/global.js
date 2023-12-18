@@ -104,7 +104,11 @@ export const GlobalStyle = createGlobalStyle`
 
 
 
-
+.IMGBANNER{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
 
 .controls {
   position: absolute;
