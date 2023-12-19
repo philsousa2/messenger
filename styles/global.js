@@ -202,24 +202,24 @@ border-radius: 100px;
   height: 40px;
 }
 .TxtinfoH2 {
-  padding: 5px ;
+  padding: 2px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
 .TxtinfoH2002 {
-  padding: 5px ;
+  padding: 2px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
 
 .TxtinfoH2003 {
-  padding: 5px ;
+  padding: 2px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
 
 .TxtinfoH2004 {
-  padding: 5px ;
+  padding: 2px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
