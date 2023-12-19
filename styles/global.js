@@ -196,30 +196,30 @@ border-radius: 100px;
 }
 .Txtinfo{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: left;
   margin-top: 7px;
-  height: 30px;
+  height: 40px;
 }
 .TxtinfoH2 {
-  padding: 2px ;
+  padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
 .TxtinfoH2002 {
-  padding: 2px ;
+  padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
 
 .TxtinfoH2003 {
-  padding: 2px ;
+  padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
 
 .TxtinfoH2004 {
-  padding: 2px ;
+  padding: 5px ;
   color: #FFF;
   background: rgba(0, 0, 0, 0.8);
 }
