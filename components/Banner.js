@@ -279,13 +279,13 @@ const Banner = () => {
               <h2 className='tituloBanner'>{slide.title}</h2>
               <div className='infoBanner'>
                 
-              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h2 className='TxtinfoH2'>{slide.content1}</h2></div>
+              <div className='Txtinfo'><div className="checkbox"><GoCheck  /></div><h3 className='TxtinfoH2'>{slide.content1}</h3></div>
 
-              <div className='Txtinfo'><div className="checkbox02"><GoCheck  /></div><h2 className='TxtinfoH2002'>{slide.content2}</h2></div>
+              <div className='Txtinfo'><div className="checkbox02"><GoCheck  /></div><h3 className='TxtinfoH2002'>{slide.content2}</h3></div>
 
-              <div className='Txtinfo'><div className="checkbox03"><GoCheck  /></div><h2 className='TxtinfoH2003'>{slide.content3}</h2></div>
+              <div className='Txtinfo'><div className="checkbox03"><GoCheck  /></div><h3 className='TxtinfoH2003'>{slide.content3}</h3></div>
 
-              <div className='Txtinfo'><div className="checkbox04"><GoCheck  /></div><h2 className='TxtinfoH2004'>{slide.content4}</h2></div>
+              <div className='Txtinfo'><div className="checkbox04"><GoCheck  /></div><h3 className='TxtinfoH2004'>{slide.content4}</h3></div>
               
             </div>
         
