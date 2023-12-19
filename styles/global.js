@@ -197,9 +197,9 @@ border-radius: 100px;
 .Txtinfo{
   display: flex;
   justify-content: flex-start;
-  align-items: left;
+  align-items: center;
   margin-top: 7px;
-  height: 25px;
+  height: 30px;
 }
 .TxtinfoH2 {
   padding: 2px ;
