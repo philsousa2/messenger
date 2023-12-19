@@ -196,7 +196,7 @@ border-radius: 100px;
 }
 .Txtinfo{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin-top: 7px;
   height: 30px;
