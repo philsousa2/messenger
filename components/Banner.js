@@ -120,7 +120,7 @@ const Banner = () => {
     resetTimer();
   };
   const getSlideClass = (index) => {
-    return `slide${index % 2 === 0 ? '' : '2'} ${index === activeSlide ? 'active' : ''}`;
+    return `slide${index % 2 === 0 ? '' : '2'}`;
   };
 
   const prevSlide = () => {
@@ -263,11 +263,11 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      <div className="slides-container">
+     <div className="slides-container">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={getSlideClass(index)}
+            className={`slide ${getSlideClass(index)} ${index === activeSlide ? 'active' : ''}`}
             style={{
               backgroundImage: `url(${slide.background})`,
               animationDuration: '12s',
