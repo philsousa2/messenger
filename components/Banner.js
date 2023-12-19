@@ -119,6 +119,9 @@ const Banner = () => {
     setActiveSlide(index);
     resetTimer();
   };
+  const getSlideClass = (index) => {
+    return `slide${index % 2 === 0 ? '' : '2'} ${index === activeSlide ? 'active' : ''}`;
+  };
 
   const prevSlide = () => {
     setActiveSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
@@ -260,16 +263,16 @@ const Banner = () => {
 
   return (
     <div className="banner">
-    <div className="slides-container">
-  {slides.map((slide, index) => (
-    <div
-      key={index}
-      className={`slide${index % 2 === 0 ? '' : '2'} ${index === activeSlide ? 'active' : ''}`}
-      style={{
-        backgroundImage: `url(${slide.background})`,
-        animationDuration: '12s',
-      }}
-    >
+      <div className="slides-container">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={getSlideClass(index)}
+            style={{
+              backgroundImage: `url(${slide.background})`,
+              animationDuration: '12s',
+            }}
+          >
           
             <div className="slide-content">
                 <div className='infoContainerBanner'>
