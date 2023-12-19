@@ -90,7 +90,7 @@ const Banner = () => {
       content4: 'Atendimento pessoal e simples',
     },
     {
-      background: './1.jpg',
+      background: './3.jpg',
       title: 'Importações e exportações simplificadas',
       content1: 'Importações na modalidade courier',
       content2:'Exportações mais rápidas e práticas',
@@ -98,7 +98,7 @@ const Banner = () => {
       content4: 'Operações no aeroportos GIC e GRU',
     },
     {
-      background: './3.jpg',
+      background: './1.jpg',
       title: 'Soluções logísticas',
       content1: 'Envios sem preocupações',
       content2:'Facilidade na solicitação de serviços',
