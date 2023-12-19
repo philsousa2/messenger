@@ -199,7 +199,7 @@ border-radius: 100px;
   justify-content: flex-start;
   align-items: left;
   margin-top: 7px;
-  height: 40px;
+  height: 25px;
 }
 .TxtinfoH2 {
   padding: 2px ;
