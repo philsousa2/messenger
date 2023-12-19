@@ -66,6 +66,14 @@ export const GlobalStyle = createGlobalStyle`
   animation-timing-function: ease-in-out;
 }
 
+.slide2.active {
+  opacity: 1;
+  position: absolute;
+  animation-name: fotomovimento2;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+}
+
 
 @keyframes fotomovimento {
   0% {
