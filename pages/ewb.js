@@ -154,10 +154,10 @@ function Ewb() {
         <div>
           <h3>Deseja solicitar coleta desta e-WB?</h3>
 
-          <input className="radio" type="radio" id="sim" name="coletaSim" value="SIM" onChange={valorInput} />
+          <input className="radio" type="radio" id="sim" name="coleta" value="SIM" onChange={valorInput} />
           <label htmlFor="sim">SIM</label>
 
-          <input className="radio" type="radio" id="nao" name="coletaNao" value="NAO" onChange={valorInput} />
+          <input className="radio" type="radio" id="nao" name="coleta" value="NAO" onChange={valorInput} />
           <label htmlFor="nao">NÃO</label>
         </div>
         <button type="submit" className="btn">ENVIAR</button>
