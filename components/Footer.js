@@ -10,8 +10,8 @@ function Footer() {
       </div>
       <div className="linha2"></div>
       <div className="texto">
-      <h3>Serviços de encomenda expressa nacional e internacional
-        Exportação e importação pelo Regime de Tributação Simplificada</h3>
+      <h3>Serviços de encomenda expressa nacional e internacional</h3>
+      <h3>Exportação e importação pelo Regime de Tributação Simplificada</h3>
         <div className="linha"></div>
         <h4>© Copyright 2022 by Messenger Express | Desenvolvido por Phelipe Sousa e Ramon Borzoni</h4>
       </div>

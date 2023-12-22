@@ -35,7 +35,7 @@ margin-top: 10px;
     }
 
 .texto{
-    width: 400px;
+    width: 600px;
 }
 
 @media(max-width: 800px) {
