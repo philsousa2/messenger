@@ -98,6 +98,16 @@ span {
     font-size: 15px;
 }
 
+.input4{
+    width: 100%;
+    margin-top: 20px;
+    margin-inline: 10px;
+    height: 50px;
+    border-radius: 5px;
+    border: #00457A solid 1px;
+    text-align: center;
+    font-size: 15px;
+}
 
 .opcao{
     width: 200px;

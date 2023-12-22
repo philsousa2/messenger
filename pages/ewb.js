@@ -75,7 +75,7 @@ function Ewb() {
         <input type="email" className="input" name="emailremetente" placeholder="Email do Responsável" onChange={valorInput} required />
         <input type="tel" className="input" name="telefoneremetente" placeholder="Telefone para Contato" onChange={valorInput} required />
         <br />
-        <input type="text" className="input" name="enderecoremetente" placeholder="Endereço de Origem" onChange={valorInput} required />
+        <input type="text" className="input4" name="enderecoremetente" placeholder="Endereço de Origem" onChange={valorInput} required />
         <br />
         <input type="text" className="input3" name="cepremetente" placeholder="CEP" onChange={valorInput} required />
         <input type="text" className="input3" name="cidaderemetente" placeholder="Cidade" onChange={valorInput} required />
@@ -91,7 +91,7 @@ function Ewb() {
         <input type="email" className="input" name="emaildestinatario" placeholder="Email" onChange={valorInput} required />
         <input type="tel" className="input" name="telefonedestinatario" placeholder="Telefone" onChange={valorInput} required />
         <br />
-        <input type="text" className="input" name="enderecodestinatario" placeholder="Endereço" onChange={valorInput} required />
+        <input type="text" className="input4" name="enderecodestinatario" placeholder="Endereço" onChange={valorInput} required />
         <br />
         <input type="text" className="input3" name="cepdestinatario" placeholder="CEP" onChange={valorInput} required />
         <input type="text" className="input3" name="cidadedestinatario" placeholder="Cidade" onChange={valorInput} required />
