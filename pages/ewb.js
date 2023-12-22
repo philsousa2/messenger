@@ -67,23 +67,40 @@ function Ewb() {
 
       <form className="formulario" onSubmit={enviarEwb}>
         <h3>Dados do Remetente</h3>
-        <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required />
+        <input type="text" className="input" name="nomeremetente" placeholder="Seu Nome" onChange={valorInput} required />
         <input type="text" className="input" id="cnpjpagador" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
-        <input type="text" className="input" id="razaoSocial" placeholder="Razão Social" onChange={valorInput} required />
-        <input type="text" className="input" id="cnpj" placeholder="CNPJ ou CPF do Remetente" onChange={valorInput} required />
+        <input type="text" className="input" id="razaoSocialremetente" placeholder="Razão Social" onChange={valorInput} required />
+        <input type="text" className="input" id="cnpjremetente" placeholder="CNPJ ou CPF do Remetente" onChange={valorInput} required />
         <br />
-        <input type="email" className="input" name="email" placeholder="Email do Responsável" onChange={valorInput} required />
-        <input type="tel" className="input" name="telefone" placeholder="Telefone para Contato" onChange={valorInput} required />
+        <input type="email" className="input" name="emailremetente" placeholder="Email do Responsável" onChange={valorInput} required />
+        <input type="tel" className="input" name="telefoneremetente" placeholder="Telefone para Contato" onChange={valorInput} required />
         <br />
-        <input type="text" className="input" name="endereco" placeholder="Endereço de Origem" onChange={valorInput} required />
+        <input type="text" className="input" name="enderecoremetente" placeholder="Endereço de Origem" onChange={valorInput} required />
         <br />
-        <input type="text" className="input3" name="cep" placeholder="CEP" onChange={valorInput} required />
-        <input type="text" className="input3" name="cidade" placeholder="Cidade" onChange={valorInput} required />
-        <input type="text" className="input3" name="estado" placeholder="Estado" onChange={valorInput} required />
-        <input type="text" className="input3" name="pais" placeholder="País" onChange={valorInput} required />
+        <input type="text" className="input3" name="cepremetente" placeholder="CEP" onChange={valorInput} required />
+        <input type="text" className="input3" name="cidaderemetente" placeholder="Cidade" onChange={valorInput} required />
+        <input type="text" className="input3" name="estadoremetente" placeholder="Estado" onChange={valorInput} required />
+        <input type="text" className="input3" name="paisremetente" placeholder="País" onChange={valorInput} required />
 
         <h3>Dados do Destinatário</h3>
 
+        <input type="text" className="input" name="nomedestinatario" placeholder="Seu Nome" onChange={valorInput} required />
+        <input type="text" className="input" id="cnpjpagadordestinatario" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
+        <input type="text" className="input" id="razaoSocialdestinatario" placeholder="Razão Social" onChange={valorInput} required />
+        <input type="text" className="input" id="cnpjdestinatario" placeholder="CNPJ ou CPF do Remetente" onChange={valorInput} required />
+        <br />
+        <input type="email" className="input" name="emaildestinatario" placeholder="Email do Responsável" onChange={valorInput} required />
+        <input type="tel" className="input" name="telefonedestinatario" placeholder="Telefone para Contato" onChange={valorInput} required />
+        <br />
+        <input type="text" className="input" name="enderecodestinatario" placeholder="Endereço de Origem" onChange={valorInput} required />
+        <br />
+        <input type="text" className="input3" name="cepdestinatario" placeholder="CEP" onChange={valorInput} required />
+        <input type="text" className="input3" name="cidadedestinatario" placeholder="Cidade" onChange={valorInput} required />
+        <input type="text" className="input3" name="estadodestinatario" placeholder="Estado" onChange={valorInput} required />
+        <input type="text" className="input3" name="paisdestinatario" placeholder="País" onChange={valorInput} required />
+
+
+        <h3>Dados do Destinatário</h3>
 
         <select className="opcao" name="remessa" onChange={valorInput} required>
           <option value="DEFAULT" hidden >Tipo de Remessa</option>
