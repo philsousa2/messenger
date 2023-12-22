@@ -99,7 +99,7 @@ span {
 }
 
 .input4{
-    width: 100%;
+    width: 85%;
     margin-top: 20px;
     margin-inline: 10px;
     height: 50px;
