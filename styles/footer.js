@@ -13,7 +13,7 @@ color: #FFF;
 text-align: center;
 
 h3{
-    margin-top: 30px; 
+    margin-top: 0px; 
 }
 h4{
     margin-top: 10px; 
