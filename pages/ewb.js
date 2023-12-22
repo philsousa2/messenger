@@ -62,7 +62,7 @@ function Ewb() {
 
   return (
     <Container>
-      <h1>Solicitação de Serviço</h1>
+      <h1>Emição de e-WB</h1>
       <p>O remetente declara ter conhecimento dos <span><a href="/Termos_e_condicoes_de_transporte.pdf" download>Termos e condições de transporte </a> </span> que regulamentam os serviços Messenger, com os quais concorda no ato da emissão desta guia de embarque.</p>
 
       <form className="formulario" onSubmit={enviarEwb}>
