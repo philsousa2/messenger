@@ -128,11 +128,11 @@ function Ewb() {
           <input className="radio" type="checkbox" id="RetornoDeProtocolo" name="RetornoDeProtocolo" value="Retorno de Protocolo" onChange={valorInput} />
           <label htmlFor="RetornoDeProtocolo">Retorno de Protocolo</label>
 
-          <input className="radio" type="checkbox" id="NextFlyOut" name="NextFlyOut" value="Next Fly Out" onChange={valorInput} />
-          <label htmlFor="NextFlyOut">Next Fly Out</label>
+          <input className="radio" type="checkbox" id="NextFlightOut" name="NextFlightOut" value="Next Flight Out" onChange={valorInput} />
+          <label htmlFor="NextFlyOut">Next Flight Out</label>
 
-          <input className="radio" type="checkbox" id="DeliveryDutyPaid" name="DeliveryDutyPaid" value="Delivery Duty Paid" onChange={valorInput} />
-          <label htmlFor="DeliveryDutyPaid">Delivery Duty Paid</label>
+          <input className="radio" type="checkbox" id="DeliveredDutyPaid" name="DeliveredDutyPaid" value="Delivered Duty Paid" onChange={valorInput} />
+          <label htmlFor="DeliveryDutyPaid">Delivered Duty Paid</label>
         </div>
 
         <div>
