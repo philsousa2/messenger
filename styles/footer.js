@@ -30,8 +30,8 @@ margin-top: 10px;
    width: 1px;
     border: 1px solid #FFF;
     margin-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px
+    margin-left: 100px;
+    margin-right: 100px
     }
 
 .texto{
