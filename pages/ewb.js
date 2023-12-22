@@ -100,7 +100,7 @@ function Ewb() {
         <input type="text" className="input3" name="paisdestinatario" placeholder="País" onChange={valorInput} required />
 
 
-        <h3>Dados do Destinatário</h3>
+        <h3>Tipo de Remessa</h3>
 
         <select className="opcao" name="remessa" onChange={valorInput} required>
           <option value="DEFAULT" hidden >Tipo de Remessa</option>
