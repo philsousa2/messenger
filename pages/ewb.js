@@ -62,12 +62,12 @@ function Ewb() {
 
   return (
     <Container>
-      <h1>Emição de e-WB</h1>
+      <h1>Emissão de e-WB</h1>
       <p>O remetente declara ter conhecimento dos <span><a href="/Termos_e_condicoes_de_transporte.pdf" download>Termos e condições de transporte </a> </span> que regulamentam os serviços Messenger, com os quais concorda no ato da emissão desta guia de embarque.</p>
 
       <form className="formulario" onSubmit={enviarEwb}>
         <h3>Dados do Remetente</h3>
-        <input type="text" className="input" name="nomeremetente" placeholder="Seu Nome" onChange={valorInput} required />
+        <input type="text" className="input" name="nomeremetente" placeholder="Nome" onChange={valorInput} required />
         <input type="text" className="input" id="cnpjpagador" placeholder="CNPJ da conta pagadora" onChange={valorInput} required />
         <input type="text" className="input" id="razaoSocialremetente" placeholder="Razão Social" onChange={valorInput} required />
         <input type="text" className="input" id="cnpjremetente" placeholder="CNPJ ou CPF do Remetente" onChange={valorInput} required />
@@ -84,15 +84,14 @@ function Ewb() {
 
         <h3>Dados do Destinatário</h3>
 
-        <input type="text" className="input" name="nomedestinatario" placeholder="Nome do Destinatário" onChange={valorInput} required />
-        <input type="text" className="input" id="cnpjpagadordestinatario" placeholder="CNPJ do Destinatário" onChange={valorInput} required />
-        <input type="text" className="input" id="razaoSocialdestinatario" placeholder="Razão Social do Destinatário" onChange={valorInput} required />
-        <input type="text" className="input" id="cnpjdestinatario" placeholder="CNPJ ou CPF do Destinatário" onChange={valorInput} required />
+        <input type="text" className="input" name="nomedestinatario" placeholder="Nome" onChange={valorInput} required />
+        <input type="text" className="input" id="razaoSocialdestinatario" placeholder="Razão Social" onChange={valorInput} required />
+        <input type="text" className="input" id="cnpjdestinatario" placeholder="CNPJ ou CPF" onChange={valorInput} required />
         <br />
-        <input type="email" className="input" name="emaildestinatario" placeholder="Email do Responsável" onChange={valorInput} required />
-        <input type="tel" className="input" name="telefonedestinatario" placeholder="Telefone para Contato" onChange={valorInput} required />
+        <input type="email" className="input" name="emaildestinatario" placeholder="Email" onChange={valorInput} required />
+        <input type="tel" className="input" name="telefonedestinatario" placeholder="Telefone" onChange={valorInput} required />
         <br />
-        <input type="text" className="input" name="enderecodestinatario" placeholder="Endereço de Destino" onChange={valorInput} required />
+        <input type="text" className="input" name="enderecodestinatario" placeholder="Endereço" onChange={valorInput} required />
         <br />
         <input type="text" className="input3" name="cepdestinatario" placeholder="CEP" onChange={valorInput} required />
         <input type="text" className="input3" name="cidadedestinatario" placeholder="Cidade" onChange={valorInput} required />
@@ -141,7 +140,7 @@ function Ewb() {
 
         <br />
         <div className="chek">
-          <label>Opções Extras:</label>
+          <label>Opções Adicionais:</label>
           <input className="radio" type="checkbox" id="RetornoDeProtocolo" name="RetornoDeProtocolo" value="Retorno de Protocolo" onChange={valorInput} />
           <label htmlFor="RetornoDeProtocolo">Retorno de Protocolo</label>
 
