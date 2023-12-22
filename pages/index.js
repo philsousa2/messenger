@@ -78,7 +78,6 @@ export default function Home() {
 
     <div className="parceiros">
       <h1>Nossos Parceiros</h1>
-      <h3>Veja algumas empresas que trabalham com a Messenger em outros países.</h3>
       <div className="parceiroslinks">
        
   
