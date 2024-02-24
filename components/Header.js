@@ -28,11 +28,11 @@ function Header() {
         <a>|</a>
         
         <MdOutlineLocalShipping size={30}/>
-        <a href="https://web.archive.org/web/20220127053821/https://messenger.brudam.com.br/site/"  target="_blank" rel="noreferrer"> Portal do Cliente</a>
+        <a href="https://messenger.brudam.com.br/site/"  target="_blank" rel="noreferrer"> Portal do Cliente</a>
         <a>|</a>
 
         <MdOutlinePersonalInjury size={30}/>
-        <a href="https://web.archive.org/web/20220127053821/https://messenger.brudam.com.br/agente/loga.php"  target="_blank" rel="noreferrer">Portal do Agente</a>
+        <a href="https://messenger.brudam.com.br/agente/loga.php"  target="_blank" rel="noreferrer">Portal do Agente</a>
       </div>
       </div>
      
