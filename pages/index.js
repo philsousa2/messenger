@@ -64,7 +64,7 @@ export default function Home() {
             <Link href="/malote">
             <div className="Btnserv">
               <GoMailRead   size={150} />
-              <h2>malote</h2>
+              <h2>Malote</h2>
             </div>
             </Link>
             <Link href="/importacao">

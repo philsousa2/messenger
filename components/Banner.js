@@ -83,7 +83,7 @@ const Banner = () => {
   const slides = [
     {
       background: './primeira.jpg',
-      title: 'Atendimento Transparente e funcional',
+      title: 'Atendimento Transparente e Funcional',
       content1: 'Informações claras e diretas',
       content2:'Flexibilidade no atendimento',
       content3: 'Agilidade nos procedimentos',
@@ -91,7 +91,7 @@ const Banner = () => {
     },
     {
       background: './3.jpg',
-      title: 'Importações e exportações simplificadas',
+      title: 'Importações e Exportações Simplificadas',
       content1: 'Importações na modalidade courier',
       content2:'Exportações mais rápidas e práticas',
       content3: 'Rede presente em mais de 200 países',
@@ -99,7 +99,7 @@ const Banner = () => {
     },
     {
       background: './1.jpg',
-      title: 'Soluções logísticas',
+      title: 'Soluções Logísticas',
       content1: 'Envios sem preocupações',
       content2:'Facilidade na solicitação de serviços',
       content3: 'Formato prático, simples e rápido',
@@ -107,7 +107,7 @@ const Banner = () => {
     },
     {
       background: './ultima.jpg',
-      title: 'Entregas rápidas e seguras',
+      title: 'Entregas Rápidas e Seguras',
       content1: 'Rastreamento 100% digital',
       content2:'Importações',
       content3: 'Exportações',
