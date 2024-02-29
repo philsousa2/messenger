@@ -37,10 +37,11 @@ function Conta() {
         },
         body: JSON.stringify({ formulario })
       })
+console.log(response);
       if (response.ok) {
+        
         alert('A solicitação de cadastro foi feita com sucesso! Nossa Central de Serviços retornará o contato o mais breve possivel, em horário útil.');
-        window.location.reload()
-
+        //window.location.reload()
       } else {
         throw new Error('Ocorreu um erro ao solicitar o Cadastro');
       }
