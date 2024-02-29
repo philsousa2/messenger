@@ -13,7 +13,7 @@ function Footer() {
       <h3>Serviços de encomenda expressa nacional e internacional <br/>
         Exportação e importação pelo Regime de Tributação Simplificada</h3>
         <div className="linha"></div>
-        <h4>© Copyright 2022 by Messenger Express | Desenvolvido por Phelipe Sousa e Ramon Borzoni</h4>
+        <h4>© Copyright 2024 by Messenger Express | Desenvolvido por Phelipe Sousa e Ramon Borzoni</h4>
       </div>
     </Container>
   )
