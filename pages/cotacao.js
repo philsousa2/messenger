@@ -60,7 +60,7 @@ function Cotacao() {
       });
       if (response.ok) {
         alert('Contação enviada com sucesso!');
-        window.location.reload()
+        //window.location.reload()
         
       } else {
         throw new Error('Ocorreu um erro ao solicitar a cotação.');
@@ -104,7 +104,6 @@ function Cotacao() {
           <input type="text" className="input2" name="profundidade" placeholder="Profundidade" onChange={valorInput} />
         </div>
 
-
         <input type="text" className="input3" name="notaFiscal" placeholder="Nota Fiscal" onChange={valorInput} required />
         <input type="text" className="input3" name="quantidade" placeholder="Quantidade de Volumes" onChange={valorInput} required />
         <input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" onChange={valorInput} required />
@@ -114,11 +113,11 @@ function Cotacao() {
         <h3>Dados do Transporte</h3>
         <h4>ORIGEM:</h4>
         <input type="text" className="input3" name="cepRemetente" placeholder="CEP" onChange={valorInput} required />
-        <input type="text" className="input" name="endereco" placeholder="Endereço" onChange={valorInput} required />
-        <input type="text" className="input3" name="complemento" placeholder="Complemento" onChange={valorInput} required />
-        <input type="text" className="input3" name="cidade" placeholder="Cidade" onChange={valorInput} required />
-        <input type="text" className="input3" name="estado" placeholder="Estado" onChange={valorInput} required />
-        <input type="text" className="input3" name="pais" placeholder="País" onChange={valorInput} required />
+        <input type="text" className="input" name="enderecoRemetente" placeholder="Endereço" onChange={valorInput} required />
+        <input type="text" className="input3" name="complementoRemetente" placeholder="Complemento" onChange={valorInput} required />
+        <input type="text" className="input3" name="cidadeRemetente" placeholder="Cidade" onChange={valorInput} required />
+        <input type="text" className="input3" name="estadoRemetente" placeholder="Estado" onChange={valorInput} required />
+        <input type="text" className="input3" name="paisRemetente" placeholder="País" onChange={valorInput} required />
         <input type="text" className="input" name="remetente" placeholder="CPF/CNPJ REMETENTE" onChange={valorInput} required />
 
         <h4>DESTINO:</h4>
