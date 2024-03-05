@@ -42,7 +42,7 @@ function Coleta() {
       
       if (response.ok) {
         alert('A solicitação de coleta foi feita com sucesso!');
-        //window.location.reload()
+        window.location.reload()
         
       } else {
         throw new Error('Ocorreu um erro ao solicitar sua coleta');
