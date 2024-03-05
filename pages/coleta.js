@@ -42,7 +42,7 @@ function Coleta() {
       
       if (response.ok) {
         alert('A solicitação de coleta foi feita com sucesso!');
-        window.location.reload()
+        //window.location.reload()
         
       } else {
         throw new Error('Ocorreu um erro ao solicitar sua coleta');
@@ -79,13 +79,13 @@ function Coleta() {
 
         <div className="dimencao">
           <label>Peso:</label>
-          <input type="text" className="input2" name="peso" placeholder="000kg" onChange={valorInput} required />
+          <input type="text" className="input2" name="peso" placeholder="000kg" onChange={valorInput} />
           <label className="labelx">Dimensões em cm:</label>
-          <input type="text" className="input2" name="altura" placeholder="Altura" onChange={valorInput} required />
+          <input type="text" className="input2" name="altura" placeholder="Altura" onChange={valorInput} />
           <label className="labelx">x</label>
-          <input type="text" className="input2" name="largura" placeholder="Largura" onChange={valorInput} required />
+          <input type="text" className="input2" name="largura" placeholder="Largura" onChange={valorInput} />
           <label className="labelx">x</label>
-          <input type="text" className="input2" name="profundidade" placeholder="Profundidade" onChange={valorInput} required />
+          <input type="text" className="input2" name="profundidade" placeholder="Profundidade" onChange={valorInput} />
         </div>
         <input type="text" className="input3" name="notaFiscal" placeholder="Nota Fiscal" onChange={valorInput} required />
         <input type="text" className="input3" name="quantidade" placeholder="Quantidade de Volumes" onChange={valorInput} required />

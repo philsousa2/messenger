@@ -95,13 +95,13 @@ function Cotacao() {
         </select>
         <div className="dimencao">
           <label>Peso:</label>
-          <input type="text" className="input2" name="peso" placeholder="000kg" onChange={valorInput} required />
+          <input type="text" className="input2" name="peso" placeholder="000kg" onChange={valorInput} />
           <label htmlFor="">Dimensões em cm:</label>
-          <input type="text" className="input2" name="altura" placeholder="Altura" onChange={valorInput} required />
+          <input type="text" className="input2" name="altura" placeholder="Altura" onChange={valorInput} />
           <label>x</label>
-          <input type="text" className="input2" name="largura" placeholder="Largura" onChange={valorInput} required />
+          <input type="text" className="input2" name="largura" placeholder="Largura" onChange={valorInput} />
           <label>x</label>
-          <input type="text" className="input2" name="profundidade" placeholder="Profundidade" onChange={valorInput} required />
+          <input type="text" className="input2" name="profundidade" placeholder="Profundidade" onChange={valorInput} />
         </div>
 
 
