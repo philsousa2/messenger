@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import AddressForm from '../components/AddressForm';
 import { Container } from "../styles/pages/coleta";
 
 function Coleta() {

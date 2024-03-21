@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import AddressForm from '../components/AddressForm';
 import { Container } from "../styles/pages/conta";
 
 function Conta() {
@@ -71,6 +72,10 @@ function Conta() {
         <input type="email" className="input2" name="emailFinanceiro" placeholder="Email do Responsável Financeiro" onChange={valorInput} required />
         <input type="text" className="input2" name="nomeFinanceiro" placeholder="Contato no Depto Financeiro" onChange={valorInput} required />
         <br />
+        <div>
+      <h1>Busca de Endereço por CEP</h1>
+      <AddressForm />
+    </div>
         <input type="text" className="input3" name="cep" placeholder="CEP" onChange={valorInput} required />
         <input type="text" className="input2" name="logradouro" placeholder="Logradouro" onChange={valorInput} required />
         <input type="text" className="input3" name="numero" placeholder="Número" onChange={valorInput} required />
