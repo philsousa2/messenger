@@ -24,7 +24,7 @@ const AddressForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div>
       <label htmlFor="cep">CEP:</label>
       <input
         type="text"
@@ -34,7 +34,7 @@ const AddressForm = () => {
         maxLength={8} // Limita tamanho do CEP (opcional)
         required
       />
-      <button type="submit">Buscar Endereço</button>
+      <button onClick={handleChange}>Buscar Endereço</button>
       {error && <p className="error-message">{error}</p>}
       {addressData && (
         <div>
@@ -44,7 +44,7 @@ const AddressForm = () => {
           <p>Estado: {addressData.uf}</p>
         </div>
       )}
-    </form>
+    </div>
   );
 };
 
