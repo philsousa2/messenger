@@ -7,6 +7,7 @@ const AddressForm = () => {
   const [error, setError] = useState(null);
 
   const handleChange = (event) => {
+    console.log(addressData.logradouro);
     setCep(event.target.value.replace(/\D/g, '')); // Remove caracteres não numéricos
   };
 
@@ -43,8 +44,10 @@ const AddressForm = () => {
           <p>Cidade: {addressData.localidade}</p>
           <p>Estado: {addressData.uf}</p>
         </div>
+
       )}
     </div>
+    
   );
 };
 
