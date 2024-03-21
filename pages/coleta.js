@@ -94,7 +94,7 @@ function Coleta() {
         <br />
         <h3>Dados do Transporte</h3>
         <input type="text" className="input4" name="endereco" placeholder="Endereço de Origem" onChange={valorInput} required />
-        <input type="text" className="input3" name="data" placeholder="Data da Coleta" onChange={valorInput} required />
+        <input type="date" className="input3" name="data" placeholder="Data da Coleta" onChange={valorInput} required />
         <h4>Horário da coleta</h4>
         <span className="txt">de</span>
         <input type="text" className="inputh" name="hora1" placeholder="00:00" onChange={valorInput} required />
