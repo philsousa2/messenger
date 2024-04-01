@@ -1,55 +1,54 @@
+import React, { useState } from 'react'
 import AddressForm from '../components/AddressForm';
 import { Container } from "../styles/pages/conta";
-import { useState } from 'react';
-import axios from 'axios';
 
-const SuaComponente = () => {
-  const [formValues, setFormValues] = useState({
-    cnpj: '',
-    razaoSocial: '',
-    inscricaoEstadual: '',
-    cnae: '',
-    nome: '',
-    email: '',
-    telefone: '',
-    emailFinanceiro: '',
-    nomeFinanceiro: '',
-    cep: '',
-    logradouro: '',
-    numero: '',
-    complemento: '',
-    bairro: '',
-    municipio: '',
-    uf: '',
-    pais: '',
-    documento: null
-  });
+function Conta() {
 
-  const valorInput = (event) => {
-    const { name, value } = event.target;
-    setFormValues({ ...formValues, [name]: value });
-  };
+  const [formulario, setFormulario] = useState({
+    cnpj: "",
+    razaoSocial: "",
+    inscricaoEstadual: "",
+    cnae: "",
+    nome: "",
+    email: "",
+    telefone: "",
+    emailFinanceiro: "",
+    nomeFinanceiro: "",
+    cep: "",
+    logradouro: "",
+    numero: "",
+    complemento: "",
+    bairro: "",
+    municipio: "",
+    uf: "",
+    pais: "",
+    documento: ""
+  })
 
-  const consultarCEP = async (cep) => {
+  const valorInput = (e) => setFormulario({ ...formulario, [e.target.name]: e.target.value })
+
+  const enviarConta = async e => {
+    e.preventDefault();
+
     try {
-      const response = await axios.get('https://viacep.com.br/ws/${cep}/json/');
-      const data = response.data;
-      setFormValues({
-        ...formValues,
-        logradouro: data.logradouro,
-        bairro: data.bairro,
-        municipio: data.localidade,
-        uf: data.uf
-      });
+      const response = await fetch("/contaMessenger/", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ formulario })
+      })
+      if (response.ok) {
+        
+        alert('A solicitação de cadastro foi feita com sucesso! Nossa Central de Serviços retornará o contato o mais breve possivel, em horário útil.');
+        window.location.reload()
+      } else {
+        throw new Error('Ocorreu um erro ao solicitar o Cadastro');
+      }
     } catch (error) {
-      console.error('Erro ao consultar CEP:', error);
+      console.error(error);
+      alert('Ocorreu um erro na abertura de conta. Por favor, tente novamente.');
     }
-  };
-
-  const enviarConta = async (event) => {
-    event.preventDefault();
-    // Aqui você pode enviar os dados do formulário para o backend
-    console.log('Dados do formulário:', formValues);
   };
 
   return (
@@ -59,7 +58,7 @@ const SuaComponente = () => {
         <span> A Messenger não fatura despesas referentes às taxas e tributos gerados na importação ou exportação de remessa expressa.</span></p>
       <h2>Todos os campos são obrigatórios.</h2>
       <form onSubmit={enviarConta} className="formulario">
-        {/* Seus campos de input JSX */}
+
         <input type="text" className="input2" name="cnpj" placeholder="CNPJ" onChange={valorInput} required />
         <input type="text" className="input2" name="razaoSocial" placeholder="Razão Social" onChange={valorInput} required />
         <input type="text" className="input2" name="inscricaoEstadual" placeholder="Inscrição Estadual" onChange={valorInput} required />
@@ -73,7 +72,7 @@ const SuaComponente = () => {
         <input type="email" className="input2" name="emailFinanceiro" placeholder="Email do Responsável Financeiro" onChange={valorInput} required />
         <input type="text" className="input2" name="nomeFinanceiro" placeholder="Contato no Depto Financeiro" onChange={valorInput} required />
         <br />
-        <input type="text" className="input3" name="cep" placeholder="CEP" onBlur={(event) => consultarCEP(event.target.value)} onChange={valorInput} required />
+        <input type="text" className="input3" name="cep" placeholder="CEP" onChange={valorInput} required />
         <input type="text" className="input2" name="logradouro" placeholder="Logradouro" onChange={valorInput} required />
         <input type="text" className="input3" name="numero" placeholder="Número" onChange={valorInput} required />
         <br />
@@ -83,10 +82,17 @@ const SuaComponente = () => {
         <br />
         <input type="text" className="input3" name="uf" placeholder="UF" onChange={valorInput} required />
         <input type="text" className="input3" name="pais" placeholder="País" onChange={valorInput} required />
+        <input type="file" name="documento" onChange={valorInput} />
         <button type="submit" className="btn"> Enviar </button>
       </form>
+      <div>
+        <h1>Busca de Endereço por CEP</h1>
+        <AddressForm />
+      </div>
     </Container>
-  );
-};
+  
 
-export default SuaComponente;
+  )
+}
+
+export default Conta
