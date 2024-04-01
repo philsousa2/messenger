@@ -49,7 +49,29 @@ const SuaComponente = () => {
   const enviarConta = async (event) => {
     event.preventDefault();
     // Aqui você pode enviar os dados do formulário para o backend
+
+    try {
+      const response = await fetch("/contaMessenger/", {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ formulario })
+      })
+      if (response.ok) {
+        
+        alert('A solicitação de cadastro foi feita com sucesso! Nossa Central de Serviços retornará o contato o mais breve possivel, em horário útil.');
+        window.location.reload()
+      } else {
+        throw new Error('Ocorreu um erro ao solicitar o Cadastro');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Ocorreu um erro na abertura de conta. Por favor, tente novamente.');
+    }
+    
     console.log('Dados do formulário:', formValues);
+
   };
 
   return (
