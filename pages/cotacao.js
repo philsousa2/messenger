@@ -115,11 +115,11 @@ function Cotacao() {
           prefix="R$ "
           customInput={<input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" />}
           onValueChange={(values) => {
-            const { formattedValue, value } = values;
+            const { value } = values;
             setFormulario({ ...formulario, valor: value });
           }} 
           required />
-          
+
         <input type="text" className="input" name="conteudo" placeholder="Descrição do Conteúdo" onChange={valorInput} required />
 
         <br />
