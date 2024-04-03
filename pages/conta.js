@@ -41,7 +41,8 @@ const SuaComponente = () => {
         logradouro: data.logradouro,
         bairro: data.bairro,
         municipio: data.localidade,
-        uf: data.uf
+        uf: data.uf,
+        pais: data.pais
       });
     } catch (error) {
       console.error('Erro ao consultar CEP:', error);
@@ -106,7 +107,7 @@ const SuaComponente = () => {
         <input type="text" className="input3" name="municipio" placeholder="Município" value={formValues.municipio || ''} onChange={valorInput} required />
         <br />
         <input type="text" className="input3" name="uf" placeholder="UF" value={formValues.uf || ''} onChange={valorInput} required />
-        <input type="text" className="input3" name="pais" placeholder="País" onChange={valorInput} required />
+        <input type="text" className="input3" name="pais" placeholder="País" value={formValues.pais || ''} onChange={valorInput} required />
         <button type="submit" className="btn"> Enviar </button>
       </form>
     </Container>
