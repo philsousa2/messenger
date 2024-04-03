@@ -35,7 +35,7 @@ const SuaComponente = () => {
     try {
       //const qs = require('qs');
       //const response = await axios.get('https://viacep.com.br/ws/${cep}/json/', qs.stringify({ 'cep': ${cep} }));
-      const response = await axios.get('https://viacep.com.br/ws/'+${cep}+'/json/');
+      const response = await axios.get('https://viacep.com.br/ws/'+$cep+'/json/');
       const data = response.data;
       setFormValues({
         ...formValues,
