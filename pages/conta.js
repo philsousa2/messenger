@@ -2,6 +2,7 @@ import AddressForm from '../components/AddressForm';
 import { Container } from "../styles/pages/conta";
 import { useState } from 'react';
 import axios from 'axios';
+import qs from 'qs';
 
 const SuaComponente = () => {
   const [formValues, setFormValues] = useState({
@@ -32,7 +33,9 @@ const SuaComponente = () => {
 
   const consultarCEP = async (cep) => {
     try {
-      const response = await axios.get('https://viacep.com.br/ws/${cep}/json/');
+      //const qs = require('qs');
+      //const response = await axios.get('https://viacep.com.br/ws/${cep}/json/', qs.stringify({ 'cep': ${cep} }));
+      const response = await axios.get('https://viacep.com.br/ws/'+${cep}+'/json/');
       const data = response.data;
       setFormValues({
         ...formValues,
