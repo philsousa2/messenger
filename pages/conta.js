@@ -41,8 +41,7 @@ const SuaComponente = () => {
         logradouro: data.logradouro,
         bairro: data.bairro,
         municipio: data.localidade,
-        uf: data.uf,
-        pais: data.pais
+        uf: data.uf
       });
     } catch (error) {
       console.error('Erro ao consultar CEP:', error);
@@ -99,15 +98,15 @@ const SuaComponente = () => {
         <input type="text" className="input2" name="nomeFinanceiro" placeholder="Contato no Depto Financeiro" onChange={valorInput} required />
         <br />
         <input type="text" className="input3" name="cep" placeholder="CEP" onBlur={(event) => consultarCEP(event.target.value)} onChange={valorInput} required />
-        <input type="text" className="input2" name="logradouro" placeholder="Logradouro" onBlur={(event) => consultarCEP(event.target.value)} onChange={valorInput} required />
+        <input type="text" className="input2" name="logradouro" placeholder="Logradouro" onChange={valorInput} required />
         <input type="text" className="input3" name="numero" placeholder="Número" onChange={valorInput} required />
         <br />
         <input type="text" className="input2" name="complemento" placeholder="Complemento" onChange={valorInput} required />
-        <input type="text" className="input3" name="bairro" placeholder="Bairro" onBlur={(event) => consultarCEP(event.target.value)} onChange={valorInput} required />
-        <input type="text" className="input3" name="municipio" placeholder="Município" onBlur={(event) => consultarCEP(event.target.value)} onChange={valorInput} required />
+        <input type="text" className="input3" name="bairro" placeholder="Bairro" onChange={valorInput} required />
+        <input type="text" className="input3" name="municipio" placeholder="Município" onChange={valorInput} required />
         <br />
-        <input type="text" className="input3" name="uf" placeholder="UF" onBlur={(event) => consultarCEP(event.target.value)} onChange={valorInput} required />
-        <input type="text" className="input3" name="pais" placeholder="País" onBlur={(event) => consultarCEP(event.target.value)} onChange={valorInput} required />
+        <input type="text" className="input3" name="uf" placeholder="UF" onChange={valorInput} required />
+        <input type="text" className="input3" name="pais" placeholder="País" onChange={valorInput} required />
         <button type="submit" className="btn"> Enviar </button>
       </form>
     </Container>
