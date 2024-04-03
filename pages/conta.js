@@ -2,7 +2,6 @@ import AddressForm from '../components/AddressForm';
 import { Container } from "../styles/pages/conta";
 import { useState } from 'react';
 import axios from 'axios';
-import qs from 'qs';
 
 const SuaComponente = () => {
   const [formValues, setFormValues] = useState({
