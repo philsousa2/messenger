@@ -21,7 +21,9 @@ module.exports = {
         source: '/contaMessenger/:path*',
         destination: 'https://api.upsilan.com.br/form_conta/:path*',
         methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-        headers: {"Access-Control-Allow-Origin": "*"}
+        headers: [
+          { "key": "Access-Control-Allow-Origin", "value": "*" }
+        ]
         //[
           //{ key: "Access-Control-Allow-Origin", value: "*" }
           //{ key: "Access-Control-Allow-Methods", value: "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
