@@ -80,15 +80,15 @@ const SuaComponente = () => {
   return (
     <Container>
       <h1>ABRA SUA CONTA</h1>
-      <p>A conta Messenger permite a utilização dos serviços com pagamento faturado. Preencha aqui as informações cadastrais da sua empresa, para aprovação do crédito. Anexar contrato social, Inscrição Estadual ou Municipal conforme o caso. Nossa Central de Serviços retornará o contato o mais breve possivel, em horário útil.<br />
+      <p>A conta Messenger permite a utilização dos serviços com pagamento faturado. Preencha aqui suas informações cadastrais físicas ou da sua empresa, para aprovação do crédito. Anexar contrato social, Inscrição Estadual ou Municipal conforme o caso. Nossa Central de Serviços retornará o contato o mais breve possivel, em horário útil.<br />
         <span> A Messenger não fatura despesas referentes às taxas e tributos gerados na importação ou exportação de remessa expressa.</span></p>
       <h2>Todos os campos são obrigatórios.</h2>
       <form onSubmit={enviarConta} className="formulario">
         {/* Seus campos de input JSX */}
-        <input type="text" className="input2" name="cnpj" placeholder="CNPJ" onChange={valorInput} required />
-        <input type="text" className="input2" name="razaoSocial" placeholder="Razão Social" onChange={valorInput} required />
-        <input type="text" className="input2" name="inscricaoEstadual" placeholder="Inscrição Estadual" onChange={valorInput} required />
-        <input type="text" className="input2" name="cnae" placeholder="CNAE" onChange={valorInput} required />
+        <input type="text" className="input2" name="cnpj" placeholder="CPF ou CNPJ" onChange={valorInput} required />
+        <input type="text" className="input2" name="razaoSocial" placeholder="Nome ou Razão Social" onChange={valorInput} required />
+        <input type="text" className="input2" name="inscricaoEstadual" placeholder="Inscrição Estadual" onChange={valorInput} />
+        <input type="text" className="input2" name="cnae" placeholder="CNAE" onChange={valorInput} />
         <br />
         <input type="text" className="input" name="nome" placeholder="Nome do Responsável" onChange={valorInput} required />
         <br />

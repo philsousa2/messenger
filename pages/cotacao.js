@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Container } from "../styles/pages/cotacao";
+import NumberFormat from 'react-number-format';
 
 function Cotacao() {
 
@@ -80,7 +81,7 @@ function Cotacao() {
 
         <h3>Dados do solicitante</h3>
         <input type="text" className="input" name="nome" placeholder="Seu Nome" onChange={valorInput} required />
-        <input type="text" className="input" name="numeroConta" placeholder="CNPJ/CPF ou Conta Pagadora" onChange={valorInput} required />
+        <input type="text" className="input" name="numeroConta" placeholder="CNPJ/CPF" onChange={valorInput} required />
         <input type="tel" className="input" name="telefone" placeholder="Telefone" onChange={valorInput} required />
         <input type="email" className="input" name="email" placeholder="Email" onChange={valorInput} required />
 
@@ -95,7 +96,7 @@ function Cotacao() {
         </select>
         <div className="dimencao">
           <label>Peso:</label>
-          <input type="text" className="input2" name="peso" placeholder="000kg" onChange={valorInput} />
+          <input type="text" className="input2" name="peso" placeholder="000g" onChange={valorInput} />
           <label htmlFor="">Dimensões em cm:</label>
           <input type="text" className="input2" name="altura" placeholder="Altura" onChange={valorInput} />
           <label>x</label>
@@ -106,6 +107,17 @@ function Cotacao() {
 
         <input type="text" className="input3" name="notaFiscal" placeholder="Nota Fiscal" onChange={valorInput} required />
         <input type="text" className="input3" name="quantidade" placeholder="Quantidade de Volumes" onChange={valorInput} required />
+        <NumberFormat
+          value={formulario.valor}
+          thousandSeparator="."
+          decimalSeparator=","
+          prefix="R$ "
+          customInput={<input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" />}
+          onValueChange={(values) => {
+            const { formattedValue, value } = values;
+            setFormulario({ ...formulario, valor: value });
+          }} 
+          required />
         <input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" onChange={valorInput} required />
         <input type="text" className="input" name="conteudo" placeholder="Descrição do Conteúdo" onChange={valorInput} required />
 

@@ -22,6 +22,7 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-number-format": "^5.3.4",
     "react-responsive-carousel": "^3.2.23",
     "react-slideshow-image": "^4.0.4",
     "styled-components": "^5.3.5"
