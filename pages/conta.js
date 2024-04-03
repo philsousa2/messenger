@@ -98,7 +98,7 @@ const SuaComponente = () => {
         <input type="text" className="input2" name="nomeFinanceiro" placeholder="Contato no Depto Financeiro" onChange={valorInput} required />
         <br />
         <input type="text" className="input3" name="cep" placeholder="CEP" onBlur={(event) => consultarCEP(event.target.value)} onChange={valorInput} required />
-        <input type="text" className="input2" name="logradouro" placeholder="Logradouro" onChange={valorInput} required />
+        <input type="text" className="input2" name="logradouro" placeholder="Logradouro" onChange={formValues} required />
         <input type="text" className="input3" name="numero" placeholder="Número" onChange={valorInput} required />
         <br />
         <input type="text" className="input2" name="complemento" placeholder="Complemento" onChange={valorInput} required />
