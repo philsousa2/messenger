@@ -107,6 +107,7 @@ function Cotacao() {
 
         <input type="text" className="input3" name="notaFiscal" placeholder="Nota Fiscal" onChange={valorInput} required />
         <input type="text" className="input3" name="quantidade" placeholder="Quantidade de Volumes" onChange={valorInput} required />
+
         <NumberFormat
           value={formulario.valor}
           thousandSeparator="."
@@ -118,7 +119,7 @@ function Cotacao() {
             setFormulario({ ...formulario, valor: value });
           }} 
           required />
-        <input type="text" className="input3" name="valor" placeholder="Valor da Mercadoria" onChange={valorInput} required />
+          
         <input type="text" className="input" name="conteudo" placeholder="Descrição do Conteúdo" onChange={valorInput} required />
 
         <br />
